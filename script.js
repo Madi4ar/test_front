@@ -85,12 +85,11 @@ $(document).ready(function(){
         $(this).addClass('active: !bg-[#19B2DD] !text-white');
     });
 
-    
+     $(".default_option").click(function() {
+        $(".select_ul").toggleClass('blocks');
+     })
 
-      // $(".default_option").click(function(){
-      //   $(this).parent().toggleClass("hover:hidden");
-      // })
-      
+
       $(".select_ul li").click(function(){
         var currentele = $(this).html();
         $(".default_option li").html(currentele);

@@ -126,6 +126,10 @@
 			transition: 1s all ease;
 		}
 
+		.tabs-scroll-container::-webkit-scrollbar {
+			display: none;
+		}
+
 
 	</style>
 </head>	
@@ -240,7 +244,7 @@
 	<div class="course-menu sm: hidden md:block md:pt-[15px]  bg-[#F5F5F5] border border-transparent ">
         <div class="container md:w-full md: p-[0_15px] lg:w-[1128px] mx-auto">
             <nav class="flex justify-between items-center w-full ml-5">
-				<ul class="sm: hidden md:hidden lg:block flex justify-between items-center ul-width font-bold uppercase w-2/4" >
+				<ul class="sm: hidden md:hidden lg:flex flex justify-between items-center ul-width font-bold uppercase w-2/4" >
 					<li><a href="">Каталог</a></li>
 					<li><a href="">CPM.KZ</a></li>
 					<li><a href="">Контакты</a></li>
@@ -447,16 +451,16 @@
 			  <ul class="flex flex-wrap text-sm justify-between w-full font-medium text-center text-gray-500 dark:text-gray-400"
 			  id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
 				<li class="mr-2" role="presentation">
-				  <a href="#" id="courses-tab" data-tabs-target="#courses" role="tab" aria-controls="courses" aria-selected="true"  class="tab sm: !p-[15px_25px] sm: bg-white sm: rounded-lg sm: text-black sm: p-[15px_25px] text-[#161616] rounded-lg  active: !bg-[#19B2DD] active: !text-white flex justify-between uppercase mr-lg cursor-pointer p-[10px] inline-block px-4 py-3">Курсы</a>
+				  <a href="#" id="courses-tab" data-tabs-target="#courses" role="tab" aria-controls="courses" aria-selected="true"  class="tab sm: !p-[15px_25px] sm: bg-white sm: rounded-lg sm: text-black sm: p-[15px_25px] md:!p-[10px_18px] text-[#161616] rounded-lg  active: !bg-[#19B2DD] active: !text-white flex justify-between uppercase mr-lg cursor-pointer inline-block ">Курсы</a>
 				</li>
 				<li class="mr-2" role="presentation">
-				  <a href="#" id="holidays-tab" data-tabs-target="#holidays" role="tab" aria-controls="holidays" aria-selected="false" class="tab sm: !p-[15px_25px] sm: bg-white sm: rounded-lg sm: text-black sm: p-[15px_25px] text-[#161616] mr-lg uppercase tab cursor-pointer p-[10px] inline-block px-4 py-3 rounded-lg">Мероприятия</a>
+				  <a href="#" id="holidays-tab" data-tabs-target="#holidays" role="tab" aria-controls="holidays" aria-selected="false" class="tab sm: !p-[15px_25px] sm: bg-white sm: rounded-lg sm: text-black sm: p-[15px_25px] md:!p-[10px_18px] text-[#161616] mr-lg uppercase tab cursor-pointer p-[10px] inline-block px-4 py-3 rounded-lg">Мероприятия</a>
 				</li>
 				<li class="mr-2" role="presentation">
-				  <a href="#" id="mook-tab" data-tabs-target="#mook" role="tab" aria-controls="mook" aria-selected="false" class="tab sm: bg-white sm: !p-[15px_25px] sm: rounded-lg sm: text-black sm: p-[15px_25px] text-[#161616] mr-lg uppercase cursor-pointer p-[10px] inline-block px-4 py-3 rounded-lg">МООК</a>
+				  <a href="#" id="mook-tab" data-tabs-target="#mook" role="tab" aria-controls="mook" aria-selected="false" class="tab sm: bg-white sm: !p-[15px_25px] sm: rounded-lg sm: text-black sm: p-[15px_25px] md:!p-[10px_18px] text-[#161616] mr-lg uppercase cursor-pointer p-[10px] inline-block px-4 py-3 rounded-lg">МООК</a>
 				</li>
 				<li class="mr-2" role="presentation">
-				  <a href="#" id="resources-tab" data-tabs-target="#resources" role="tab" aria-controls="resources" aria-selected="false" class="tab sm: !p-[15px_25px] sm: bg-white sm: rounded-lg sm: text-black sm: p-[15px_25px] text-[#161616] mr-lg uppercase cursor-pointer p-[10px] inline-block px-4 py-3 rounded-lg">Ресурсы</a>
+				  <a href="#" id="resources-tab" data-tabs-target="#resources" role="tab" aria-controls="resources" aria-selected="false" class="tab sm: !p-[15px_25px] sm: bg-white sm: rounded-lg sm: text-black sm: p-[15px_25px] md:!p-[10px_18px] text-[#161616] mr-lg uppercase cursor-pointer p-[10px] inline-block px-4 py-3 rounded-lg">Ресурсы</a>
 				</li>
 			  </ul>
 			</div>
@@ -474,8 +478,8 @@
 							before:content-[''] before:absolute before:top-[18px] before:right-[18px]
 							before:w-[6px] before:h-[6px] before:border-[2px] before:rotate-[-45deg] 
 							before:border-[transparent_transparent_#6CC126_#6CC126]
-						    group-hover:block group-hover:before:top-[25px] group-hover:before:rotate-[-225deg]" >
-								<li class="py-[10px] px-[20px]">
+						    ">
+								<li class="py-[8px] px-[20px]">
 									<div class="option pizza flex items-center">
 									  <div class="icon w-[32px] h-[32px] mr-[15px]
 									  bg-[url('https://i.imgur.com/UczSxO3.png')] bg-no-repeat bg-[0_0]"></div>
@@ -485,7 +489,7 @@
 							</ul>
 							<ul class="select_ul absolute top-[55px] left-0
 							w-full bg-white rounded-[5px] hidden 
-							group-hover:block ">
+							">
 								<li class="py-[10px] px-[20px] cursor-pointer 
 								hover:rounded-t hover:bg-[#fff4dd]">
 									<div class="option flex items-center bg-position-0 pizza">
@@ -518,7 +522,7 @@
 				</div>
 
 				
-				<div class="filter-orig z-10 sm: mt-[10px] sm: ml-[10px]" onclick="showFilter()">
+				<div class="filter-orig sm: mt-[10px] sm: ml-[10px]" onclick="showFilter()">
 					<svg width="59" height="40" viewBox="0 0 59 40" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<rect width="59" height="40" rx="4" fill="#6CC126"/>
 						<path d="M23.67 26C23.8766 25.4145 24.2597 24.9074 24.7666 24.5488C25.2735 24.1902 25.8791 23.9976 26.5 23.9976C27.1209 23.9976 27.7265 24.1902 28.2334 24.5488C28.7403 24.9074 29.1234 25.4145 29.33 26H39.5V28H29.33C29.1234 28.5855 28.7403 29.0926 28.2334 29.4512C27.7265 29.8099 27.1209 30.0025 26.5 30.0025C25.8791 30.0025 25.2735 29.8099 24.7666 29.4512C24.2597 29.0926 23.8766 28.5855 23.67 28H19.5V26H23.67ZM29.67 19C29.8766 18.4145 30.2597 17.9074 30.7666 17.5488C31.2735 17.1902 31.8791 16.9976 32.5 16.9976C33.1209 16.9976 33.7265 17.1902 34.2334 17.5488C34.7403 17.9074 35.1234 18.4145 35.33 19H39.5V21H35.33C35.1234 21.5855 34.7403 22.0926 34.2334 22.4512C33.7265 22.8099 33.1209 23.0025 32.5 23.0025C31.8791 23.0025 31.2735 22.8099 30.7666 22.4512C30.2597 22.0926 29.8766 21.5855 29.67 21H19.5V19H29.67ZM23.67 12C23.8766 11.4145 24.2597 10.9074 24.7666 10.5488C25.2735 10.1902 25.8791 9.99756 26.5 9.99756C27.1209 9.99756 27.7265 10.1902 28.2334 10.5488C28.7403 10.9074 29.1234 11.4145 29.33 12H39.5V14H29.33C29.1234 14.5855 28.7403 15.0926 28.2334 15.4512C27.7265 15.8099 27.1209 16.0025 26.5 16.0025C25.8791 16.0025 25.2735 15.8099 24.7666 15.4512C24.2597 15.0926 23.8766 14.5855 23.67 14H19.5V12H23.67ZM26.5 14C26.7652 14 27.0196 13.8947 27.2071 13.7071C27.3946 13.5196 27.5 13.2652 27.5 13C27.5 12.7348 27.3946 12.4804 27.2071 12.2929C27.0196 12.1054 26.7652 12 26.5 12C26.2348 12 25.9804 12.1054 25.7929 12.2929C25.6054 12.4804 25.5 12.7348 25.5 13C25.5 13.2652 25.6054 13.5196 25.7929 13.7071C25.9804 13.8947 26.2348 14 26.5 14ZM32.5 21C32.7652 21 33.0196 20.8947 33.2071 20.7071C33.3946 20.5196 33.5 20.2652 33.5 20C33.5 19.7348 33.3946 19.4804 33.2071 19.2929C33.0196 19.1054 32.7652 19 32.5 19C32.2348 19 31.9804 19.1054 31.7929 19.2929C31.6054 19.4804 31.5 19.7348 31.5 20C31.5 20.2652 31.6054 20.5196 31.7929 20.7071C31.9804 20.8947 32.2348 21 32.5 21ZM26.5 28C26.7652 28 27.0196 27.8947 27.2071 27.7071C27.3946 27.5196 27.5 27.2652 27.5 27C27.5 26.7348 27.3946 26.4804 27.2071 26.2929C27.0196 26.1054 26.7652 26 26.5 26C26.2348 26 25.9804 26.1054 25.7929 26.2929C25.6054 26.4804 25.5 26.7348 25.5 27C25.5 27.2652 25.6054 27.5196 25.7929 27.7071C25.9804 27.8947 26.2348 28 26.5 28Z" fill="white"/>
@@ -527,9 +531,280 @@
 
 
 				<div class="filter-hidden fixed top-0 left-0 hidden bg-white w-full h-full
-				transition transition-all duration-300">
-					<p>Zdes filter</p>
-					<button class="closeModal">Закрыть</button>
+				transition transition-all duration-300 overflow-scroll">
+				<i class="fa-solid fa-xmark text-[40px] absolute right-[15px] top-[15px]" onclick="closeFilter()"></i>
+				<div class="documents mt-[40px] bg-white rounded-[8px]">
+				<div class="faq-head text-[#151515] py-[29px] px-[21px] relative text-[24px] leading-[1.3] font-medium flex flex-col justify-between cursor-pointer rounded-[2px] border-none  aezakmi">
+					<p class="font-semibold text-base">Для кого курс</p>
+					<div class="button  absolute w-[24px] h-[24px] top-[50%] right-[0] transform -translate-x-1/2 -translate-y-1/2 rotate-0 rounded-[50%] cursor-pointer z-100 transition-all duration-[400ms]
+					before:content-[''] before:absolute before:top-[50%] before:left-[50%] before:transform before:-translate-x-1/2 before:-translate-y-1/2
+					before:h-[50%] before:w-[2px] before:bg-[#B5BAC3] 
+					after:content-[''] after:absolute after:top-[50%] after:left-[50%] after:transform after:-translate-x-1/2 after:-translate-y-1/2
+					after:h-[2px] after:w-[50%] after:bg-[#B5BAC3]
+					"></div>
+				</div>
+				<div class="faq-content hidden text-[#444444] p-[15px]  pb-[30px] font-normal text-[16px] leading-[1.5]">
+					<div class="checkbox">
+						<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 
+						rounded-md relative checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block 
+						after:rotate-45 after:border-white after:border-b-2 after:border-r-2 after:w-2 after:h-3"> <p class="ml-[10px] text-[14px]">Руководитель</p>
+					</label>
+					</div>
+					<div class="checkbox mt-[10px]">
+						<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md 
+						relative checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white 
+						after:border-b-2 after:border-r-2 after:w-2 after:h-3"> 
+						<p class="ml-[10px] text-[14px]">Учитель предметник</p>
+						</label>
+					</div>
+					<div class="checkbox mt-[10px]">
+						<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md 
+						relative checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 
+						after:border-r-2 after:w-2 after:h-3"> 
+						<p class="ml-[10px] text-[14px]">Психолог</p>
+						</label>
+					</div>
+					<div class="checkbox mt-[10px]">
+						<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md relative 
+						checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 after:border-r-2 
+						after:w-2 after:h-3"> 
+						<p class="ml-[10px] text-[14px]">Дошкольное образование</p>
+						</label>
+					</div>
+					<div class="checkbox mt-[10px]">
+						<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md relative 
+						checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 after:border-r-2 
+						after:w-2 after:h-3"> 
+						<p class="ml-[10px] text-[14px]">Преподаватель ВУЗа</p>
+						</label>
+					</div>
+					<div class="checkbox mt-[10px]">
+						<label class="flex">
+							<input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md relative checked:border-0 
+							checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 after:border-r-2 after:w-2 
+							after:h-3"><p class="ml-[10px] text-[14px]">ТИПО</p> 
+						</label>
+					</div>
+					
+				</div>
+			</div>
+
+			<div class="documents mt-[8px] bg-white rounded-[8px]">
+				<div class="faq-head text-[#151515] py-[29px] px-[21px] relative text-[24px] leading-[1.3] font-medium flex flex-col justify-between cursor-pointer rounded-[2px] border-none flex aezakmi">
+					<p class="font-semibold text-base">Предмет</p>
+					<div class="button  absolute w-[24px] h-[24px] top-[50%] right-[0] transform -translate-x-1/2 -translate-y-1/2 rotate-0 rounded-[50%] cursor-pointer z-100 transition-all duration-[400ms]before:content-[''] before:absolute before:top-[50%] before:left-[50%] before:transform before:-translate-x-1/2 before:-translate-y-1/2
+					before:h-[50%] before:w-[2px] before:bg-[#B5BAC3]
+					after:content-[''] after:absolute after:top-[50%] after:left-[50%] after:transform after:-translate-x-1/2 after:-translate-y-1/2
+					after:h-[2px] after:w-[50%] after:bg-[#B5BAC3]"></div>
+				</div>
+				<div class="faq-content hidden text-[#444444] p-[15px]  pb-[30px]">
+					<div class="checkbox">
+						<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 
+						rounded-md relative checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block 
+						after:rotate-45 after:border-white after:border-b-2 after:border-r-2 after:w-2 after:h-3"> <p class="ml-[10px] text-[14px]">Руководитель</p>
+					</label>
+					</div>
+					<div class="checkbox mt-[10px]">
+						<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md 
+						relative checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white 
+						after:border-b-2 after:border-r-2 after:w-2 after:h-3"> 
+						<p class="ml-[10px] text-[14px]">Учитель предметник</p>
+						</label>
+					</div>
+					<div class="checkbox mt-[10px]">
+						<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md 
+						relative checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 
+						after:border-r-2 after:w-2 after:h-3"> 
+						<p class="ml-[10px] text-[14px]">Психолог</p>
+						</label>
+					</div>
+					<div class="checkbox mt-[10px]">
+						<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md relative 
+						checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 after:border-r-2 
+						after:w-2 after:h-3"> 
+						<p class="ml-[10px] text-[14px]">Дошкольное образование</p>
+						</label>
+					</div>
+					<div class="checkbox mt-[10px]">
+						<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md relative 
+						checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 after:border-r-2 
+						after:w-2 after:h-3"> 
+						<p class="ml-[10px] text-[14px]">Преподаватель ВУЗа</p>
+						</label>
+					</div>
+					<div class="checkbox mt-[10px]">
+						<label class="flex">
+							<input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md relative checked:border-0 
+							checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 after:border-r-2 after:w-2 
+							after:h-3"><p class="ml-[10px] text-[14px]">ТИПО</p> 
+						</label>
+					</div>
+				</div>
+			</div>
+
+			<div class="documents mt-[8px] bg-white rounded-[8px]">
+				<div class="faq-head text-[#151515] py-[29px] px-[21px] relative text-[24px] leading-[1.3] font-medium flex flex-col justify-between cursor-pointer rounded-[2px] border-none flex aezakmi">
+					<p class="font-semibold text-base w-[152px]">Место проведения</p>
+					<div class="button  absolute w-[24px] h-[24px] top-[50%] right-[0] transform -translate-x-1/2 -translate-y-1/2 rotate-0 rounded-[50%] cursor-pointer z-100 transition-all duration-[400ms] before:content-[''] before:absolute before:top-[50%] before:left-[50%] before:transform before:-translate-x-1/2 before:-translate-y-1/2
+					before:h-[50%] before:w-[2px] before:bg-[#B5BAC3]
+					after:content-[''] after:absolute after:top-[50%] after:left-[50%] after:transform after:-translate-x-1/2 after:-translate-y-1/2
+					after:h-[2px] after:w-[50%] after:bg-[#B5BAC3]"></div>
+				</div>
+				<div class="faq-content hidden text-[#444444] p-[15px]  pb-[30px]">
+					<div class="checkbox">
+						<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 
+						rounded-md relative checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block 
+						after:rotate-45 after:border-white after:border-b-2 after:border-r-2 after:w-2 after:h-3"> <p class="ml-[10px] text-[14px]">Руководитель</p>
+					</label>
+					</div>
+					<div class="checkbox mt-[10px]">
+						<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md 
+						relative checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white 
+						after:border-b-2 after:border-r-2 after:w-2 after:h-3"> 
+						<p class="ml-[10px] text-[14px]">Учитель предметник</p>
+						</label>
+					</div>
+					<div class="checkbox mt-[10px]">
+						<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md 
+						relative checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 
+						after:border-r-2 after:w-2 after:h-3"> 
+						<p class="ml-[10px] text-[14px]">Психолог</p>
+						</label>
+					</div>
+					<div class="checkbox mt-[10px]">
+						<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md relative 
+						checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 after:border-r-2 
+						after:w-2 after:h-3"> 
+						<p class="ml-[10px] text-[14px]">Дошкольное образование</p>
+						</label>
+					</div>
+					<div class="checkbox mt-[10px]">
+						<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md relative 
+						checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 after:border-r-2 
+						after:w-2 after:h-3"> 
+						<p class="ml-[10px] text-[14px]">Преподаватель ВУЗа</p>
+						</label>
+					</div>
+					<div class="checkbox mt-[10px]">
+						<label class="flex">
+							<input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md relative checked:border-0 
+							checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 after:border-r-2 after:w-2 
+							after:h-3"><p class="ml-[10px] text-[14px]">ТИПО</p> 
+						</label>
+					</div>
+				</div>
+			</div>
+
+			<div class="documents mt-[8px] bg-white rounded-[8px]">
+				<div class="faq-head text-[#151515] py-[29px] px-[21px] relative text-[24px] leading-[1.3] font-medium flex flex-col justify-between cursor-pointer rounded-[2px] border-none flex aezakmi">
+					<p class="font-semibold text-base">Язык</p>
+					<div class="button  absolute w-[24px] h-[24px] top-[50%] right-[0] transform -translate-x-1/2 -translate-y-1/2 rotate-0 rounded-[50%] cursor-pointer z-100 transition-all duration-[400ms] before:content-[''] before:absolute before:top-[50%] before:left-[50%] before:transform before:-translate-x-1/2 before:-translate-y-1/2
+					before:h-[50%] before:w-[2px] before:bg-[#B5BAC3]
+					after:content-[''] after:absolute after:top-[50%] after:left-[50%] after:transform after:-translate-x-1/2 after:-translate-y-1/2
+					after:h-[2px] after:w-[50%] after:bg-[#B5BAC3]"></div>
+				</div>
+				<div class="faq-content hidden text-[#444444] p-[15px]  pb-[30px]">
+					<div class="checkbox">
+						<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 
+						rounded-md relative checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block 
+						after:rotate-45 after:border-white after:border-b-2 after:border-r-2 after:w-2 after:h-3"> <p class="ml-[10px] text-[14px]">Руководитель</p>
+					</label>
+					</div>
+					<div class="checkbox mt-[10px]">
+						<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md 
+						relative checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white 
+						after:border-b-2 after:border-r-2 after:w-2 after:h-3"> 
+						<p class="ml-[10px] text-[14px]">Учитель предметник</p>
+						</label>
+					</div>
+					<div class="checkbox mt-[10px]">
+						<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md 
+						relative checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 
+						after:border-r-2 after:w-2 after:h-3"> 
+						<p class="ml-[10px] text-[14px]">Психолог</p>
+						</label>
+					</div>
+					<div class="checkbox mt-[10px]">
+						<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md relative 
+						checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 after:border-r-2 
+						after:w-2 after:h-3"> 
+						<p class="ml-[10px] text-[14px]">Дошкольное образование</p>
+						</label>
+					</div>
+					<div class="checkbox mt-[10px]">
+						<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md relative 
+						checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 after:border-r-2 
+						after:w-2 after:h-3"> 
+						<p class="ml-[10px] text-[14px]">Преподаватель ВУЗа</p>
+						</label>
+					</div>
+					<div class="checkbox mt-[10px]">
+						<label class="flex">
+							<input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md relative checked:border-0 
+							checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 after:border-r-2 after:w-2 
+							after:h-3"><p class="ml-[10px] text-[14px]">ТИПО</p> 
+						</label>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="documents mt-[8px] bg-white rounded-[8px]">
+				<div class="faq-head text-[#151515] py-[29px] px-[21px] relative text-[24px] leading-[1.3] font-medium flex flex-col justify-between cursor-pointer rounded-[2px] border-none flex aezakmi">
+					<p class="font-semibold text-base">Стоимость</p>
+					<div class="button  absolute w-[24px] h-[24px] top-[50%] right-[0] transform -translate-x-1/2 -translate-y-1/2 rotate-0 rounded-[50%] cursor-pointer z-100 transition-all duration-[400ms] before:content-[''] before:absolute before:top-[50%] before:left-[50%] before:transform before:-translate-x-1/2 before:-translate-y-1/2
+					before:h-[50%] before:w-[2px] before:bg-[#B5BAC3]
+					after:content-[''] after:absolute after:top-[50%] after:left-[50%] after:transform after:-translate-x-1/2 after:-translate-y-1/2
+					after:h-[2px] after:w-[50%] after:bg-[#B5BAC3]"></div>
+				</div>
+				<div class="faq-content hidden text-[#444444] p-[20px]  pb-[30px]">
+					<div class="checkbox">
+						<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 
+						rounded-md relative checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block 
+						after:rotate-45 after:border-white after:border-b-2 after:border-r-2 after:w-2 after:h-3"> <p class="ml-[10px] text-[14px]">Руководитель</p>
+					</label>
+					</div>
+					<div class="checkbox mt-[10px]">
+						<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md 
+						relative checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white 
+						after:border-b-2 after:border-r-2 after:w-2 after:h-3"> 
+						<p class="ml-[10px] text-[14px]">Учитель предметник</p>
+						</label>
+					</div>
+					<div class="checkbox mt-[10px]">
+						<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md 
+						relative checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 
+						after:border-r-2 after:w-2 after:h-3"> 
+						<p class="ml-[10px] text-[14px]">Психолог</p>
+						</label>
+					</div>
+					<div class="checkbox mt-[10px]">
+						<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md relative 
+						checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 after:border-r-2 
+						after:w-2 after:h-3"> 
+						<p class="ml-[10px] text-[14px]">Дошкольное образование</p>
+						</label>
+					</div>
+					<div class="checkbox mt-[10px]">
+						<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md relative 
+						checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 after:border-r-2 
+						after:w-2 after:h-3"> 
+						<p class="ml-[10px] text-[14px]">Преподаватель ВУЗа</p>
+						</label>
+					</div>
+					<div class="checkbox mt-[10px]">
+						<label class="flex">
+							<input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md relative checked:border-0 
+							checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 after:border-r-2 after:w-2 
+							after:h-3"><p class="ml-[10px] text-[14px]">ТИПО</p> 
+						</label>
+					</div>
+				</div>
+			</div>
+
+
+			
+					
 				</div>
 			</div>
 			<div class="tab-content sm: ml-0 sm: mr-0 md: flex items-center justify-center  w-full" id="myTabContent">
@@ -824,7 +1099,7 @@
 								
 							<div class="course-block1 sm: flex-col sm: min-h-[551px] sm: items-end md:flex-row md:min-h-[310px] md:items-start bg-[#EDF0FF] py-[49px] px-[73px] flex justify-between relative">
 								<div class="course-txt">
-									<p class="tex sm: w-full text-[#000] md:w-[467px] text-[24px] font-bold">Курс исследовательская деятельность педагога:
+									<p class="tex sm: w-full sm: text-[20px] text-[#000] md:w-[467px] md:text-[24px] font-bold">Курс исследовательская деятельность педагога:
 										<span class="text-[#19B2DD]">Lesson Study и Action Research</span>
 									</p>
 								  
@@ -1820,8 +2095,12 @@
 
 		function showFilter() {
 			let modal = document.querySelector('.filter-hidden');
-			let close = document.querySelector('.closeModal');
 			modal.classList.toggle('open');
+		}
+
+		function closeFilter() {
+			let modal = document.querySelector('.filter-hidden');
+			modal.classList.remove('open');
 		}
 		
 	</script>
