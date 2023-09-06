@@ -18,6 +18,7 @@
 	<script src="https://cdn.tailwindcss.com"></script>
 	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.0/dist/cdn.min.js"></script>
 	<style>
 		.info_slider .slick-slide {
 		margin-right: 15px;
@@ -118,7 +119,7 @@
 		}
 		.blocks {
 			display:block !important;
-			transition: 2s all ease;
+			transition: 3s all ease;
 		}
 		.open {
 			display: block !important;
@@ -127,6 +128,12 @@
 
 		.tabs-scroll-container::-webkit-scrollbar {
 			display: none;
+		}
+		input[type=range]::-webkit-slider-thumb {
+		pointer-events: all;
+		width: 24px;
+		height: 24px;
+		-webkit-appearance: none;  
 		}
 	</style>
 </head>	
@@ -178,7 +185,7 @@
 								</div>
 
 
-								<div class="login show z-10 hidden absolute w-[120px] top-[75px] ml-[5px] bg-white rounded-[5px] cursor-pointer flex flex-col items-center justify-center">
+								<div class="login show transition-all ease-in-out duration-500 shadow-[0_4px_20px_0_rgba(24,41,189,0.13)] z-10 hidden absolute w-[120px] top-[75px] ml-[5px] bg-white rounded-[5px] cursor-pointer flex flex-col items-center justify-center">
 									<a href="https://esus.kz/login"><p class="text-black p-[8px] border-b-[1px] w-full text-center" >Войти</p></a>
 									<a href="https://esus.kz/register"><p class="text-black p-[8px] mt-[5px] text-center" >Регистрация</p></a>						
 								</div>
@@ -248,7 +255,7 @@
 
 	<div class="extra block bg-[#F5F5F5] border border-transparent hidden sm: !block md:!block lg:!hidden">
 		<div class="container md:w-full md: p-[0_15px] lg:w-[1170px] mx-auto ">
-			<div class="search-box mt-5">
+			<div class="search-box mt-5 relative">
 				<button class="btn-search sm: !bg-transparent sm: focus:bg-transparent w-[50px] h-[50px] border-none text-xl font-semibold
 				outline-0 cursor-pointer rounded-[50%] absolute right-[10px] bg-transparent
 				focus:border border-[#D9D9D9] focus:rounded-[12px]
@@ -269,7 +276,7 @@
 					<div class="info_slide_in">
 					<div class="info_title flex items-start font-bold">
 						<img src="images/tv-2-line.svg" alt="">
-						<p class="sm: w-full text-xl ml-2 md:w-[322px]">Развитие предметных компетенций
+						<p class="sm: w-full text-xl ml-[20px] md:w-[322px]">Развитие предметных компетенций
 						по предмету  информатика </p>
 					</div>
 					<div class="info_text md:w-[100%] lg:w-[356px] flex flex-col justify-between">
@@ -280,9 +287,9 @@
 							педагогической практики.
 						</p>
 						<div class="info_button md:mt-[70px] mt-[95px]">
-							<a href="" class="flex items-center">
+							<a href="" class="group flex items-center">
 								<p class="font-normal text-[#161616] zapis">Записаться</p>
-								<img class="ml-2" src="images/Frame 8061.svg" alt="">
+								<img class="ml-2 group-hover:ml-[20px] transition-all group-hover:transition group-hover:transition-all group-hover:duration-300" src="images/Frame 8061.svg" alt="">
 							</a>
 						</div>
 					</div>
@@ -295,7 +302,7 @@
 					<div class="info_slide_in">
 					<div class="info_title flex items-start font-bold">
 						<img src="images/Frame 8080.svg" alt="">
-						<p class="sm: w-full text-xl ml-2 md:w-[322px]">Фокусы в образовании по предмету  история </p>
+						<p class="sm: w-full text-xl ml-[20px] md:w-[322px]">Фокусы в образовании по предмету  история </p>
 					</div>
 					<div class="info_text md:w-[100%] lg:w-[356px] flex flex-col">
 						<p class="mt-5 sm:w-full font-normal text-gray-600 ">
@@ -305,11 +312,12 @@
 							педагогической практики.
 						</p>
 						<div class="info_button md:mt-[70px] mt-[95px]">
-							<a href="" class="flex items-center">
+							<a href="" class="group flex items-center">
 								<p class="font-normal text-[#161616] zapis">Записаться</p>
-								<img class="ml-2" src="images/Frame 8061 (1).svg">
+								<img class="ml-2 group-hover:ml-[20px] transition-all group-hover:transition group-hover:transition-all group-hover:duration-300" src="images/Frame 8061 (1).svg">
 							</a>
 						</div>
+						
 					</div>
 					</div>
 					<div class="icon-img absolute bottom-0 right-0">
@@ -321,7 +329,7 @@
 					<div class="info_slide_in">
 					<div class="info_title flex items-start font-bold">
 						<img src="images/tv-2-line.svg" alt="">
-						<p class="sm: w-full text-xl ml-2 md:w-[322px]">Развитие предметных компетенций
+						<p class="sm: w-full text-xl ml-[20px] md:w-[322px]">Развитие предметных компетенций
 						по предмету  информатика </p>
 					</div>
 					<div class="info_text md:w-[100%] lg:w-[356px] flex flex-col justify-between">
@@ -332,9 +340,9 @@
 							педагогической практики.
 						</p>
 						<div class="info_button md:mt-[70px] mt-[95px]">
-							<a href="" class="flex items-center">
+							<a href="" class="group flex items-center">
 								<p class="font-normal text-[#161616] zapis">Записаться</p>
-								<img class="ml-2" src="images/Frame 8061.svg" alt="">
+								<img class="ml-2 group-hover:ml-[20px] transition-all group-hover:transition group-hover:transition-all group-hover:duration-300" src="images/Frame 8061.svg" alt="">
 							</a>
 						</div>
 					</div>
@@ -347,7 +355,7 @@
 					<div class="info_slide_in">
 					<div class="info_title flex items-start font-bold">
 						<img src="images/Frame 8080.svg" alt="">
-						<p class="sm: w-full text-xl ml-2 md:w-[322px]">Фокусы в образовании по предмету  история </p>
+						<p class="sm: w-full text-xl ml-[20] md:w-[322px]">Фокусы в образовании по предмету  история </p>
 					</div>
 					<div class="info_text md:w-[100%] lg:w-[356px] flex flex-col">
 						<p class="mt-5 sm:w-full font-normal text-gray-600">
@@ -357,9 +365,9 @@
 							педагогической практики.
 						</p>
 						<div class="info_button md:mt-[70px] mt-[95px]">
-							<a href="" class="flex items-center">
+							<a href="" class="group flex items-center">
 								<p class="font-normal text-[#161616] zapis">Записаться</p>
-								<img class="ml-2" src="images/Frame 8061 (1).svg">
+								<img class="ml-2 group-hover:ml-[20px] transition-all group-hover:transition group-hover:transition-all group-hover:duration-300" src="images/Frame 8061 (1).svg">
 							</a>
 						</div>
 					</div>
@@ -373,7 +381,7 @@
 					<div class="info_slide_in">
 					<div class="info_title flex items-start font-bold">
 						<img src="images/tv-2-line.svg" alt="">
-						<p class="sm: w-full text-xl ml-2 md:w-[322px]">Развитие предметных компетенций
+						<p class="sm: w-full text-xl ml-[20] md:w-[322px]">Развитие предметных компетенций
 						по предмету  информатика </p>
 					</div>
 					<div class="info_text md:w-[100%] lg:w-[356px] flex flex-col justify-between">
@@ -384,9 +392,9 @@
 							педагогической практики.
 						</p>
 						<div class="info_button md:mt-[70px] mt-[95px]">
-							<a href="" class="flex items-center">
+							<a href="" class="group flex items-center">
 								<p class="font-normal text-[#161616] zapis">Записаться</p>
-								<img class="ml-2" src="images/Frame 8061.svg" alt="">
+								<img class="ml-2 group-hover:ml-[20px] transition-all group-hover:transition group-hover:transition-all group-hover:duration-300" src="images/Frame 8061.svg" alt="">
 							</a>
 						</div>
 					</div>
@@ -399,7 +407,7 @@
 					<div class="info_slide_in">
 					<div class="info_title flex items-start font-bold">
 						<img src="images/Frame 8080.svg" alt="">
-						<p class="sm: w-full text-xl ml-2 md:w-[322px]">Фокусы в образовании по предмету  история </p>
+						<p class="sm: w-full text-xl ml-[20] md:w-[322px]">Фокусы в образовании по предмету  история </p>
 					</div>
 					<div class="info_text md:w-[100%] lg:w-[356px] flex flex-col">
 						<p class="mt-5 font-normal text-gray-600">
@@ -409,9 +417,9 @@
 							педагогической практики.
 						</p>
 						<div class="info_button md:mt-[70px] mt-[95px]">
-							<a href="" class="flex items-center">
+							<a href="" class="group flex items-center">
 								<p class="font-normal text-[#161616] zapis">Записаться</p>
-								<img class="ml-2" src="images/Frame 8061 (1).svg">
+								<img class="ml-2 group-hover:ml-[20px] transition-all group-hover:transition group-hover:transition-all group-hover:duration-300" src="images/Frame 8061 (1).svg">
 							</a>
 						</div>
 					</div>
@@ -452,7 +460,7 @@
 		<div class="big_categories md:flex-col md:!mt-0 flex flex-wrap justify-between lg:!mt-12">
 			<div class="sm: !flex sm: w-full z-10 md:!hidden filter-mob flex items-center justify-between">
 				<div class="date-filter sm: w-[80%]">
-						<div class="group select_wrap w-full mt-[15px] relative select-none"
+						<div class="group select_wrap w-full mt-[15px] relative select-none shadow-[0_4px_20px_0_rgba(24,41,189,0.13)]"
 						id="dropdown">
 							<ul class="default_option bg-white rounded-[5px] relative cursor-pointer
 							before:content-[''] before:absolute before:top-[18px] before:right-[18px]
@@ -469,7 +477,7 @@
 							</ul>
 							<ul class="select_ul absolute top-[55px] left-0
 							w-full bg-white rounded-[5px] hidden 
-							">
+							shadow-[0_4px_20px_0_rgba(24,41,189,0.13)]">
 								<li class="py-[10px] px-[20px] cursor-pointer 
 								hover:rounded-t hover:bg-[#fff4dd]">
 									<div class="option flex items-center bg-position-0 pizza">
@@ -732,6 +740,161 @@
 			<div class="documents mt-[8px] bg-white rounded-[8px]">
 				<div class="faq-head text-[#151515] py-[29px] px-[21px] relative text-[24px] leading-[1.3] font-medium flex flex-col justify-between cursor-pointer rounded-[2px] border-none flex aezakmi">
 					<p class="font-semibold text-base">Стоимость</p>
+					<div class="button  absolute w-[24px] h-[24px] top-[50%] right-[0] transform -translate-x-1/2 -translate-y-1/2 rotate-0 rounded-[50%] cursor-pointer z-100 transition-all duration-[400ms] before:content-[''] before:absolute before:top-[50%] before:left-[50%] before:transform before:-translate-x-1/2 before:-translate-y-1/2
+					before:h-[50%] before:w-[2px] before:bg-[#B5BAC3]
+					after:content-[''] after:absolute after:top-[50%] after:left-[50%] after:transform after:-translate-x-1/2 after:-translate-y-1/2
+					after:h-[2px] after:w-[50%] after:bg-[#B5BAC3]"></div>
+				</div>
+				<div class="faq-content hidden text-[#444444] p-[20px]  pb-[30px]">
+					<div class="checkbox">
+						<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 
+						rounded-md relative checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block 
+						after:rotate-45 after:border-white after:border-b-2 after:border-r-2 after:w-2 after:h-3"> <p class="ml-[10px] text-[14px]">Руководитель</p>
+					</label>
+					</div>
+					<div class="checkbox mt-[10px]">
+						<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md 
+						relative checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white 
+						after:border-b-2 after:border-r-2 after:w-2 after:h-3"> 
+						<p class="ml-[10px] text-[14px]">Учитель предметник</p>
+						</label>
+					</div>
+					<div class="checkbox mt-[10px]">
+						<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md 
+						relative checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 
+						after:border-r-2 after:w-2 after:h-3"> 
+						<p class="ml-[10px] text-[14px]">Психолог</p>
+						</label>
+					</div>
+					<div class="checkbox mt-[10px]">
+						<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md relative 
+						checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 after:border-r-2 
+						after:w-2 after:h-3"> 
+						<p class="ml-[10px] text-[14px]">Дошкольное образование</p>
+						</label>
+					</div>
+					<div class="checkbox mt-[10px]">
+						<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md relative 
+						checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 after:border-r-2 
+						after:w-2 after:h-3"> 
+						<p class="ml-[10px] text-[14px]">Преподаватель ВУЗа</p>
+						</label>
+					</div>
+					<div class="checkbox mt-[10px]">
+						<label class="flex">
+							<input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md relative checked:border-0 
+							checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 after:border-r-2 after:w-2 
+							after:h-3"><p class="ml-[10px] text-[14px]">ТИПО</p> 
+						</label>
+					</div>
+				</div>
+			</div>
+
+			<div class="documents mt-[8px] bg-white rounded-[8px]">
+				<div class="faq-head text-[#151515] py-[29px] px-[21px] relative text-[24px] leading-[1.3] font-medium flex flex-col justify-between cursor-pointer rounded-[2px] border-none flex aezakmi">
+					<p class="font-semibold text-base">Сортировать</p>
+					<div class="button  absolute w-[24px] h-[24px] top-[50%] right-[0] transform -translate-x-1/2 -translate-y-1/2 rotate-0 rounded-[50%] cursor-pointer z-100 transition-all duration-[400ms] before:content-[''] before:absolute before:top-[50%] before:left-[50%] before:transform before:-translate-x-1/2 before:-translate-y-1/2
+					before:h-[50%] before:w-[2px] before:bg-[#B5BAC3]
+					after:content-[''] after:absolute after:top-[50%] after:left-[50%] after:transform after:-translate-x-1/2 after:-translate-y-1/2
+					after:h-[2px] after:w-[50%] after:bg-[#B5BAC3]"></div>
+				</div>
+				<div class="faq-content hidden text-[#444444] p-[20px]  pb-[30px]">
+					<div class="checkbox">
+						<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 
+						rounded-md relative checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block 
+						after:rotate-45 after:border-white after:border-b-2 after:border-r-2 after:w-2 after:h-3"> <p class="ml-[10px] text-[14px]">Руководитель</p>
+					</label>
+					</div>
+					<div class="checkbox mt-[10px]">
+						<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md 
+						relative checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white 
+						after:border-b-2 after:border-r-2 after:w-2 after:h-3"> 
+						<p class="ml-[10px] text-[14px]">Учитель предметник</p>
+						</label>
+					</div>
+					<div class="checkbox mt-[10px]">
+						<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md 
+						relative checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 
+						after:border-r-2 after:w-2 after:h-3"> 
+						<p class="ml-[10px] text-[14px]">Психолог</p>
+						</label>
+					</div>
+					<div class="checkbox mt-[10px]">
+						<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md relative 
+						checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 after:border-r-2 
+						after:w-2 after:h-3"> 
+						<p class="ml-[10px] text-[14px]">Дошкольное образование</p>
+						</label>
+					</div>
+					<div class="checkbox mt-[10px]">
+						<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md relative 
+						checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 after:border-r-2 
+						after:w-2 after:h-3"> 
+						<p class="ml-[10px] text-[14px]">Преподаватель ВУЗа</p>
+						</label>
+					</div>
+					<div class="checkbox mt-[10px]">
+						<label class="flex">
+							<input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md relative checked:border-0 
+							checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 after:border-r-2 after:w-2 
+							after:h-3"><p class="ml-[10px] text-[14px]">ТИПО</p> 
+						</label>
+					</div>
+				</div>
+			</div>
+		
+			<div class="documents mt-[8px] bg-white rounded-[8px]">
+				<div class="faq-head text-[#151515] py-[29px] px-[21px] relative text-[24px] leading-[1.3] font-medium flex flex-col justify-between cursor-pointer rounded-[2px] border-none flex aezakmi">
+					<p class="font-semibold text-base">Фильтр по цене</p>
+					<div class="button  absolute w-[24px] h-[24px] top-[50%] right-[0] transform -translate-x-1/2 -translate-y-1/2 rotate-0 rounded-[50%] cursor-pointer z-100 transition-all duration-[400ms] before:content-[''] before:absolute before:top-[50%] before:left-[50%] before:transform before:-translate-x-1/2 before:-translate-y-1/2
+					before:h-[50%] before:w-[2px] before:bg-[#B5BAC3]
+					after:content-[''] after:absolute after:top-[50%] after:left-[50%] after:transform after:-translate-x-1/2 after:-translate-y-1/2
+					after:h-[2px] after:w-[50%] after:bg-[#B5BAC3]"></div>
+				</div>
+				<div class="faq-content hidden text-[#444444] p-[20px]  pb-[30px]">
+					<div class="h-[10vh] flex justify-center items-center">
+						<div x-data="range()" x-init="mintrigger(); maxtrigger()" class="relative max-w-xl w-full">
+						  <div>
+							<input type="range" step="100" x-bind:min="min" x-bind:max="max" x-on:input="mintrigger" x-model="minprice" class="absolute pointer-events-none appearance-none z-20 h-2 w-full opacity-0 cursor-pointer">
+					  
+							<input type="range" step="100" x-bind:min="min" x-bind:max="max" x-on:input="maxtrigger" x-model="maxprice" class="absolute pointer-events-none appearance-none z-20 h-2 w-full opacity-0 cursor-pointer">
+					  
+							<div class="relative z-10 h-2">
+					  
+							  <div class="absolute z-10 left-0 right-0 bottom-0 top-0 rounded-md bg-gray-200"></div>
+					  
+							  <div class="absolute z-20 top-0 bottom-0 rounded-md bg-[#67BA39]" x-bind:style="'right:'+maxthumb+'%; left:'+minthumb+'%'"></div>
+					  
+							  <div class="absolute z-30 w-6 h-6 top-0 left-0 bg-[#67BA39] rounded-full -mt-2" x-bind:style="'left: '+minthumb+'%'"></div>
+					  
+							  <div class="absolute z-30 w-6 h-6 top-0 right-0 bg-[#67BA39] rounded-full -mt-2" x-bind:style="'right: '+maxthumb+'%'"></div>
+					  
+							</div>
+					  
+						  </div>
+					  
+							<div class="flex items-center justify-between pt-5 space-x-4 text-sm text-gray-700">
+							  <div>
+								<input type="text" maxlength="5" x-on:input.debounce="mintrigger" x-model="minprice"
+								  wire:model.debounce.300="minPrice"
+								  class="w-24 px-3 py-2 text-center border-none focus:border-yellow-400 focus:outline-none">
+							  </div>
+							  <div>
+								<input type="text" maxlength="5" x-on:input.debounce.300="maxtrigger" x-model="maxprice"
+								  wire:model.debounce="maxPrice"
+								  class="w-24 px-3 py-2 text-center border-none focus:border-yellow-400 focus:outline-none">
+							  </div>
+							</div>
+					  
+						</div>
+					 
+					  </div>
+				</div>
+			</div>
+
+			<div class="documents mt-[8px] bg-white rounded-[8px]">
+				<div class="faq-head text-[#151515] py-[29px] px-[21px] relative text-[24px] leading-[1.3] font-medium flex flex-col justify-between cursor-pointer rounded-[2px] border-none flex aezakmi">
+					<p class="font-semibold text-base">Категории</p>
 					<div class="button  absolute w-[24px] h-[24px] top-[50%] right-[0] transform -translate-x-1/2 -translate-y-1/2 rotate-0 rounded-[50%] cursor-pointer z-100 transition-all duration-[400ms] before:content-[''] before:absolute before:top-[50%] before:left-[50%] before:transform before:-translate-x-1/2 before:-translate-y-1/2
 					before:h-[50%] before:w-[2px] before:bg-[#B5BAC3]
 					after:content-[''] after:absolute after:top-[50%] after:left-[50%] after:transform after:-translate-x-1/2 after:-translate-y-1/2
@@ -1165,7 +1328,7 @@
 		
 								<div class="info_zap sm: sm: mt-[20px] md:mt-0 flex items-start">
 									<a href="" class="group sm: text-[14px] sm: !p-[14px_18px] sm: items-center rounded-lg text-[#19B2DD] border-[2px] border-[#19B2DD] py-[12px] px-[18px] hover:bg-[#19B2DD] hover:text-white hover:transition-all hover:duration-[500ms]">Узнать больше</a>
-									<a href="" class="group sm: items-center sm: !p-[12px_18px] flex ml-5 bg-[#19B2DD] border-[2px] border-[#19B2DD] rounded-lg py-[11.5px] px-[17.5px] hover:bg-white hover:transition-all hover:duration-[500ms]">
+									<a href="" class="group sm: items-center sm: !p-[11px_18px] flex ml-5 bg-[#19B2DD] border-[2px] border-[#19B2DD] rounded-lg py-[11.5px] px-[17.5px] hover:bg-white hover:transition-all hover:duration-[500ms]">
 										<p class="sm: text-[14px] text-white group-hover:text-[#19B2DD]">Записаться</p>
 										<svg class="ml-2" width="27" h	eight="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<path class="group-hover:fill-[#19B2DD]" d="M5.59375 12.6875H3.96875V14.3125H5.59375V12.6875Z" fill="white"/>
@@ -1268,7 +1431,7 @@
 		
 								<div class="info_zap sm: mt-[20px] md:mt-0 flex items-start">
 									<a href="" class="group sm: text-[14px] sm: !p-[14px_18px] rounded-lg text-[#19B2DD] border-[2px] border-[#19B2DD] py-[12px] px-[18px] hover:bg-[#19B2DD] hover:text-white hover:transition-all hover:duration-[500ms]">Узнать больше</a>
-									<a href="" class="group sm: items-center sm: !p-[12px_18px] flex ml-5 bg-[#19B2DD] border-[2px] border-[#19B2DD] rounded-lg py-[11.5px] px-[17.5px] hover:bg-white hover:transition-all hover:duration-[500ms]">
+									<a href="" class="group sm: items-center sm: !p-[11px_18px] flex ml-5 bg-[#19B2DD] border-[2px] border-[#19B2DD] rounded-lg py-[11.5px] px-[17.5px] hover:bg-white hover:transition-all hover:duration-[500ms]">
 										<p class="sm: text-[14px] text-white group-hover:text-[#19B2DD]">Записаться</p>
 										<svg class="ml-2" width="27" h	eight="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<path class="group-hover:fill-[#19B2DD]" d="M5.59375 12.6875H3.96875V14.3125H5.59375V12.6875Z" fill="white"/>
@@ -1380,7 +1543,7 @@
 		
 								<div class="info_zap sm: mt-[20px] md:mt-0 flex items-start">
 									<a href="" class="group sm: text-[14px] sm: !p-[14px_18px] rounded-lg text-[#19B2DD] border-[2px] border-[#19B2DD] py-[12px] px-[18px] hover:bg-[#19B2DD] hover:text-white hover:transition-all hover:duration-[500ms]">Узнать больше</a>
-									<a href="" class="group sm: items-center sm: !p-[12px_18px] flex ml-5 bg-[#19B2DD] border-[2px] border-[#19B2DD] rounded-lg py-[11.5px] px-[17.5px] hover:bg-white hover:transition-all hover:duration-[500ms]">
+									<a href="" class="group sm: items-center sm: !p-[11px_18px] flex ml-5 bg-[#19B2DD] border-[2px] border-[#19B2DD] rounded-lg py-[11.5px] px-[17.5px] hover:bg-white hover:transition-all hover:duration-[500ms]">
 										<p class="sm: text-[14px] text-white group-hover:text-[#19B2DD]">Записаться</p>
 										<svg class="ml-2" width="27" h	eight="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<path class="group-hover:fill-[#19B2DD]" d="M5.59375 12.6875H3.96875V14.3125H5.59375V12.6875Z" fill="white"/>
@@ -1403,8 +1566,8 @@
 				</div>
 
 				<div id="resources" class="hidden flex justify-between flex-wrap" role="tabpanel" aria-labelledby="resources-tab">
-					<div class="filter sm: hidden md:block md:w-[90%] w-[25%] mt-8 lg:w-[22%]">
-						<div class="faq-items mt-[40px] w-[271px] rounded-[8px] w-full">
+					<div class="filter sm: hidden md:block md:w-[90%] w-[25%] lg:w-[22%]">
+						<div class="faq-items w-[271px] rounded-[8px] w-full">
 							<div class="documents mt-[8px] bg-white rounded-[8px]">
 								<div class="faq-head text-[#151515] py-[29px] px-[21px] relative text-[24px] leading-[1.3] font-medium flex flex-col justify-between cursor-pointer rounded-[2px] border-none flex aezakmi">
 									<p class="font-semibold text-base">Сортировать</p>
@@ -1467,22 +1630,43 @@
 									after:h-[2px] after:w-[50%] after:bg-[#B5BAC3]"></div>
 								</div>
 								<div class="faq-content hidden text-[#444444] p-[20px]  pb-[30px]">
-									<div class="range_container flex flex-col w-[80%] m-[100px]">
-										<div class="sliders_control relative min-h-[50px]">
-										   <input id="fromSlider" type="range" value="10" min="0" max="100"/>
-										   <input id="toSlider" type="range" value="30" min="0" max="100"/>
-										</div>
-										<div class="form_control text-[#635a5a] relative flex justify-between text-2xl">
-										  <div class="form_control_container">
-											  <div class="form_control_container__time">Min</div>
-											  <input class="form_control_container__time__input w-[50px] h-[30px] text-xl border-none" type="number" id="fromInput" value="10" min="0" max="100"/>
+									<div class="h-[10vh] flex justify-center items-center">
+										<div x-data="range()" x-init="mintrigger(); maxtrigger()" class="relative max-w-xl w-full">
+										  <div>
+											<input type="range" step="100" x-bind:min="min" x-bind:max="max" x-on:input="mintrigger" x-model="minprice" class="absolute pointer-events-none appearance-none z-20 h-2 w-full opacity-0 cursor-pointer">
+									  
+											<input type="range" step="100" x-bind:min="min" x-bind:max="max" x-on:input="maxtrigger" x-model="maxprice" class="absolute pointer-events-none appearance-none z-20 h-2 w-full opacity-0 cursor-pointer">
+									  
+											<div class="relative z-10 h-2">
+									  
+											  <div class="absolute z-10 left-0 right-0 bottom-0 top-0 rounded-md bg-gray-200"></div>
+									  
+											  <div class="absolute z-20 top-0 bottom-0 rounded-md bg-[#67BA39]" x-bind:style="'right:'+maxthumb+'%; left:'+minthumb+'%'"></div>
+									  
+											  <div class="absolute z-30 w-6 h-6 top-0 left-0 bg-[#67BA39] rounded-full -mt-2" x-bind:style="'left: '+minthumb+'%'"></div>
+									  
+											  <div class="absolute z-30 w-6 h-6 top-0 right-0 bg-[#67BA39] rounded-full -mt-2" x-bind:style="'right: '+maxthumb+'%'"></div>
+									  
 											</div>
-											<div class="form_control_container">
-											  <div class="form_control_container__time">Max</div>
-											  <input class="form_control_container__time__input w-[50px] h-[30px] text-xl border-none" type="number" id="toInput" value="30" min="0" max="100"/>
+									  
+										  </div>
+									  
+											<div class="flex items-center justify-between pt-5 space-x-4 text-sm text-gray-700">
+											  <div>
+												<input type="text" maxlength="5" x-on:input.debounce="mintrigger" x-model="minprice"
+												  wire:model.debounce.300="minPrice"
+												  class="w-24 px-3 py-2 text-center border-none focus:border-yellow-400 focus:outline-none">
+											  </div>
+											  <div>
+												<input type="text" maxlength="5" x-on:input.debounce.300="maxtrigger" x-model="maxprice"
+												  wire:model.debounce="maxPrice"
+												  class="w-24 px-3 py-2 text-center border-none focus:border-yellow-400 focus:outline-none">
+											  </div>
 											</div>
+									  
 										</div>
-									</div>
+									 
+									  </div>
 								</div>
 							</div>
 		
@@ -2038,6 +2222,49 @@
 			let modal = document.querySelector('.filter-hidden');
 			modal.classList.remove('open');
 		}
+
+		function range() {
+				  return {
+					minprice: 0,
+					maxprice: 10000,
+					min: 0,
+					max: 10000,
+					minthumb: 0,
+					maxthumb: 0,
+					mintrigger() {
+					  this.validation();
+					  this.minprice = Math.min(this.minprice, this.maxprice - 500);
+					  this.minthumb = ((this.minprice - this.min) / (this.max - this.min)) * 100;
+					},
+					maxtrigger() {
+					  this.validation();
+					  this.maxprice = Math.max(this.maxprice, this.minprice + 200);
+					  this.maxthumb = 100 - (((this.maxprice - this.min) / (this.max - this.min)) * 100);
+					},
+					validation() {
+					  if (/^\d*$/.test(this.minprice)) {
+						if (this.minprice > this.max) {
+						  this.minprice = 9500;
+						}
+						if (this.minprice < this.min) {
+						  this.minprice = this.min;
+						}
+					  } else {
+						this.minprice = 0;
+					  }
+					  if (/^\d*$/.test(this.maxprice)) {
+						if (this.maxprice > this.max) {
+						  this.maxprice = this.max;
+						}
+						if (this.maxprice < this.min) {
+						  this.maxprice = 200;
+						}
+					  } else {
+						this.maxprice = 10000;
+					  }
+					}
+				  }
+				}
 		
 	</script>
 </body>
