@@ -134,8 +134,8 @@
 	</style>
 </head>	
 <body class="m-0 p-0 font-['Inter']">
-	<div class="block1 pt-[9px] pb-[9px]" style="background: #19B2DD;">
-		<div class="container md:w-full md: p-[0_15px] lg:w-[1170px] mx-auto">
+	<div class="block1 pt-2 pb-2" style="background: #19B2DD;">
+		<div class="container sm: px-3.5 sm: py-0 md:w-full md:px-3.5 md:py-0 lg:w-[1170px] mx-auto">
 		<header class="flex items-center justify-between">
 			<nav class="w-full flex items-center justify-between">
 				<div class="flex justify-between items-center ">
@@ -146,78 +146,74 @@
 	
 				<div class="flex items-center gap-6">
 				  <div class="search-box w-fit h-fit relative sm: hidden md:hidden">
-					<button class="btn-search peer w-[50px] h-[50px] border-none text-xl font-bold
+					<button class="btn-search peer w-12 h-12 border-none text-xl font-bold
 					outline-0 cursor-pointer rounded-[50%] absolute right-0 bg-transparent
 					"><img src="images/Group.svg" alt=""></button>
-					<input type="text" class="input-search h-[50px] w-[50px] border-none p-[10px] text-lg tracking-[2px] 
-					outline-0 rounded-[25px] bg-transparent transition-all duration-[500ms] pr-[40px] ::placeholder lg:peer-focus:w-[150px] xl:peer-focus:w-[200px] peer-focus:border border-[#D9D9D9]
-					peer-focus:rounded-[12px] peer-focus:bg-white peer-focus:transition-all peer-focus:duration-[500ms] peer-focus:text-black text-gray-500 text-sm 
-					tracking-wider font-light lg:focus:w-[150px] xl:focus:w-[200px] focus:border border-[#D9D9D9] focus:rounded-[12px] focus:bg-white focus:text-black focus:transition-all focus:duration-[500ms]" placeholder="Поиск">
+					<input type="text" class="input-search h-12 w-12 border-none p-2.5 text-lg tracking-wider 
+					outline-0 rounded-3xl bg-transparent transition-all duration-500 pr-10 ::placeholder lg:peer-focus:w-36 xl:peer-focus:w-48 peer-focus:border border-[#D9D9D9]
+					peer-focus:rounded-xl peer-focus:bg-white peer-focus:transition-all peer-focus:duration-500 peer-focus:text-black text-gray-500 text-sm 
+					tracking-wider font-light lg:focus:w-36 xl:focus:w-48 focus:border border-[#D9D9D9] focus:rounded-xl focus:bg-white focus:text-black focus:transition-all focus:duration-500" placeholder="Поиск">
 				  </div>  
-				  <div class="log md:w-[284px] hidden md:flex xl:w-[284px] smart flex items-center justify-between">
-								<div class="login transition-all hidden ease-in-out duration-500  border border-white-500 rounded-[30px] cursor-pointer flex items-center justify-between p-4"
-								onclick="toggle()">
+				  <div class="log md:w-60 hidden md:flex xl:w-64 smart flex items-center justify-between">
+								<div class="login transition-all hidden ease-in-out duration-500  border border-white-500 rounded-3xl cursor-pointer flex items-center justify-between p-4" onclick="toggle()">
 									<img src="images/Group.png" alt="">
-									<p class="ml-2 text-white" >Вход</p>
+									<p class="ml-2 text-white">Вход</p>
 									<svg class="ml-1" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M6 8.5L1.5 4.33324L2.39987 3.5L6 6.83353L9.60013 3.5L10.5 4.33323L6 8.5Z" fill="white"/>
+										<path d="M6 8.5L1.5 4.33324L2.39987 3.5L6 6.83353L9.60013 3.5L10.5 4.33323L6 8.5Z" fill="white"></path>
 									</svg>						
 								</div>
 
-								<div class="login border border-white-500 rounded-[30px] cursor-pointer flex items-center justify-between p-[5px_8px]"
-								onclick="toggle()">
+								<div class="login border border-white-500 rounded-3xl cursor-pointer flex items-center justify-between py-1 px-2" onclick="toggle()">
 									<img src="images/Frame 8037.png" alt="">
 									<p class="ml-2 text-white">Yekaterina</p>						
 								</div>
 
 
-								<div class="login show z-10 hidden absolute w-[120px] top-[75px] ml-[5px] bg-white rounded-[5px] cursor-pointer flex flex-col items-center justify-center">
-									<a href="https://esus.kz/login"><p class="text-black p-[8px] border-b-[1px] w-full text-center" >Профиль</p></a>
-									<a href="https://esus.kz/register"><p class="text-black p-[8px] mt-[5px] text-center" >Выйти</p></a>						
+								<div class="login show transition-all ease-in-out duration-500 shadow-[0_4px_20px_0_rgba(24,41,189,0.13)] z-10 hidden absolute w-28 
+								top-16 ml-1 bg-white rounded-md cursor-pointer flex flex-col items-center justify-center">
+									<a href="https://esus.kz/login"><p class="text-black p-2 border-b w-full text-center">Профиль</p></a>
+									<a href="https://esus.kz/register"><p class="text-black p-2 mt-1 text-center">Выйти</p></a>						
 								</div>
 
 
 				
-								<div class="login border border-white-500 rounded-[30px] cursor-pointer flex items-center justify-between p-4 hidden">
+								<div class="login border border-white-500 rounded-3xl cursor-pointer flex items-center justify-between p-4 hidden">
 									<img src="images/Frame 8037.png" alt="">
 									<p class="ml-2 text-white">Yekaterina</p>
 									<svg class="ml-1" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M6 8.5L1.5 4.33324L2.39987 3.5L6 6.83353L9.60013 3.5L10.5 4.33323L6 8.5Z" fill="white"/>
+										<path d="M6 8.5L1.5 4.33324L2.39987 3.5L6 6.83353L9.60013 3.5L10.5 4.33323L6 8.5Z" fill="white"></path>
 									</svg>						
 								</div>
 				
 								<div class="lang cursor-pointer">
-									<p class="text-white"> <span class="mod active: bg-[#0095BF] p-[10px] rounded-[10px] transition-all ease-in-out duration-500">КАЗ</span> |  <span class="mod transition-all ease-in-out duration-500">РУС</span></p>
+									<p class="text-white"> <span class="mod active: bg-[#0095BF] p-2.5 rounded-lg transition-all ease-in-out duration-500">КАЗ</span> |  <span class="mod transition-all ease-in-out duration-500">РУС</span></p>
 								</div>
 							</div>
 
 							<div class="lg:hidden flex items-center">
 								<button class="outline-none mobile-menu-button">
 									<svg class="bg-[#6DDB30] rounded-lg" width="59" height="40" viewBox="0 0 59 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M19.5 14H39.5M19.5 20H29.5M19.5 26H39.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-									</svg>
-										
+										<path d="M19.5 14H39.5M19.5 20H29.5M19.5 26H39.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg>						
 							</button>
-							</div>
-					
-				</div>
-				
+						</div>
+					</div>
 				</nav>
 		</header>
 		<div class="hidden mobile-menu">
 			
 			<div class="log w-full md:hidden smart flex flex-col items-center justify-center">
-				<div class="lang cursor-pointer mt-[10px]">
-					<p class="text-white"> <span class="mod active: bg-[#0095BF] p-[10px] rounded-[10px] transition-all ease-in-out duration-500">КАЗ</span> |  <span class="mod transition-all ease-in-out duration-500">РУС</span></p>
+				<div class="lang cursor-pointer mt-2.5">
+					<p class="text-white"> <span class="mod active: bg-[#0095BF] p-2.5 rounded-lg transition-all ease-in-out duration-500">КАЗ</span> |  <span class="mod transition-all ease-in-out duration-500">РУС</span></p>
 				</div>
 
 				<div class="reg flex ">
-					<div class="login mt-[15px] cursor-pointer flex items-center justify-between p-4">
+					<div class="login mt-3.5 cursor-pointer flex items-center justify-between p-4">
 						<a href="https://esus.kz/login"><p class="text-white  w-full text-center" >Профиль</p></a>				
 					</div>
 
-					<div class="login mt-[10px] cursor-pointer flex items-center justify-between p-4">
-						<a href="https://esus.kz/register"><p class="text-white mt-[5px] text-center" >Выйти</p></a>									
+					<div class="login mt-2.5 cursor-pointer flex items-center justify-between p-4">
+						<a href="https://esus.kz/register"><p class="text-white mt-1 text-center" >Выйти</p></a>									
 					</div>
 				</div>
 			
@@ -226,11 +222,9 @@
 			
 
 			<ul class="flex flex-col items-center justify-center">
-				<li><a href="#" class="block text-[15px] text-white px-2 py-4 hover:bg-green-500 transition duration-300">Каталог</a></li>
-				<li><a href="#" class="block text-[15px] text-white px-2 py-4 hover:bg-green-500 transition duration-300">CPM.KZ</a></li>
-				<li><a href="#" class="block text-[15px] text-white px-2 py-4 hover:bg-green-500 transition duration-300">Контакты</a></li>
-				<li><a href="#" class="block text-[15px] text-white px-2 py-4 hover:bg-green-500 transition duration-300">Мои курсы</a></li>
-				
+				<li><a href="course.html" class="block text-sm text-white px-2 py-4 hover:bg-green-500 transition duration-300">Каталог</a></li>
+				<li><a href="#" class="block text-sm text-white px-2 py-4 hover:bg-green-500 transition duration-300">CPM.KZ</a></li>
+				<li><a href="#" class="block text-sm text-white px-2 py-4 hover:bg-green-500 transition duration-300">Контакты</a></li>
 			</ul>
 
 
@@ -241,8 +235,8 @@
 		</div>
 	</div>
 
-	<div class="course-menu sm: hidden md:block md:pt-[15px]  bg-[#F5F5F5] border border-transparent ">
-        <div class="container md:w-full md: p-[0_15px] lg:w-[1128px] mx-auto">
+	<div class="course-menu sm: hidden md:block md:pt-3.5  bg-[#F5F5F5] border border-transparent ">
+        <div class="container md:w-full md:px-3.5 md:py-0 lg:w-[1128px] mx-auto">
             <nav class="flex justify-between items-center w-full ml-5">
 				<ul class="sm: hidden md:hidden lg:flex flex justify-between items-center ul-width font-bold uppercase w-2/4" >
 					<li><a href="">Каталог</a></li>
@@ -253,13 +247,13 @@
 				
 				
 				<div class="search-box w-fit h-fit relative sm: hidden md:hidden lg:block lg:mr-[10px]">
-					<button class="btn-search peer w-[50px] h-[50px] border-none text-xl font-bold
+					<button class="btn-search peer w-12 h-12 border-none text-xl font-bold
 					outline-0 cursor-pointer rounded-[50%] absolute right-0 bg-transparent
 					"><img src="images/Group.svg" alt=""></button>
-					<input type="text" class="input-search h-[50px] w-[50px] border-none p-[10px] text-lg tracking-[2px] 
-					outline-0 rounded-[25px] bg-transparent transition-all duration-[500ms] pr-[40px] ::placeholder lg:peer-focus:w-[150px] xl:peer-focus:w-[200px] peer-focus:border border-[#D9D9D9]
-					peer-focus:rounded-[12px] peer-focus:bg-white peer-focus:transition-all peer-focus:duration-[500ms] peer-focus:text-black text-gray-500 text-sm 
-					tracking-wider font-light lg:focus:w-[150px] xl:focus:w-[200px] focus:border border-[#D9D9D9] focus:rounded-[12px] focus:bg-white focus:text-black focus:transition-all focus:duration-[500ms]" placeholder="Поиск">
+					<input type="text" class="input-search h-12 w-12 border-none p-2.5 text-lg tracking-wider 
+					outline-0 rounded-[25px] bg-transparent transition-all duration-500 pr-10 ::placeholder lg:peer-focus:w-36 xl:peer-focus:w-48 peer-focus:border border-[#D9D9D9]
+					peer-focus:rounded-xl peer-focus:bg-white peer-focus:transition-all peer-focus:duration-500 peer-focus:text-black text-gray-500 text-sm 
+					tracking-wider font-light lg:focus:w-36 xl:focus:w-48 focus:border border-[#D9D9D9] focus:rounded-xl focus:bg-white focus:text-black focus:transition-all focus:duration-500" placeholder="Поиск">
 				  </div>  
 				
 			</nav>
@@ -267,177 +261,179 @@
     </div>
 
 	<div class="extra block bg-[#F5F5F5] border border-transparent hidden sm: !block md:!block lg:!hidden">
-		<div class="container md:w-full md: p-[0_15px] lg:w-[1170px] mx-auto ">
+		<div class="container sm: px-3.5 sm: py-0 md:w-full md:px-3.5 md:py-0 lg:w-[1170px] mx-auto ">
 			<div class="search-box mt-5 relative">
-				<button class="btn-search sm: !bg-transparent sm: focus:bg-transparent w-[50px] h-[50px] border-none text-xl font-semibold
-				outline-0 cursor-pointer rounded-[50%] absolute right-[10px] bg-transparent
-				focus:border border-[#D9D9D9] focus:rounded-[12px]
-				focus: bg-white focus:~+ transition-all focus:~+ duration-[500ms]
+				<button class="btn-search sm: !bg-transparent sm: focus:bg-transparent w-12 h-12 border-none text-xl font-semibold
+				outline-0 cursor-pointer rounded-[50%] absolute right-2.5 bg-transparent
+				focus:border border-[#D9D9D9] focus:rounded-xl
+				focus: bg-white focus:~+ transition-all focus:~+ duration-500
 				focus: text-black"><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></button>
-				<input type="text" class="input-search placeholder-[#7E7E7E] placeholder-text-[15px] placeholder-tracking-[15px] h-[50px] w-full
-				rounded-[12px] bg-white text-black p-[10px] text-lg
-				tracking-[2px] outline-0 pr-[40px] border border-[#D9D9D9] text-[#000000]
-				focus:w-full focus:border border-[#D9D9D9] focus:rounded-[12px] focus:bg-white 
-				focus:text-black focus:transition-all focus:duration-[500ms]" placeholder="Поиск">
+				<input type="text" class="input-search placeholder-[#7E7E7E] placeholder-text-[15px] placeholder-tracking-[15px] h-12 w-full
+				rounded-xl bg-white text-black p-2.5 text-lg
+				tracking-[2px] outline-0 pr-10 border border-[#D9D9D9] text-[#000000]
+				focus:w-full focus:border border-[#D9D9D9] focus:rounded-xl focus:bg-white 
+				focus:text-black focus:transition-all focus:duration-500" placeholder="Поиск">
 			</div>
 		</div>
 	</div>
-	<div class="block2 sm: pt-[24px]  block bg-[#F5F5F5] border border-transparent lg:pt-0 lg:pb-[10px] xl:pt-[34px]">
-		<div class="container md:w-full md: p-[0_15px] sm:p-[0_15px] lg:w-[1170px] mx-auto ">
+
+	<div class="block2 sm: pt-6  block bg-[#F5F5F5] border border-transparent lg:pt-0 lg:pb-2.5 xl:pt-9">
+		<div class="container sm: px-3.5 sm: py-0 md:w-full md:px-3.5 md:py-0 lg:w-[1170px] mx-auto ">
 			<div class="info_slider mt-6">
-				<div class="info_slide sm: flex-col sm: !min-h-[486px] md:!min-h-[372px] rounded-[24px] bg-white shadow-[0_4px_20px_0_rgba(112, 126, 255, 0.13)] flex justify-between p-6 relative">
+				<div class="info_slide sm: flex-col sm: !min-h-[486px] lg:!min-h-[372px] rounded-3xl bg-white shadow-[0_4px_20px_0_rgba(112, 126, 255, 0.13)] flex justify-between p-6 relative">
 					<div class="info_slide_in">
 					<div class="info_title flex items-start font-bold">
 						<img src="images/tv-2-line.svg" alt="">
-						<p class="sm: w-full text-xl ml-[20] md:w-[322px]">Развитие предметных компетенций
+						<p class="sm: w-full text-xl ml-5 md:w-80">Развитие предметных компетенций
 						по предмету  информатика </p>
 					</div>
-					<div class="info_text md:w-[100%] lg:w-[356px] flex flex-col justify-between">
+					<div class="info_text md:w-full lg:w-96 flex flex-col justify-between">
 						<p class="mt-5 font-normal text-gray-600 sm:w-full">
 							Рекомендовано к использованию 
 							тренерами, преподавателями организаций 
 							образования для обогащения их 
 							педагогической практики.
 						</p>
-						<div class="info_button md:mt-[70px] mt-[95px]">
+						<div class="info_button md:mt-16 mt-24 z-10">
 							<a href="" class="group flex items-center">
 								<p class="font-normal text-[#161616] zapis">Записаться</p>
-								<img class="ml-2 group-hover:ml-[20px] transition-all group-hover:transition group-hover:transition-all group-hover:duration-300" src="images/Frame 8061.svg" alt="">
+								<img class="ml-2 group-hover:ml-5 transition-all group-hover:transition group-hover:transition-all group-hover:duration-300" src="images/Frame 8061.svg" alt="">
 							</a>
 						</div>
 					</div>
 					</div>
 					<div class="icon-img absolute bottom-0 right-0">
-						<img class="md:h-[161px] lg:h-[201px]" src="images/Man.png" alt="">
+						<img class="sm: h-[150px] md:h-[161px] lg:h-[201px]" src="images/Man.png" alt="">
 					</div>
 				</div>
-				<div class="info_slide sm: !min-h-[486px] md:!min-h-[372px] rounded-[24px] bg-white shadow-[0_4px_20px_0_rgba(112, 126, 255, 0.13)] flex justify-between p-6 relative">
+				<div class="info_slide sm: !min-h-[486px] lg:!min-h-[372px] rounded-3xl bg-white shadow-[0_4px_20px_0_rgba(112, 126, 255, 0.13)] flex justify-between p-6 relative">
 					<div class="info_slide_in">
 					<div class="info_title flex items-start font-bold">
 						<img src="images/Frame 8080.svg" alt="">
-						<p class="sm: w-full text-xl ml-[20px] md:w-[322px]">Фокусы в образовании по предмету  история </p>
+						<p class="sm: w-full text-xl ml-5 md:w-80">Фокусы в образовании по предмету  история </p>
 					</div>
-					<div class="info_text md:w-[100%] lg:w-[356px] flex flex-col">
+					<div class="info_text md:w-full lg:w-96 flex flex-col">
 						<p class="mt-5 sm:w-full font-normal text-gray-600 ">
 							Рекомендовано к использованию 
 							тренерами, преподавателями организаций 
 							образования для обогащения их 
 							педагогической практики.
 						</p>
-						<div class="info_button md:mt-[70px] mt-[95px]">
-							<a href="" class="flex items-center">
+						<div class="info_button md:mt-16 mt-24 z-10">
+							<a href="" class="group flex items-center">
 								<p class="font-normal text-[#161616] zapis">Записаться</p>
-								<img class="ml-2 group-hover:ml-[20px] transition-all group-hover:transition group-hover:transition-all group-hover:duration-300" src="images/Frame 8061 (1).svg">
+								<img class="ml-2 group-hover:ml-5 transition-all group-hover:transition group-hover:transition-all group-hover:duration-300" src="images/Frame 8061 (1).svg">
 							</a>
 						</div>
+						
 					</div>
 					</div>
 					<div class="icon-img absolute bottom-0 right-0">
-						<img class="md:h-[161px] lg:h-[201px]" src="images/Man Bottom.png" alt="">
+						<img class="sm: h-[150px] md:h-[161px] lg:h-[201px]" src="images/Man Bottom.png" alt="">
 					</div>
 				</div>
 				
-				<div class="info_slide sm: !min-h-[486px] md:!min-h-[372px] rounded-[24px] bg-white shadow-[0_4px_20px_0_rgba(112, 126, 255, 0.13)] flex justify-between p-6 relative">
+				<div class="info_slide sm: !min-h-[486px] lg:!min-h-[372px] rounded-3xl bg-white shadow-[0_4px_20px_0_rgba(112, 126, 255, 0.13)] flex justify-between p-6 relative">
 					<div class="info_slide_in">
 					<div class="info_title flex items-start font-bold">
 						<img src="images/tv-2-line.svg" alt="">
-						<p class="sm: w-full text-xl ml-[20px] md:w-[322px]">Развитие предметных компетенций
+						<p class="sm: w-full text-xl ml-5 md:w-80">Развитие предметных компетенций
 						по предмету  информатика </p>
 					</div>
-					<div class="info_text md:w-[100%] lg:w-[356px] flex flex-col justify-between">
+					<div class="info_text md:w-full lg:w-96 flex flex-col justify-between">
 						<p class="mt-5 sm:w-full font-normal text-gray-600">
 							Рекомендовано к использованию 
 							тренерами, преподавателями организаций 
 							образования для обогащения их 
 							педагогической практики.
 						</p>
-						<div class="info_button md:mt-[70px] mt-[95px]">
-							<a href="" class="flex items-center">
+						<div class="info_button md:mt-16 mt-24 z-10">
+							<a href="" class="group flex items-center">
 								<p class="font-normal text-[#161616] zapis">Записаться</p>
-								<img class="ml-2 group-hover:ml-[20px] transition-all group-hover:transition group-hover:transition-all group-hover:duration-300" src="images/Frame 8061.svg" alt="">
+								<img class="ml-2 group-hover:ml-5 transition-all group-hover:transition group-hover:transition-all group-hover:duration-300" src="images/Frame 8061.svg" alt="">
 							</a>
 						</div>
 					</div>
 					</div>
 					<div class="icon-img absolute bottom-0 right-0">
-						<img class="md:h-[161px] lg:h-[201px]" src="images/Man.png" alt="">
+						<img class="sm: h-[150px] md:h-[161px] lg:h-[201px]" src="images/Man.png" alt="">
 					</div>
 				</div>
-				<div class="info_slide sm: !min-h-[486px] md:!min-h-[372px] rounded-[24px] bg-white shadow-[0_4px_20px_0_rgba(112, 126, 255, 0.13)] flex justify-between p-6 relative">
+				<div class="info_slide sm: !min-h-[486px] lg:!min-h-[372px] rounded-3xl bg-white shadow-[0_4px_20px_0_rgba(112, 126, 255, 0.13)] flex justify-between p-6 relative">
 					<div class="info_slide_in">
 					<div class="info_title flex items-start font-bold">
 						<img src="images/Frame 8080.svg" alt="">
-						<p class="sm: w-full text-xl ml-[20px] md:w-[322px]">Фокусы в образовании по предмету  история </p>
+						<p class="sm: w-full text-xl ml-5 md:w-80">Фокусы в образовании по предмету  история </p>
 					</div>
-					<div class="info_text md:w-[100%] lg:w-[356px] flex flex-col">
+					<div class="info_text md:w-full lg:w-96 flex flex-col">
 						<p class="mt-5 sm:w-full font-normal text-gray-600">
 							Рекомендовано к использованию 
 							тренерами, преподавателями организаций 
 							образования для обогащения их 
 							педагогической практики.
 						</p>
-						<div class="info_button md:mt-[70px] mt-[95px]">
-							<a href="" class="flex items-center">
+						<div class="info_button md:mt-16 mt-24 z-10">
+							<a href="" class="group flex items-center">
 								<p class="font-normal text-[#161616] zapis">Записаться</p>
-								<img class="ml-2 group-hover:ml-[20px] transition-all group-hover:transition group-hover:transition-all group-hover:duration-300" src="images/Frame 8061 (1).svg">
+								<img class="ml-2 group-hover:ml-5 transition-all group-hover:transition group-hover:transition-all group-hover:duration-300" src="images/Frame 8061 (1).svg">
 							</a>
 						</div>
 					</div>
 					</div>
 					<div class="icon-img absolute bottom-0 right-0">
-						<img class="md:h-[161px] lg:h-[201px]" src="images/Man Bottom.png" alt="">
+						<img class="sm: h-[150px] md:h-[161px] lg:h-[201px]" src="images/Man Bottom.png" alt="">
 					</div>
 				</div>
 
-				<div class="info_slide sm: !min-h-[486px] md:!min-h-[372px] rounded-[24px] bg-white shadow-[0_4px_20px_0_rgba(112, 126, 255, 0.13)] flex justify-between p-6 relative">
+				<div class="info_slide sm: !min-h-[486px] lg:!min-h-[372px] rounded-3xl bg-white shadow-[0_4px_20px_0_rgba(112, 126, 255, 0.13)] flex justify-between p-6 relative">
 					<div class="info_slide_in">
 					<div class="info_title flex items-start font-bold">
 						<img src="images/tv-2-line.svg" alt="">
-						<p class="sm: w-full text-xl ml-[20px] md:w-[322px]">Развитие предметных компетенций
+						<p class="sm: w-full text-xl ml-5 md:w-80">Развитие предметных компетенций
 						по предмету  информатика </p>
 					</div>
-					<div class="info_text md:w-[100%] lg:w-[356px] flex flex-col justify-between">
+					<div class="info_text md:w-full lg:w-96 flex flex-col justify-between">
 						<p class="mt-5 sm:w-full font-normal text-gray-600">
 							Рекомендовано к использованию 
 							тренерами, преподавателями организаций 
 							образования для обогащения их 
 							педагогической практики.
 						</p>
-						<div class="info_button md:mt-[70px] mt-[95px]">
-							<a href="" class="flex items-center">
+						<div class="info_button md:mt-16 mt-24 z-10">
+							<a href="" class="group flex items-center">
 								<p class="font-normal text-[#161616] zapis">Записаться</p>
-								<img class="ml-2 group-hover:ml-[20px] transition-all group-hover:transition group-hover:transition-all group-hover:duration-300" src="images/Frame 8061.svg" alt="">
+								<img class="ml-2 group-hover:ml-5 transition-all group-hover:transition group-hover:transition-all group-hover:duration-300" src="images/Frame 8061.svg" alt="">
 							</a>
 						</div>
 					</div>
 					</div>
 					<div class="icon-img absolute bottom-0 right-0">
-						<img class="md:h-[161px] lg:h-[201px]" src="images/Man.png" alt="">
+						<img class="sm: h-[150px] md:h-[161px] lg:h-[201px]" src="images/Man.png" alt="">
 					</div>
 				</div>
-				<div class="info_slide sm: !min-h-[486px] md:!min-h-[372px] rounded-[24px] bg-white shadow-[0_4px_20px_0_rgba(112, 126, 255, 0.13)] flex justify-between p-6 relative">
+				<div class="info_slide sm: !min-h-[486px] lg:!min-h-[372px] rounded-3xl bg-white shadow-[0_4px_20px_0_rgba(112, 126, 255, 0.13)] flex justify-between p-6 relative">
 					<div class="info_slide_in">
 					<div class="info_title flex items-start font-bold">
 						<img src="images/Frame 8080.svg" alt="">
-						<p class="sm: w-full text-xl ml-[20px] md:w-[322px]">Фокусы в образовании по предмету  история </p>
+						<p class="sm: w-full text-xl ml-5 md:w-80">Фокусы в образовании по предмету  история </p>
 					</div>
-					<div class="info_text md:w-[100%] lg:w-[356px] flex flex-col">
+					<div class="info_text md:w-full lg:w-96 flex flex-col">
 						<p class="mt-5 font-normal text-gray-600">
 							Рекомендовано к использованию 
 							тренерами, преподавателями организаций 
 							образования для обогащения их 
 							педагогической практики.
 						</p>
-						<div class="info_button md:mt-[70px] mt-[95px]">
-							<a href="" class="flex items-center">
+						<div class="info_button md:mt-16 mt-24 z-10">
+							<a href="" class="group flex items-center">
 								<p class="font-normal text-[#161616] zapis">Записаться</p>
-								<img class="ml-2 group-hover:ml-[20px] transition-all group-hover:transition group-hover:transition-all group-hover:duration-300" src="images/Frame 8061 (1).svg">
+								<img class="ml-2 group-hover:ml-5 transition-all group-hover:transition group-hover:transition-all group-hover:duration-300" src="images/Frame 8061 (1).svg">
 							</a>
 						</div>
 					</div>
 					</div>
 					<div class="icon-img absolute bottom-0 right-0">
-						<img class="md:h-[161px] lg:h-[201px]" src="images/Man Bottom.png" alt="">
+						<img class="sm: h-[150px] md:h-[161px] lg:h-[201px]" src="images/Man Bottom.png" alt="">
 					</div>
 				</div>
 			</div>
@@ -446,61 +442,61 @@
 
 	<div class="block3 block bg-[#F5F5F5] border border-transparent pb-28 pt-[10px]">
 		
-		<div class="tabs-scroll-container sm: max-w-[569px] sm: overflow-x-scroll sm: whitespace-nowrap md:max-w-full md:overflow-hidden">
-			<div class="tabs sm: inline-block sm: rounded-lg sm: !bg-transparent md:!bg-white w-[569px] mx-auto rounded-[8px] flex items-center justify-center mt-6 p-5 bg-white">	
+		<div class="tabs-scroll-container sm: max-w-[569px] sm: overflow-x-scroll sm: whitespace-nowrap md:max-w-full md:overflow-hidden" style="margin: 0 auto;">
+			<div class="tabs sm: inline-block sm: rounded-lg sm: !bg-transparent md:!bg-white w-[569px] mx-auto rounded-lg flex items-center justify-center mt-6 p-5 bg-white">	
 			  <ul class="flex flex-wrap text-sm justify-between w-full font-medium text-center text-gray-500 dark:text-gray-400"
 			  id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
 				<li class="mr-2 sm: shadow-[0_4px_20px_0_rgba(112,126,255,0.18)] md:shadow-none" role="presentation">
-				  <a href="#" id="courses-tab" data-tabs-target="#courses" role="tab" aria-controls="courses" aria-selected="true"  class="tab sm: !p-[15px_25px] sm: bg-white sm: rounded-lg sm: text-black sm: p-[15px_25px] md:!p-[10px_18px] text-[#161616] rounded-lg  active: !bg-[#19B2DD] active: !text-white flex justify-between uppercase mr-lg cursor-pointer inline-block ">Курсы</a>
+				  <a href="#" id="courses-tab" data-tabs-target="#courses" role="tab" aria-controls="courses" aria-selected="true"  class="tab sm: !px-6 sm: !py-3.5 sm: bg-white sm: rounded-lg sm: text-black md:!px-4 md:!py-2.5 text-[#161616] rounded-lg  active: !bg-[#19B2DD] active: !text-white flex justify-between uppercase mr-lg cursor-pointer inline-block ">Курсы</a>
 				</li>
 				<li class="mr-2 sm: shadow-[0_4px_20px_0_rgba(112,126,255,0.18)] md:shadow-none" role="presentation">
-				  <a href="#" id="holidays-tab" data-tabs-target="#holidays" role="tab" aria-controls="holidays" aria-selected="false" class="tab sm: !p-[15px_25px] sm: bg-white sm: rounded-lg sm: text-black sm: p-[15px_25px] md:!p-[10px_18px] text-[#161616] mr-lg uppercase tab cursor-pointer p-[10px] inline-block px-4 py-3 rounded-lg">Мероприятия</a>
+				  <a href="#" id="holidays-tab" data-tabs-target="#holidays" role="tab" aria-controls="holidays" aria-selected="false" class="tab sm: !px-6 sm: !py-3.5 sm: bg-white sm: rounded-lg sm: text-black md:!px-4 md:!py-2.5 text-[#161616] mr-lg uppercase tab cursor-pointer p-2.5 inline-block px-4 py-3 rounded-lg">Мероприятия</a>
 				</li>
 				<li class="mr-2 sm: shadow-[0_4px_20px_0_rgba(112,126,255,0.18)] md:shadow-none" role="presentation">
-				  <a href="#" id="mook-tab" data-tabs-target="#mook" role="tab" aria-controls="mook" aria-selected="false" class="tab sm: bg-white sm: !p-[15px_25px] sm: rounded-lg sm: text-black sm: p-[15px_25px] md:!p-[10px_18px] text-[#161616] mr-lg uppercase cursor-pointer p-[10px] inline-block px-4 py-3 rounded-lg">МООК</a>
+				  <a href="#" id="mook-tab" data-tabs-target="#mook" role="tab" aria-controls="mook" aria-selected="false" class="tab sm: bg-white sm: !px-6 sm: !py-3.5 sm: rounded-lg sm: text-black  md:!px-4 md:!py-2.5 text-[#161616] mr-lg uppercase cursor-pointer p-2.5 inline-block px-4 py-3 rounded-lg">МООК</a>
 				</li>
 				<li class="mr-2 sm: shadow-[0_4px_20px_0_rgba(112,126,255,0.18)] md:shadow-none" role="presentation">
-				  <a href="#" id="resources-tab" data-tabs-target="#resources" role="tab" aria-controls="resources" aria-selected="false" class="tab sm: !p-[15px_25px] sm: bg-white sm: rounded-lg sm: text-black sm: p-[15px_25px] md:!p-[10px_18px] text-[#161616] mr-lg uppercase cursor-pointer p-[10px] inline-block px-4 py-3 rounded-lg">Ресурсы</a>
+				  <a href="#" id="resources-tab" data-tabs-target="#resources" role="tab" aria-controls="resources" aria-selected="false" class="tab sm: !px-6 sm: !py-3.5 sm: bg-white sm: rounded-lg sm: text-black md:!px-4 md:!py-2.5 text-[#161616] mr-lg uppercase cursor-pointer p-2.5 inline-block px-4 py-3 rounded-lg">Ресурсы</a>
 				</li>
 			  </ul>
 			</div>
-		  </div>
+		  </div>	
 		
 		  
 		  
-		<div class="container md:w-full md: p-[0_15px] lg:w-[1170px] mx-auto ">
-		<div class="big_categories md:flex-col md:!mt-0 flex flex-wrap justify-between lg:!mt-12">
-			<div class="sm: !flex sm: w-full z-10 md:!hidden filter-mob flex items-center justify-between">
-				<div class="date-filter sm: w-[80%]">
-						<div class="group select_wrap w-full mt-[15px] relative select-none  shadow-[0_4px_20px_0_rgba(24,41,189,0.13)]"
+		  <div class="container sm: px-3.5 sm: py-0 md:w-full md:px-3.5 md:py-0 lg:w-[1170px] mx-auto ">
+			<div class="big_categories md:flex-col md:!mt-0 flex flex-wrap justify-between lg:!mt-12">
+				<div class="sm: !flex sm: w-full z-10 md:!hidden filter-mob flex items-center justify-between">
+					<div class="date-filter sm: w-4/5">
+						<div class="group select_wrap w-full mt-3.5 relative select-none shadow-[0_4px_20px_0_rgba(24,41,189,0.13)]"
 						id="dropdown">
-							<ul class="default_option bg-white rounded-[5px] relative cursor-pointer
-							before:content-[''] before:absolute before:top-[18px] before:right-[18px]
-							before:w-[6px] before:h-[6px] before:border-[2px] before:rotate-[-45deg] 
+							<ul class="default_option bg-white rounded relative cursor-pointer
+							before:content-[''] before:absolute before:top-4 before:right-4
+							before:w-1.5 before:h-1.5 before:border-[2px] before:rotate-[-45deg] 
 							before:border-[transparent_transparent_#6CC126_#6CC126]
 						    ">
-								<li class="py-[8px] px-[20px]">
+								<li class="py-2 px-5">
 									<div class="option pizza flex items-center">
-									  <div class="icon w-[32px] h-[32px] mr-[15px]
+									  <div class="icon w-8 h-8 mr-3.5
 									  bg-[url('https://i.imgur.com/UczSxO3.png')] bg-no-repeat bg-[0_0]"></div>
 									  <p>По дате</p>
 									</div>
 								</li>
 							</ul>
-							<ul class="select_ul absolute top-[55px] left-0
-							w-full bg-white rounded-[5px] hidden 
+							<ul class="select_ul absolute top-14 left-0
+							w-full bg-white rounded hidden 
 							shadow-[0_4px_20px_0_rgba(24,41,189,0.13)]">
-								<li class="py-[10px] px-[20px] cursor-pointer 
+								<li class="py-2.5 px-5 cursor-pointer 
 								hover:rounded-t hover:bg-[#fff4dd]">
 									<div class="option flex items-center bg-position-0 pizza">
-										<div class="icon w-[32px] h-[32px] mr-[15px]
+										<div class="icon w-8 h-8 mr-3.5
 										bg-[url('https://i.imgur.com/UczSxO3.png')] bg-no-repeat"></div>
 									  <p>По цене</p>
 									</div>
 								</li>
 								<li class="py-[10px] px-[20px] cursor-pointer hover:bg-[#fff4dd]">
 									<div class="option flex items-center burger">
-										<div class="icon w-[32px] h-[32px] mr-[15px]
+										<div class="icon w-8 h-8 mr-3.5
 										bg-[url('https://i.imgur.com/UczSxO3.png')] bg-no-repeat bg-[0_-45px]"></div>
 									  <p>Текст</p>
 									</div>  
@@ -508,7 +504,7 @@
 								<li class="py-[10px] px-[20px] cursor-pointer 
 								hover:rounded-t hover:bg-[#fff4dd]">
 									<div class="option flex items-center ice">
-										<div class="icon w-[32px] h-[32px] mr-[15px]
+										<div class="icon w-8 h-8 mr-3.5
 										bg-[url('https://i.imgur.com/UczSxO3.png')] bg-no-repeat bg-[0_-90px]" 
 										></div>
 									  <p>Текст</p>
@@ -522,7 +518,7 @@
 				</div>
 
 				
-				<div class="filter-orig sm: mt-[10px] sm: ml-[10px]" onclick="showFilter()">
+				<div class="filter-orig scale-125 sm: mt-4 sm: ml-2.5" onclick="showFilter()">
 					<svg width="59" height="40" viewBox="0 0 59 40" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<rect width="59" height="40" rx="4" fill="#6CC126"/>
 						<path d="M23.67 26C23.8766 25.4145 24.2597 24.9074 24.7666 24.5488C25.2735 24.1902 25.8791 23.9976 26.5 23.9976C27.1209 23.9976 27.7265 24.1902 28.2334 24.5488C28.7403 24.9074 29.1234 25.4145 29.33 26H39.5V28H29.33C29.1234 28.5855 28.7403 29.0926 28.2334 29.4512C27.7265 29.8099 27.1209 30.0025 26.5 30.0025C25.8791 30.0025 25.2735 29.8099 24.7666 29.4512C24.2597 29.0926 23.8766 28.5855 23.67 28H19.5V26H23.67ZM29.67 19C29.8766 18.4145 30.2597 17.9074 30.7666 17.5488C31.2735 17.1902 31.8791 16.9976 32.5 16.9976C33.1209 16.9976 33.7265 17.1902 34.2334 17.5488C34.7403 17.9074 35.1234 18.4145 35.33 19H39.5V21H35.33C35.1234 21.5855 34.7403 22.0926 34.2334 22.4512C33.7265 22.8099 33.1209 23.0025 32.5 23.0025C31.8791 23.0025 31.2735 22.8099 30.7666 22.4512C30.2597 22.0926 29.8766 21.5855 29.67 21H19.5V19H29.67ZM23.67 12C23.8766 11.4145 24.2597 10.9074 24.7666 10.5488C25.2735 10.1902 25.8791 9.99756 26.5 9.99756C27.1209 9.99756 27.7265 10.1902 28.2334 10.5488C28.7403 10.9074 29.1234 11.4145 29.33 12H39.5V14H29.33C29.1234 14.5855 28.7403 15.0926 28.2334 15.4512C27.7265 15.8099 27.1209 16.0025 26.5 16.0025C25.8791 16.0025 25.2735 15.8099 24.7666 15.4512C24.2597 15.0926 23.8766 14.5855 23.67 14H19.5V12H23.67ZM26.5 14C26.7652 14 27.0196 13.8947 27.2071 13.7071C27.3946 13.5196 27.5 13.2652 27.5 13C27.5 12.7348 27.3946 12.4804 27.2071 12.2929C27.0196 12.1054 26.7652 12 26.5 12C26.2348 12 25.9804 12.1054 25.7929 12.2929C25.6054 12.4804 25.5 12.7348 25.5 13C25.5 13.2652 25.6054 13.5196 25.7929 13.7071C25.9804 13.8947 26.2348 14 26.5 14ZM32.5 21C32.7652 21 33.0196 20.8947 33.2071 20.7071C33.3946 20.5196 33.5 20.2652 33.5 20C33.5 19.7348 33.3946 19.4804 33.2071 19.2929C33.0196 19.1054 32.7652 19 32.5 19C32.2348 19 31.9804 19.1054 31.7929 19.2929C31.6054 19.4804 31.5 19.7348 31.5 20C31.5 20.2652 31.6054 20.5196 31.7929 20.7071C31.9804 20.8947 32.2348 21 32.5 21ZM26.5 28C26.7652 28 27.0196 27.8947 27.2071 27.7071C27.3946 27.5196 27.5 27.2652 27.5 27C27.5 26.7348 27.3946 26.4804 27.2071 26.2929C27.0196 26.1054 26.7652 26 26.5 26C26.2348 26 25.9804 26.1054 25.7929 26.2929C25.6054 26.4804 25.5 26.7348 25.5 27C25.5 27.2652 25.6054 27.5196 25.7929 27.7071C25.9804 27.8947 26.2348 28 26.5 28Z" fill="white"/>
@@ -532,273 +528,434 @@
 
 				<div class="filter-hidden fixed top-0 left-0 hidden bg-white w-full h-full
 				transition transition-all duration-300 overflow-scroll">
-				<i class="fa-solid fa-xmark text-[40px] absolute right-[15px] top-[15px]" onclick="closeFilter()"></i>
-				<div class="documents mt-[40px] bg-white rounded-[8px]">
-				<div class="faq-head text-[#151515] py-[29px] px-[21px] relative text-[24px] leading-[1.3] font-medium flex flex-col justify-between cursor-pointer rounded-[2px] border-none  aezakmi">
+				<i class="fa-solid fa-xmark text-[40px] absolute right-3.5 top-3.5" onclick="closeFilter()"></i>
+				<div class="documents mt-10 bg-white rounded-lg">
+				<div class="faq-head text-[#151515] py-7 px-5 relative text-2xl leading-[1.3] font-medium flex flex-col justify-between cursor-pointer rounded-sm border-none aezakmi">
 					<p class="font-semibold text-base">Для кого курс</p>
-					<div class="button  absolute w-[24px] h-[24px] top-[50%] right-[0] transform -translate-x-1/2 -translate-y-1/2 rotate-0 rounded-[50%] cursor-pointer z-100 transition-all duration-[400ms]
-					before:content-[''] before:absolute before:top-[50%] before:left-[50%] before:transform before:-translate-x-1/2 before:-translate-y-1/2
-					before:h-[50%] before:w-[2px] before:bg-[#B5BAC3] 
-					after:content-[''] after:absolute after:top-[50%] after:left-[50%] after:transform after:-translate-x-1/2 after:-translate-y-1/2
-					after:h-[2px] after:w-[50%] after:bg-[#B5BAC3]
+					<div class="button absolute w-6 h-6 top-1/2 right-0 transform -translate-x-1/2 -translate-y-1/2 rotate-0 rounded-[50%] cursor-pointer z-100 transition-all duration-[400ms]
+					before:content-[''] before:absolute before:top-1/2 before:left-1/2 before:transform before:-translate-x-1/2 before:-translate-y-1/2
+					before:h-1/2 before:w-0.5 before:bg-[#B5BAC3] 
+					after:content-[''] after:absolute after:top-1/2 after:left-1/2 after:transform after:-translate-x-1/2 after:-translate-y-1/2
+					after:h-0.5 after:w-1/2 after:bg-[#B5BAC3]
 					"></div>
 				</div>
-				<div class="faq-content hidden text-[#444444] p-[15px]  pb-[30px] font-normal text-[16px] leading-[1.5]">
+				<div class="faq-content hidden text-[#444444] p-3.5  pb-7 font-normal text-base leading-[1.5]">
 					<div class="checkbox">
 						<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 
 						rounded-md relative checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block 
-						after:rotate-45 after:border-white after:border-b-2 after:border-r-2 after:w-2 after:h-3"> <p class="ml-[10px] text-[14px]">Руководитель</p>
+						after:rotate-45 after:border-white after:border-b-2 after:border-r-2 after:w-2 after:h-3"> <p class="ml-2.5 text-sm">Руководитель</p>
 					</label>
 					</div>
-					<div class="checkbox mt-[10px]">
+					<div class="checkbox mt-2.5">
 						<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md 
 						relative checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white 
 						after:border-b-2 after:border-r-2 after:w-2 after:h-3"> 
-						<p class="ml-[10px] text-[14px]">Учитель предметник</p>
+						<p class="ml-2.5 text-sm">Учитель предметник</p>
 						</label>
 					</div>
-					<div class="checkbox mt-[10px]">
+					<div class="checkbox mt-2.5">
 						<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md 
 						relative checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 
 						after:border-r-2 after:w-2 after:h-3"> 
-						<p class="ml-[10px] text-[14px]">Психолог</p>
+						<p class="ml-2.5 text-sm">Психолог</p>
 						</label>
 					</div>
-					<div class="checkbox mt-[10px]">
+					<div class="checkbox mt-2.5">
 						<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md relative 
 						checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 after:border-r-2 
 						after:w-2 after:h-3"> 
-						<p class="ml-[10px] text-[14px]">Дошкольное образование</p>
+						<p class="ml-2.5 text-sm">Дошкольное образование</p>
 						</label>
 					</div>
-					<div class="checkbox mt-[10px]">
+					<div class="checkbox mt-2.5">
 						<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md relative 
 						checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 after:border-r-2 
 						after:w-2 after:h-3"> 
-						<p class="ml-[10px] text-[14px]">Преподаватель ВУЗа</p>
+						<p class="ml-2.5 text-sm">Преподаватель ВУЗа</p>
 						</label>
 					</div>
-					<div class="checkbox mt-[10px]">
+					<div class="checkbox mt-2.5">
 						<label class="flex">
 							<input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md relative checked:border-0 
 							checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 after:border-r-2 after:w-2 
-							after:h-3"><p class="ml-[10px] text-[14px]">ТИПО</p> 
+							after:h-3"><p class="ml-2.5 text-sm">ТИПО</p> 
 						</label>
 					</div>
 					
 				</div>
 			</div>
 
-			<div class="documents mt-[8px] bg-white rounded-[8px]">
-				<div class="faq-head text-[#151515] py-[29px] px-[21px] relative text-[24px] leading-[1.3] font-medium flex flex-col justify-between cursor-pointer rounded-[2px] border-none flex aezakmi">
+			<div class="documents mt-2 bg-white rounded-lg">
+				<div class="faq-head text-[#151515] py-7 px-5 relative text-2xl leading-[1.3] font-medium flex flex-col justify-between cursor-pointer rounded-sm border-none flex aezakmi">
 					<p class="font-semibold text-base">Предмет</p>
-					<div class="button  absolute w-[24px] h-[24px] top-[50%] right-[0] transform -translate-x-1/2 -translate-y-1/2 rotate-0 rounded-[50%] cursor-pointer z-100 transition-all duration-[400ms]before:content-[''] before:absolute before:top-[50%] before:left-[50%] before:transform before:-translate-x-1/2 before:-translate-y-1/2
-					before:h-[50%] before:w-[2px] before:bg-[#B5BAC3]
-					after:content-[''] after:absolute after:top-[50%] after:left-[50%] after:transform after:-translate-x-1/2 after:-translate-y-1/2
-					after:h-[2px] after:w-[50%] after:bg-[#B5BAC3]"></div>
+					<div class="button  absolute w-6 h-6 top-1/2 right-0 transform -translate-x-1/2 -translate-y-1/2 rotate-0 rounded-[50%] cursor-pointer z-100 transition-all duration-[400ms] before:content-[''] before:absolute before:top-1/2 before:left-1/2 before:transform before:-translate-x-1/2 before:-translate-y-1/2
+					before:h-1/2 before:w-0.5 before:bg-[#B5BAC3]
+					after:content-[''] after:absolute after:top-1/2 after:left-1/2 after:transform after:-translate-x-1/2 after:-translate-y-1/2
+					after:h-0.5 after:w-1/2 after:bg-[#B5BAC3]"></div>
 				</div>
-				<div class="faq-content hidden text-[#444444] p-[15px]  pb-[30px]">
+				<div class="faq-content hidden text-[#444444] p-3.5  pb-7 font-normal text-base leading-[1.5]">
 					<div class="checkbox">
 						<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 
 						rounded-md relative checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block 
-						after:rotate-45 after:border-white after:border-b-2 after:border-r-2 after:w-2 after:h-3"> <p class="ml-[10px] text-[14px]">Руководитель</p>
+						after:rotate-45 after:border-white after:border-b-2 after:border-r-2 after:w-2 after:h-3"> <p class="ml-2.5 text-sm">Руководитель</p>
 					</label>
 					</div>
-					<div class="checkbox mt-[10px]">
+					<div class="checkbox mt-2.5">
 						<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md 
 						relative checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white 
 						after:border-b-2 after:border-r-2 after:w-2 after:h-3"> 
-						<p class="ml-[10px] text-[14px]">Учитель предметник</p>
+						<p class="ml-2.5 text-sm">Учитель предметник</p>
 						</label>
 					</div>
-					<div class="checkbox mt-[10px]">
+					<div class="checkbox mt-2.5">
 						<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md 
 						relative checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 
 						after:border-r-2 after:w-2 after:h-3"> 
-						<p class="ml-[10px] text-[14px]">Психолог</p>
+						<p class="ml-2.5 text-sm">Психолог</p>
 						</label>
 					</div>
-					<div class="checkbox mt-[10px]">
+					<div class="checkbox mt-2.5">
 						<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md relative 
 						checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 after:border-r-2 
 						after:w-2 after:h-3"> 
-						<p class="ml-[10px] text-[14px]">Дошкольное образование</p>
+						<p class="ml-2.5 text-sm">Дошкольное образование</p>
 						</label>
 					</div>
-					<div class="checkbox mt-[10px]">
+					<div class="checkbox mt-2.5">
 						<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md relative 
 						checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 after:border-r-2 
 						after:w-2 after:h-3"> 
-						<p class="ml-[10px] text-[14px]">Преподаватель ВУЗа</p>
+						<p class="ml-2.5 text-sm">Преподаватель ВУЗа</p>
 						</label>
 					</div>
-					<div class="checkbox mt-[10px]">
+					<div class="checkbox mt-2.5">
 						<label class="flex">
 							<input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md relative checked:border-0 
 							checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 after:border-r-2 after:w-2 
-							after:h-3"><p class="ml-[10px] text-[14px]">ТИПО</p> 
+							after:h-3"><p class="ml-2.5 text-sm">ТИПО</p> 
 						</label>
 					</div>
+					
 				</div>
 			</div>
 
-			<div class="documents mt-[8px] bg-white rounded-[8px]">
-				<div class="faq-head text-[#151515] py-[29px] px-[21px] relative text-[24px] leading-[1.3] font-medium flex flex-col justify-between cursor-pointer rounded-[2px] border-none flex aezakmi">
-					<p class="font-semibold text-base w-[152px]">Место проведения</p>
-					<div class="button  absolute w-[24px] h-[24px] top-[50%] right-[0] transform -translate-x-1/2 -translate-y-1/2 rotate-0 rounded-[50%] cursor-pointer z-100 transition-all duration-[400ms] before:content-[''] before:absolute before:top-[50%] before:left-[50%] before:transform before:-translate-x-1/2 before:-translate-y-1/2
-					before:h-[50%] before:w-[2px] before:bg-[#B5BAC3]
-					after:content-[''] after:absolute after:top-[50%] after:left-[50%] after:transform after:-translate-x-1/2 after:-translate-y-1/2
-					after:h-[2px] after:w-[50%] after:bg-[#B5BAC3]"></div>
+			<div class="documents mt-2 bg-white rounded-lg">
+				<div class="faq-head text-[#151515] py-7 px-5 relative text-2xl leading-[1.3] font-medium flex flex-col justify-between cursor-pointer rounded-sm border-none flex aezakmi">
+					<p class="font-semibold text-base">Место проведения</p>
+					<div class="button  absolute w-6 h-6 top-1/2 right-0 transform -translate-x-1/2 -translate-y-1/2 rotate-0 rounded-[50%] cursor-pointer z-100 transition-all duration-[400ms] before:content-[''] before:absolute before:top-1/2 before:left-1/2 before:transform before:-translate-x-1/2 before:-translate-y-1/2
+					before:h-1/2 before:w-0.5 before:bg-[#B5BAC3]
+					after:content-[''] after:absolute after:top-1/2 after:left-1/2 after:transform after:-translate-x-1/2 after:-translate-y-1/2
+					after:h-0.5 after:w-1/2 after:bg-[#B5BAC3]"></div>
 				</div>
-				<div class="faq-content hidden text-[#444444] p-[15px]  pb-[30px]">
+				<div class="faq-content hidden text-[#444444] p-3.5  pb-7 font-normal text-base leading-[1.5]">
 					<div class="checkbox">
 						<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 
 						rounded-md relative checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block 
-						after:rotate-45 after:border-white after:border-b-2 after:border-r-2 after:w-2 after:h-3"> <p class="ml-[10px] text-[14px]">Руководитель</p>
+						after:rotate-45 after:border-white after:border-b-2 after:border-r-2 after:w-2 after:h-3"> <p class="ml-2.5 text-sm">Руководитель</p>
 					</label>
 					</div>
-					<div class="checkbox mt-[10px]">
+					<div class="checkbox mt-2.5">
 						<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md 
 						relative checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white 
 						after:border-b-2 after:border-r-2 after:w-2 after:h-3"> 
-						<p class="ml-[10px] text-[14px]">Учитель предметник</p>
+						<p class="ml-2.5 text-sm">Учитель предметник</p>
 						</label>
 					</div>
-					<div class="checkbox mt-[10px]">
+					<div class="checkbox mt-2.5">
 						<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md 
 						relative checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 
 						after:border-r-2 after:w-2 after:h-3"> 
-						<p class="ml-[10px] text-[14px]">Психолог</p>
+						<p class="ml-2.5 text-sm">Психолог</p>
 						</label>
 					</div>
-					<div class="checkbox mt-[10px]">
+					<div class="checkbox mt-2.5">
 						<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md relative 
 						checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 after:border-r-2 
 						after:w-2 after:h-3"> 
-						<p class="ml-[10px] text-[14px]">Дошкольное образование</p>
+						<p class="ml-2.5 text-sm">Дошкольное образование</p>
 						</label>
 					</div>
-					<div class="checkbox mt-[10px]">
+					<div class="checkbox mt-2.5">
 						<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md relative 
 						checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 after:border-r-2 
 						after:w-2 after:h-3"> 
-						<p class="ml-[10px] text-[14px]">Преподаватель ВУЗа</p>
+						<p class="ml-2.5 text-sm">Преподаватель ВУЗа</p>
 						</label>
 					</div>
-					<div class="checkbox mt-[10px]">
+					<div class="checkbox mt-2.5">
 						<label class="flex">
 							<input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md relative checked:border-0 
 							checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 after:border-r-2 after:w-2 
-							after:h-3"><p class="ml-[10px] text-[14px]">ТИПО</p> 
+							after:h-3"><p class="ml-2.5 text-sm">ТИПО</p> 
 						</label>
 					</div>
+					
 				</div>
 			</div>
 
-			<div class="documents mt-[8px] bg-white rounded-[8px]">
-				<div class="faq-head text-[#151515] py-[29px] px-[21px] relative text-[24px] leading-[1.3] font-medium flex flex-col justify-between cursor-pointer rounded-[2px] border-none flex aezakmi">
+			<div class="documents mt-2 bg-white rounded-lg">
+				<div class="faq-head text-[#151515] py-7 px-5 relative text-2xl leading-[1.3] font-medium flex flex-col justify-between cursor-pointer rounded-sm border-none flex aezakmi">
 					<p class="font-semibold text-base">Язык</p>
-					<div class="button  absolute w-[24px] h-[24px] top-[50%] right-[0] transform -translate-x-1/2 -translate-y-1/2 rotate-0 rounded-[50%] cursor-pointer z-100 transition-all duration-[400ms] before:content-[''] before:absolute before:top-[50%] before:left-[50%] before:transform before:-translate-x-1/2 before:-translate-y-1/2
-					before:h-[50%] before:w-[2px] before:bg-[#B5BAC3]
-					after:content-[''] after:absolute after:top-[50%] after:left-[50%] after:transform after:-translate-x-1/2 after:-translate-y-1/2
-					after:h-[2px] after:w-[50%] after:bg-[#B5BAC3]"></div>
+					<div class="button  absolute w-6 h-6 top-1/2 right-0 transform -translate-x-1/2 -translate-y-1/2 rotate-0 rounded-[50%] cursor-pointer z-100 transition-all duration-[400ms] before:content-[''] before:absolute before:top-1/2 before:left-1/2 before:transform before:-translate-x-1/2 before:-translate-y-1/2
+					before:h-1/2 before:w-0.5 before:bg-[#B5BAC3]
+					after:content-[''] after:absolute after:top-1/2 after:left-1/2 after:transform after:-translate-x-1/2 after:-translate-y-1/2
+					after:h-0.5 after:w-1/2 after:bg-[#B5BAC3]"></div>
 				</div>
-				<div class="faq-content hidden text-[#444444] p-[15px]  pb-[30px]">
+				<div class="faq-content hidden text-[#444444] p-3.5  pb-7 font-normal text-base leading-[1.5]">
 					<div class="checkbox">
 						<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 
 						rounded-md relative checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block 
-						after:rotate-45 after:border-white after:border-b-2 after:border-r-2 after:w-2 after:h-3"> <p class="ml-[10px] text-[14px]">Руководитель</p>
+						after:rotate-45 after:border-white after:border-b-2 after:border-r-2 after:w-2 after:h-3"> <p class="ml-2.5 text-sm">Руководитель</p>
 					</label>
 					</div>
-					<div class="checkbox mt-[10px]">
+					<div class="checkbox mt-2.5">
 						<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md 
 						relative checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white 
 						after:border-b-2 after:border-r-2 after:w-2 after:h-3"> 
-						<p class="ml-[10px] text-[14px]">Учитель предметник</p>
+						<p class="ml-2.5 text-sm">Учитель предметник</p>
 						</label>
 					</div>
-					<div class="checkbox mt-[10px]">
+					<div class="checkbox mt-2.5">
 						<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md 
 						relative checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 
 						after:border-r-2 after:w-2 after:h-3"> 
-						<p class="ml-[10px] text-[14px]">Психолог</p>
+						<p class="ml-2.5 text-sm">Психолог</p>
 						</label>
 					</div>
-					<div class="checkbox mt-[10px]">
+					<div class="checkbox mt-2.5">
 						<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md relative 
 						checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 after:border-r-2 
 						after:w-2 after:h-3"> 
-						<p class="ml-[10px] text-[14px]">Дошкольное образование</p>
+						<p class="ml-2.5 text-sm">Дошкольное образование</p>
 						</label>
 					</div>
-					<div class="checkbox mt-[10px]">
+					<div class="checkbox mt-2.5">
 						<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md relative 
 						checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 after:border-r-2 
 						after:w-2 after:h-3"> 
-						<p class="ml-[10px] text-[14px]">Преподаватель ВУЗа</p>
+						<p class="ml-2.5 text-sm">Преподаватель ВУЗа</p>
 						</label>
 					</div>
-					<div class="checkbox mt-[10px]">
+					<div class="checkbox mt-2.5">
 						<label class="flex">
 							<input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md relative checked:border-0 
 							checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 after:border-r-2 after:w-2 
-							after:h-3"><p class="ml-[10px] text-[14px]">ТИПО</p> 
+							after:h-3"><p class="ml-2.5 text-sm">ТИПО</p> 
 						</label>
 					</div>
+					
 				</div>
 			</div>
 
 
-			<div class="documents mt-[8px] bg-white rounded-[8px]">
-				<div class="faq-head text-[#151515] py-[29px] px-[21px] relative text-[24px] leading-[1.3] font-medium flex flex-col justify-between cursor-pointer rounded-[2px] border-none flex aezakmi">
+			<div class="documents mt-2 bg-white rounded-lg">
+				<div class="faq-head text-[#151515] py-7 px-5 relative text-2xl leading-[1.3] font-medium flex flex-col justify-between cursor-pointer rounded-sm border-none flex aezakmi">
 					<p class="font-semibold text-base">Стоимость</p>
-					<div class="button  absolute w-[24px] h-[24px] top-[50%] right-[0] transform -translate-x-1/2 -translate-y-1/2 rotate-0 rounded-[50%] cursor-pointer z-100 transition-all duration-[400ms] before:content-[''] before:absolute before:top-[50%] before:left-[50%] before:transform before:-translate-x-1/2 before:-translate-y-1/2
-					before:h-[50%] before:w-[2px] before:bg-[#B5BAC3]
-					after:content-[''] after:absolute after:top-[50%] after:left-[50%] after:transform after:-translate-x-1/2 after:-translate-y-1/2
-					after:h-[2px] after:w-[50%] after:bg-[#B5BAC3]"></div>
+					<div class="button  absolute w-6 h-6 top-1/2 right-0 transform -translate-x-1/2 -translate-y-1/2 rotate-0 rounded-[50%] cursor-pointer z-100 transition-all duration-[400ms] before:content-[''] before:absolute before:top-1/2 before:left-1/2 before:transform before:-translate-x-1/2 before:-translate-y-1/2
+					before:h-1/2 before:w-0.5 before:bg-[#B5BAC3]
+					after:content-[''] after:absolute after:top-1/2 after:left-1/2 after:transform after:-translate-x-1/2 after:-translate-y-1/2
+					after:h-0.5 after:w-1/2 after:bg-[#B5BAC3]"></div>
 				</div>
-				<div class="faq-content hidden text-[#444444] p-[20px]  pb-[30px]">
+				<div class="faq-content hidden text-[#444444] p-3.5  pb-7 font-normal text-base leading-[1.5]">
 					<div class="checkbox">
 						<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 
 						rounded-md relative checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block 
-						after:rotate-45 after:border-white after:border-b-2 after:border-r-2 after:w-2 after:h-3"> <p class="ml-[10px] text-[14px]">Руководитель</p>
+						after:rotate-45 after:border-white after:border-b-2 after:border-r-2 after:w-2 after:h-3"> <p class="ml-2.5 text-sm">Руководитель</p>
 					</label>
 					</div>
-					<div class="checkbox mt-[10px]">
+					<div class="checkbox mt-2.5">
 						<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md 
 						relative checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white 
 						after:border-b-2 after:border-r-2 after:w-2 after:h-3"> 
-						<p class="ml-[10px] text-[14px]">Учитель предметник</p>
+						<p class="ml-2.5 text-sm">Учитель предметник</p>
 						</label>
 					</div>
-					<div class="checkbox mt-[10px]">
+					<div class="checkbox mt-2.5">
 						<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md 
 						relative checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 
 						after:border-r-2 after:w-2 after:h-3"> 
-						<p class="ml-[10px] text-[14px]">Психолог</p>
+						<p class="ml-2.5 text-sm">Психолог</p>
 						</label>
 					</div>
-					<div class="checkbox mt-[10px]">
+					<div class="checkbox mt-2.5">
 						<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md relative 
 						checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 after:border-r-2 
 						after:w-2 after:h-3"> 
-						<p class="ml-[10px] text-[14px]">Дошкольное образование</p>
+						<p class="ml-2.5 text-sm">Дошкольное образование</p>
 						</label>
 					</div>
-					<div class="checkbox mt-[10px]">
+					<div class="checkbox mt-2.5">
 						<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md relative 
 						checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 after:border-r-2 
 						after:w-2 after:h-3"> 
-						<p class="ml-[10px] text-[14px]">Преподаватель ВУЗа</p>
+						<p class="ml-2.5 text-sm">Преподаватель ВУЗа</p>
 						</label>
 					</div>
-					<div class="checkbox mt-[10px]">
+					<div class="checkbox mt-2.5">
 						<label class="flex">
 							<input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md relative checked:border-0 
 							checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 after:border-r-2 after:w-2 
-							after:h-3"><p class="ml-[10px] text-[14px]">ТИПО</p> 
+							after:h-3"><p class="ml-2.5 text-sm">ТИПО</p> 
 						</label>
 					</div>
+					
+				</div>
+			</div>
+
+			<div class="documents mt-2 bg-white rounded-lg">
+				<div class="faq-head text-[#151515] py-7 px-5 relative text-2xl leading-[1.3] font-medium flex flex-col justify-between cursor-pointer rounded-sm border-none flex aezakmi">
+					<p class="font-semibold text-base">Сортировать</p>
+					<div class="button  absolute w-6 h-6 top-1/2 right-0 transform -translate-x-1/2 -translate-y-1/2 rotate-0 rounded-[50%] cursor-pointer z-100 transition-all duration-[400ms] before:content-[''] before:absolute before:top-1/2 before:left-1/2 before:transform before:-translate-x-1/2 before:-translate-y-1/2
+					before:h-1/2 before:w-0.5 before:bg-[#B5BAC3]
+					after:content-[''] after:absolute after:top-1/2 after:left-1/2 after:transform after:-translate-x-1/2 after:-translate-y-1/2
+					after:h-0.5 after:w-1/2 after:bg-[#B5BAC3]"></div>
+				</div>
+				<div class="faq-content hidden text-[#444444] p-3.5  pb-7 font-normal text-base leading-[1.5]">
+					<div class="checkbox">
+						<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 
+						rounded-md relative checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block 
+						after:rotate-45 after:border-white after:border-b-2 after:border-r-2 after:w-2 after:h-3"> <p class="ml-2.5 text-sm">Руководитель</p>
+					</label>
+					</div>
+					<div class="checkbox mt-2.5">
+						<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md 
+						relative checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white 
+						after:border-b-2 after:border-r-2 after:w-2 after:h-3"> 
+						<p class="ml-2.5 text-sm">Учитель предметник</p>
+						</label>
+					</div>
+					<div class="checkbox mt-2.5">
+						<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md 
+						relative checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 
+						after:border-r-2 after:w-2 after:h-3"> 
+						<p class="ml-2.5 text-sm">Психолог</p>
+						</label>
+					</div>
+					<div class="checkbox mt-2.5">
+						<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md relative 
+						checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 after:border-r-2 
+						after:w-2 after:h-3"> 
+						<p class="ml-2.5 text-sm">Дошкольное образование</p>
+						</label>
+					</div>
+					<div class="checkbox mt-2.5">
+						<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md relative 
+						checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 after:border-r-2 
+						after:w-2 after:h-3"> 
+						<p class="ml-2.5 text-sm">Преподаватель ВУЗа</p>
+						</label>
+					</div>
+					<div class="checkbox mt-2.5">
+						<label class="flex">
+							<input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md relative checked:border-0 
+							checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 after:border-r-2 after:w-2 
+							after:h-3"><p class="ml-2.5 text-sm">ТИПО</p> 
+						</label>
+					</div>
+					
+				</div>
+			</div>
+		
+			<div class="documents mt-2 bg-white rounded-lg">
+				<div class="faq-head text-[#151515] py-7 px-5 relative text-2xl leading-[1.3] font-medium flex flex-col justify-between cursor-pointer rounded-sm border-none flex aezakmi">
+					<p class="font-semibold text-base">Фильтр по цене</p>
+					<div class="button  absolute w-6 h-6 top-1/2 right-0 transform -translate-x-1/2 -translate-y-1/2 rotate-0 rounded-[50%] cursor-pointer z-100 transition-all duration-[400ms] before:content-[''] before:absolute before:top-1/2 before:left-1/2 before:transform before:-translate-x-1/2 before:-translate-y-1/2
+					before:h-1/2 before:w-0.5 before:bg-[#B5BAC3]
+					after:content-[''] after:absolute after:top-1/2 after:left-1/2 after:transform after:-translate-x-1/2 after:-translate-y-1/2
+					after:h-0.5 after:w-1/2 after:bg-[#B5BAC3]"></div>
+				</div>
+				<div class="faq-content hidden text-[#444444] p-5  pb-7">
+					<div class="h-[10vh] flex justify-center items-center">
+						<div x-data="range()" x-init="mintrigger(); maxtrigger()" class="relative max-w-xl w-full">
+						  <div>
+							<input type="range" step="100" x-bind:min="min" x-bind:max="max" x-on:input="mintrigger" x-model="minprice" class="absolute pointer-events-none appearance-none z-20 h-2 w-full opacity-0 cursor-pointer">
+					  
+							<input type="range" step="100" x-bind:min="min" x-bind:max="max" x-on:input="maxtrigger" x-model="maxprice" class="absolute pointer-events-none appearance-none z-20 h-2 w-full opacity-0 cursor-pointer">
+					  
+							<div class="relative z-10 h-2">
+					  
+							  <div class="absolute z-10 left-0 right-0 bottom-0 top-0 rounded-md bg-gray-200"></div>
+					  
+							  <div class="absolute z-20 top-0 bottom-0 rounded-md bg-[#67BA39]" x-bind:style="'right:'+maxthumb+'%; left:'+minthumb+'%'"></div>
+					  
+							  <div class="absolute z-30 w-6 h-6 top-0 left-0 bg-[#67BA39] rounded-full -mt-2" x-bind:style="'left: '+minthumb+'%'"></div>
+					  
+							  <div class="absolute z-30 w-6 h-6 top-0 right-0 bg-[#67BA39] rounded-full -mt-2" x-bind:style="'right: '+maxthumb+'%'"></div>
+					  
+							</div>
+					  
+						  </div>
+					  
+							<div class="flex items-center justify-between pt-5 space-x-4 text-sm text-gray-700">
+							  <div>
+								<input type="text" maxlength="5" x-on:input.debounce="mintrigger" x-model="minprice"
+								  wire:model.debounce.300="minPrice"
+								  class="w-24 px-3 py-2 text-center border-none focus:border-yellow-400 focus:outline-none">
+							  </div>
+							  <div>
+								<input type="text" maxlength="5" x-on:input.debounce.300="maxtrigger" x-model="maxprice"
+								  wire:model.debounce="maxPrice"
+								  class="w-24 px-3 py-2 text-center border-none focus:border-yellow-400 focus:outline-none">
+							  </div>
+							</div>
+					  
+						</div>
+					 
+					  </div>
+				</div>
+			</div>
+
+			<div class="documents mt-2 bg-white rounded-lg">
+				<div class="faq-head text-[#151515] py-7 px-5 relative text-2xl leading-[1.3] font-medium flex flex-col justify-between cursor-pointer rounded-sm border-none flex aezakmi">
+					<p class="font-semibold text-base">Категории</p>
+					<div class="button  absolute w-6 h-6 top-1/2 right-0 transform -translate-x-1/2 -translate-y-1/2 rotate-0 rounded-[50%] cursor-pointer z-100 transition-all duration-[400ms] before:content-[''] before:absolute before:top-1/2 before:left-1/2 before:transform before:-translate-x-1/2 before:-translate-y-1/2
+					before:h-1/2 before:w-0.5 before:bg-[#B5BAC3]
+					after:content-[''] after:absolute after:top-1/2 after:left-1/2 after:transform after:-translate-x-1/2 after:-translate-y-1/2
+					after:h-0.5 after:w-1/2 after:bg-[#B5BAC3]"></div>
+				</div>
+				<div class="faq-content hidden text-[#444444] p-3.5  pb-7 font-normal text-base leading-[1.5]">
+					<div class="checkbox">
+						<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 
+						rounded-md relative checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block 
+						after:rotate-45 after:border-white after:border-b-2 after:border-r-2 after:w-2 after:h-3"> <p class="ml-2.5 text-sm">Руководитель</p>
+					</label>
+					</div>
+					<div class="checkbox mt-2.5">
+						<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md 
+						relative checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white 
+						after:border-b-2 after:border-r-2 after:w-2 after:h-3"> 
+						<p class="ml-2.5 text-sm">Учитель предметник</p>
+						</label>
+					</div>
+					<div class="checkbox mt-2.5">
+						<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md 
+						relative checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 
+						after:border-r-2 after:w-2 after:h-3"> 
+						<p class="ml-2.5 text-sm">Психолог</p>
+						</label>
+					</div>
+					<div class="checkbox mt-2.5">
+						<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md relative 
+						checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 after:border-r-2 
+						after:w-2 after:h-3"> 
+						<p class="ml-2.5 text-sm">Дошкольное образование</p>
+						</label>
+					</div>
+					<div class="checkbox mt-2.5">
+						<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md relative 
+						checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 after:border-r-2 
+						after:w-2 after:h-3"> 
+						<p class="ml-2.5 text-sm">Преподаватель ВУЗа</p>
+						</label>
+					</div>
+					<div class="checkbox mt-2.5">
+						<label class="flex">
+							<input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md relative checked:border-0 
+							checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 after:border-r-2 after:w-2 
+							after:h-3"><p class="ml-2.5 text-sm">ТИПО</p> 
+						</label>
+					</div>
+					
 				</div>
 			</div>
 
@@ -809,19 +966,19 @@
 			</div>
 			<div class="tab-content sm: ml-0 sm: mr-0 md: flex items-center justify-center  w-full" id="myTabContent">
 				<div id="courses" class="sm: justify-center sm: w-full md:justify-center flex lg:w-full lg:justify-between flex-wrap" role="tabpanel" aria-labelledby="courses-tab">
-					<div class="filter  sm: hidden md:block md:w-[90%] w-[25%] lg:mt-[30px] lg:w-[22%]">
-						<div class="faq-items mt-[40px] w-[271px] rounded-[8px] w-full">
+					<div class="filter sm: hidden md:block md:w-[90%] md:mt-7 w-1/4 lg:w-[19%] xl:w-[22%]">
+						<div class="faq-items mt-10 rounded-lg w-full">
 							<div class="documents mt-[8px] bg-white rounded-[8px]">
 								<div class="faq-head text-[#151515] py-[29px] px-[21px] relative text-[24px] leading-[1.3] font-medium flex flex-col justify-between cursor-pointer rounded-[2px] border-none  aezakmi">
 									<p class="font-semibold text-base">Для кого курс</p>
-									<div class="button  absolute w-[24px] h-[24px] top-[50%] right-[0] transform -translate-x-1/2 -translate-y-1/2 rotate-0 rounded-[50%] cursor-pointer z-100 transition-all duration-[400ms]
+									<div class="button absolute w-6 h-6 top-[50%] right-[0] transform -translate-x-1/2 -translate-y-1/2 rotate-0 rounded-[50%] cursor-pointer z-100 transition-all duration-[400ms]
 									before:content-[''] before:absolute before:top-[50%] before:left-[50%] before:transform before:-translate-x-1/2 before:-translate-y-1/2
-									before:h-[50%] before:w-[2px] before:bg-[#B5BAC3] 
+									before:h-[50%] before:w-0.5 before:bg-[#B5BAC3] 
 									after:content-[''] after:absolute after:top-[50%] after:left-[50%] after:transform after:-translate-x-1/2 after:-translate-y-1/2
 									after:h-[2px] after:w-[50%] after:bg-[#B5BAC3]
 									"></div>
 								</div>
-								<div class="faq-content hidden text-[#444444] p-[15px] pt-[25px] pb-[30px] font-normal text-[16px] leading-[1.5]">
+								<div class="faq-content hidden text-[#444444] p-[15px]  pb-[30px] font-normal text-[16px] leading-[1.5]">
 									<div class="checkbox">
 										<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 
 										rounded-md relative checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block 
@@ -867,224 +1024,228 @@
 								</div>
 							</div>
 						
-							<div class="documents mt-[8px] bg-white rounded-[8px]">
-								<div class="faq-head text-[#151515] py-[29px] px-[21px] relative text-[24px] leading-[1.3] font-medium flex flex-col justify-between cursor-pointer rounded-[2px] border-none flex aezakmi">
+							<div class="documents mt-2 bg-white rounded-lg">
+								<div class="faq-head text-[#151515] py-7 px-5 relative text-2xl leading-[1.3] font-medium flex flex-col justify-between cursor-pointer rounded-sm border-none flex aezakmi">
 									<p class="font-semibold text-base">Предмет</p>
-									<div class="button  absolute w-[24px] h-[24px] top-[50%] right-[0] transform -translate-x-1/2 -translate-y-1/2 rotate-0 rounded-[50%] cursor-pointer z-100 transition-all duration-[400ms]before:content-[''] before:absolute before:top-[50%] before:left-[50%] before:transform before:-translate-x-1/2 before:-translate-y-1/2
-									before:h-[50%] before:w-[2px] before:bg-[#B5BAC3]
-									after:content-[''] after:absolute after:top-[50%] after:left-[50%] after:transform after:-translate-x-1/2 after:-translate-y-1/2
-									after:h-[2px] after:w-[50%] after:bg-[#B5BAC3]"></div>
+									<div class="button  absolute w-6 h-6 top-1/2 right-0 transform -translate-x-1/2 -translate-y-1/2 rotate-0 rounded-[50%] cursor-pointer z-100 transition-all duration-[400ms] before:content-[''] before:absolute before:top-1/2 before:left-1/2 before:transform before:-translate-x-1/2 before:-translate-y-1/2
+									before:h-1/2 before:w-0.5 before:bg-[#B5BAC3]
+									after:content-[''] after:absolute after:top-1/2 after:left-1/2 after:transform after:-translate-x-1/2 after:-translate-y-1/2
+									after:h-0.5 after:w-1/2 after:bg-[#B5BAC3]"></div>
 								</div>
-								<div class="faq-content hidden text-[#444444] p-[15px] pt-[25px] pb-[30px]">
+								<div class="faq-content hidden text-[#444444] p-3.5  pb-7 font-normal text-base leading-[1.5]">
 									<div class="checkbox">
 										<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 
 										rounded-md relative checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block 
-										after:rotate-45 after:border-white after:border-b-2 after:border-r-2 after:w-2 after:h-3"> <p class="ml-[10px] text-[14px]">Руководитель</p>
+										after:rotate-45 after:border-white after:border-b-2 after:border-r-2 after:w-2 after:h-3"> <p class="ml-2.5 text-sm">Руководитель</p>
 									</label>
 									</div>
-									<div class="checkbox mt-[10px]">
+									<div class="checkbox mt-2.5">
 										<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md 
 										relative checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white 
 										after:border-b-2 after:border-r-2 after:w-2 after:h-3"> 
-										<p class="ml-[10px] text-[14px]">Учитель предметник</p>
+										<p class="ml-2.5 text-sm">Учитель предметник</p>
 										</label>
 									</div>
-									<div class="checkbox mt-[10px]">
+									<div class="checkbox mt-2.5">
 										<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md 
 										relative checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 
 										after:border-r-2 after:w-2 after:h-3"> 
-										<p class="ml-[10px] text-[14px]">Психолог</p>
+										<p class="ml-2.5 text-sm">Психолог</p>
 										</label>
 									</div>
-									<div class="checkbox mt-[10px]">
+									<div class="checkbox mt-2.5">
 										<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md relative 
 										checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 after:border-r-2 
 										after:w-2 after:h-3"> 
-										<p class="ml-[10px] text-[14px]">Дошкольное образование</p>
+										<p class="ml-2.5 text-sm">Дошкольное образование</p>
 										</label>
 									</div>
-									<div class="checkbox mt-[10px]">
+									<div class="checkbox mt-2.5">
 										<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md relative 
 										checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 after:border-r-2 
 										after:w-2 after:h-3"> 
-										<p class="ml-[10px] text-[14px]">Преподаватель ВУЗа</p>
+										<p class="ml-2.5 text-sm">Преподаватель ВУЗа</p>
 										</label>
 									</div>
-									<div class="checkbox mt-[10px]">
+									<div class="checkbox mt-2.5">
 										<label class="flex">
 											<input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md relative checked:border-0 
 											checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 after:border-r-2 after:w-2 
-											after:h-3"><p class="ml-[10px] text-[14px]">ТИПО</p> 
+											after:h-3"><p class="ml-2.5 text-sm">ТИПО</p> 
 										</label>
 									</div>
+									
 								</div>
 							</div>
 		
-							<div class="documents mt-[8px] bg-white rounded-[8px]">
-								<div class="faq-head text-[#151515] py-[29px] px-[21px] relative text-[24px] leading-[1.3] font-medium flex flex-col justify-between cursor-pointer rounded-[2px] border-none flex aezakmi">
-									<p class="font-semibold text-base w-[152px]">Место проведения</p>
-									<div class="button  absolute w-[24px] h-[24px] top-[50%] right-[0] transform -translate-x-1/2 -translate-y-1/2 rotate-0 rounded-[50%] cursor-pointer z-100 transition-all duration-[400ms] before:content-[''] before:absolute before:top-[50%] before:left-[50%] before:transform before:-translate-x-1/2 before:-translate-y-1/2
-									before:h-[50%] before:w-[2px] before:bg-[#B5BAC3]
-									after:content-[''] after:absolute after:top-[50%] after:left-[50%] after:transform after:-translate-x-1/2 after:-translate-y-1/2
-									after:h-[2px] after:w-[50%] after:bg-[#B5BAC3]"></div>
+							<div class="documents mt-2 bg-white rounded-lg">
+								<div class="faq-head text-[#151515] py-7 px-5 relative text-2xl leading-[1.3] font-medium flex flex-col justify-between cursor-pointer rounded-sm border-none flex aezakmi">
+									<p class="font-semibold text-base">Место проведения</p>
+									<div class="button  absolute w-6 h-6 top-1/2 right-0 transform -translate-x-1/2 -translate-y-1/2 rotate-0 rounded-[50%] cursor-pointer z-100 transition-all duration-[400ms] before:content-[''] before:absolute before:top-1/2 before:left-1/2 before:transform before:-translate-x-1/2 before:-translate-y-1/2
+									before:h-1/2 before:w-0.5 before:bg-[#B5BAC3]
+									after:content-[''] after:absolute after:top-1/2 after:left-1/2 after:transform after:-translate-x-1/2 after:-translate-y-1/2
+									after:h-0.5 after:w-1/2 after:bg-[#B5BAC3]"></div>
 								</div>
-								<div class="faq-content hidden text-[#444444] p-[15px] pt-[25px] pb-[30px]">
+								<div class="faq-content hidden text-[#444444] p-3.5  pb-7 font-normal text-base leading-[1.5]">
 									<div class="checkbox">
 										<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 
 										rounded-md relative checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block 
-										after:rotate-45 after:border-white after:border-b-2 after:border-r-2 after:w-2 after:h-3"> <p class="ml-[10px] text-[14px]">Руководитель</p>
+										after:rotate-45 after:border-white after:border-b-2 after:border-r-2 after:w-2 after:h-3"> <p class="ml-2.5 text-sm">Руководитель</p>
 									</label>
 									</div>
-									<div class="checkbox mt-[10px]">
+									<div class="checkbox mt-2.5">
 										<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md 
 										relative checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white 
 										after:border-b-2 after:border-r-2 after:w-2 after:h-3"> 
-										<p class="ml-[10px] text-[14px]">Учитель предметник</p>
+										<p class="ml-2.5 text-sm">Учитель предметник</p>
 										</label>
 									</div>
-									<div class="checkbox mt-[10px]">
+									<div class="checkbox mt-2.5">
 										<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md 
 										relative checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 
 										after:border-r-2 after:w-2 after:h-3"> 
-										<p class="ml-[10px] text-[14px]">Психолог</p>
+										<p class="ml-2.5 text-sm">Психолог</p>
 										</label>
 									</div>
-									<div class="checkbox mt-[10px]">
+									<div class="checkbox mt-2.5">
 										<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md relative 
 										checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 after:border-r-2 
 										after:w-2 after:h-3"> 
-										<p class="ml-[10px] text-[14px]">Дошкольное образование</p>
+										<p class="ml-2.5 text-sm">Дошкольное образование</p>
 										</label>
 									</div>
-									<div class="checkbox mt-[10px]">
+									<div class="checkbox mt-2.5">
 										<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md relative 
 										checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 after:border-r-2 
 										after:w-2 after:h-3"> 
-										<p class="ml-[10px] text-[14px]">Преподаватель ВУЗа</p>
+										<p class="ml-2.5 text-sm">Преподаватель ВУЗа</p>
 										</label>
 									</div>
-									<div class="checkbox mt-[10px]">
+									<div class="checkbox mt-2.5">
 										<label class="flex">
 											<input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md relative checked:border-0 
 											checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 after:border-r-2 after:w-2 
-											after:h-3"><p class="ml-[10px] text-[14px]">ТИПО</p> 
+											after:h-3"><p class="ml-2.5 text-sm">ТИПО</p> 
 										</label>
 									</div>
+									
 								</div>
 							</div>
 		
-							<div class="documents mt-[8px] bg-white rounded-[8px]">
-								<div class="faq-head text-[#151515] py-[29px] px-[21px] relative text-[24px] leading-[1.3] font-medium flex flex-col justify-between cursor-pointer rounded-[2px] border-none flex aezakmi">
+							<div class="documents mt-2 bg-white rounded-lg">
+								<div class="faq-head text-[#151515] py-7 px-5 relative text-2xl leading-[1.3] font-medium flex flex-col justify-between cursor-pointer rounded-sm border-none flex aezakmi">
 									<p class="font-semibold text-base">Язык</p>
-									<div class="button  absolute w-[24px] h-[24px] top-[50%] right-[0] transform -translate-x-1/2 -translate-y-1/2 rotate-0 rounded-[50%] cursor-pointer z-100 transition-all duration-[400ms] before:content-[''] before:absolute before:top-[50%] before:left-[50%] before:transform before:-translate-x-1/2 before:-translate-y-1/2
-									before:h-[50%] before:w-[2px] before:bg-[#B5BAC3]
-									after:content-[''] after:absolute after:top-[50%] after:left-[50%] after:transform after:-translate-x-1/2 after:-translate-y-1/2
-									after:h-[2px] after:w-[50%] after:bg-[#B5BAC3]"></div>
+									<div class="button  absolute w-6 h-6 top-1/2 right-0 transform -translate-x-1/2 -translate-y-1/2 rotate-0 rounded-[50%] cursor-pointer z-100 transition-all duration-[400ms] before:content-[''] before:absolute before:top-1/2 before:left-1/2 before:transform before:-translate-x-1/2 before:-translate-y-1/2
+									before:h-1/2 before:w-0.5 before:bg-[#B5BAC3]
+									after:content-[''] after:absolute after:top-1/2 after:left-1/2 after:transform after:-translate-x-1/2 after:-translate-y-1/2
+									after:h-0.5 after:w-1/2 after:bg-[#B5BAC3]"></div>
 								</div>
-								<div class="faq-content hidden text-[#444444] p-[15px] pt-[25px] pb-[30px]">
+								<div class="faq-content hidden text-[#444444] p-3.5  pb-7 font-normal text-base leading-[1.5]">
 									<div class="checkbox">
 										<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 
 										rounded-md relative checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block 
-										after:rotate-45 after:border-white after:border-b-2 after:border-r-2 after:w-2 after:h-3"> <p class="ml-[10px] text-[14px]">Руководитель</p>
+										after:rotate-45 after:border-white after:border-b-2 after:border-r-2 after:w-2 after:h-3"> <p class="ml-2.5 text-sm">Руководитель</p>
 									</label>
 									</div>
-									<div class="checkbox mt-[10px]">
+									<div class="checkbox mt-2.5">
 										<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md 
 										relative checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white 
 										after:border-b-2 after:border-r-2 after:w-2 after:h-3"> 
-										<p class="ml-[10px] text-[14px]">Учитель предметник</p>
+										<p class="ml-2.5 text-sm">Учитель предметник</p>
 										</label>
 									</div>
-									<div class="checkbox mt-[10px]">
+									<div class="checkbox mt-2.5">
 										<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md 
 										relative checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 
 										after:border-r-2 after:w-2 after:h-3"> 
-										<p class="ml-[10px] text-[14px]">Психолог</p>
+										<p class="ml-2.5 text-sm">Психолог</p>
 										</label>
 									</div>
-									<div class="checkbox mt-[10px]">
+									<div class="checkbox mt-2.5">
 										<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md relative 
 										checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 after:border-r-2 
 										after:w-2 after:h-3"> 
-										<p class="ml-[10px] text-[14px]">Дошкольное образование</p>
+										<p class="ml-2.5 text-sm">Дошкольное образование</p>
 										</label>
 									</div>
-									<div class="checkbox mt-[10px]">
+									<div class="checkbox mt-2.5">
 										<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md relative 
 										checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 after:border-r-2 
 										after:w-2 after:h-3"> 
-										<p class="ml-[10px] text-[14px]">Преподаватель ВУЗа</p>
+										<p class="ml-2.5 text-sm">Преподаватель ВУЗа</p>
 										</label>
 									</div>
-									<div class="checkbox mt-[10px]">
+									<div class="checkbox mt-2.5">
 										<label class="flex">
 											<input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md relative checked:border-0 
 											checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 after:border-r-2 after:w-2 
-											after:h-3"><p class="ml-[10px] text-[14px]">ТИПО</p> 
+											after:h-3"><p class="ml-2.5 text-sm">ТИПО</p> 
 										</label>
 									</div>
+									
 								</div>
 							</div>
 		
 		
-							<div class="documents mt-[8px] bg-white rounded-[8px]">
-								<div class="faq-head text-[#151515] py-[29px] px-[21px] relative text-[24px] leading-[1.3] font-medium flex flex-col justify-between cursor-pointer rounded-[2px] border-none flex aezakmi">
+							<div class="documents mt-2 bg-white rounded-lg">
+								<div class="faq-head text-[#151515] py-7 px-5 relative text-2xl leading-[1.3] font-medium flex flex-col justify-between cursor-pointer rounded-sm border-none flex aezakmi">
 									<p class="font-semibold text-base">Стоимость</p>
-									<div class="button  absolute w-[24px] h-[24px] top-[50%] right-[0] transform -translate-x-1/2 -translate-y-1/2 rotate-0 rounded-[50%] cursor-pointer z-100 transition-all duration-[400ms] before:content-[''] before:absolute before:top-[50%] before:left-[50%] before:transform before:-translate-x-1/2 before:-translate-y-1/2
-									before:h-[50%] before:w-[2px] before:bg-[#B5BAC3]
-									after:content-[''] after:absolute after:top-[50%] after:left-[50%] after:transform after:-translate-x-1/2 after:-translate-y-1/2
-									after:h-[2px] after:w-[50%] after:bg-[#B5BAC3]"></div>
+									<div class="button  absolute w-6 h-6 top-1/2 right-0 transform -translate-x-1/2 -translate-y-1/2 rotate-0 rounded-[50%] cursor-pointer z-100 transition-all duration-[400ms] before:content-[''] before:absolute before:top-1/2 before:left-1/2 before:transform before:-translate-x-1/2 before:-translate-y-1/2
+									before:h-1/2 before:w-0.5 before:bg-[#B5BAC3]
+									after:content-[''] after:absolute after:top-1/2 after:left-1/2 after:transform after:-translate-x-1/2 after:-translate-y-1/2
+									after:h-0.5 after:w-1/2 after:bg-[#B5BAC3]"></div>
 								</div>
-								<div class="faq-content hidden text-[#444444] p-[20px] pt-[25px] pb-[30px]">
+								<div class="faq-content hidden text-[#444444] p-3.5  pb-7 font-normal text-base leading-[1.5]">
 									<div class="checkbox">
 										<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 
 										rounded-md relative checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block 
-										after:rotate-45 after:border-white after:border-b-2 after:border-r-2 after:w-2 after:h-3"> <p class="ml-[10px] text-[14px]">Руководитель</p>
+										after:rotate-45 after:border-white after:border-b-2 after:border-r-2 after:w-2 after:h-3"> <p class="ml-2.5 text-sm">Руководитель</p>
 									</label>
 									</div>
-									<div class="checkbox mt-[10px]">
+									<div class="checkbox mt-2.5">
 										<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md 
 										relative checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white 
 										after:border-b-2 after:border-r-2 after:w-2 after:h-3"> 
-										<p class="ml-[10px] text-[14px]">Учитель предметник</p>
+										<p class="ml-2.5 text-sm">Учитель предметник</p>
 										</label>
 									</div>
-									<div class="checkbox mt-[10px]">
+									<div class="checkbox mt-2.5">
 										<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md 
 										relative checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 
 										after:border-r-2 after:w-2 after:h-3"> 
-										<p class="ml-[10px] text-[14px]">Психолог</p>
+										<p class="ml-2.5 text-sm">Психолог</p>
 										</label>
 									</div>
-									<div class="checkbox mt-[10px]">
+									<div class="checkbox mt-2.5">
 										<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md relative 
 										checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 after:border-r-2 
 										after:w-2 after:h-3"> 
-										<p class="ml-[10px] text-[14px]">Дошкольное образование</p>
+										<p class="ml-2.5 text-sm">Дошкольное образование</p>
 										</label>
 									</div>
-									<div class="checkbox mt-[10px]">
+									<div class="checkbox mt-2.5">
 										<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md relative 
 										checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 after:border-r-2 
 										after:w-2 after:h-3"> 
-										<p class="ml-[10px] text-[14px]">Преподаватель ВУЗа</p>
+										<p class="ml-2.5 text-sm">Преподаватель ВУЗа</p>
 										</label>
 									</div>
-									<div class="checkbox mt-[10px]">
+									<div class="checkbox mt-2.5">
 										<label class="flex">
 											<input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md relative checked:border-0 
 											checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 after:border-r-2 after:w-2 
-											after:h-3"><p class="ml-[10px] text-[14px]">ТИПО</p> 
+											after:h-3"><p class="ml-2.5 text-sm">ТИПО</p> 
 										</label>
 									</div>
+									
 								</div>
 							</div>
 		
 		
 							</div>
 					</div>
-					<div class="filter_contents sm: w-full md:w-[90%] md:mt-[30px] lg:w-[72%] lg:mt-0 lg:w-[75%]">
-						<div class="first-zag sm: mt-[30px] md:mt-0 ml-[20px]  flex justify-between">
+					<div class="filter_contents sm: w-full md:w-[90%] md:mt-5 lg:w-[79%] xl:w-3/4 lg:mt-0">
+						<div class="first-zag sm: mt-7 md:mt-0 ml-5 flex justify-between">
 							<p class="text-2xl font-semibold">Развитие предметных компетенций</p>
 							<a href="" class="flex items-center justify-between">
 								<span class="text-sm sm: hidden md:block" style="color:#0288D1">Больше курсов</span>
@@ -1097,14 +1258,14 @@
 		
 						<div class="info_block sec bg-[#EDF0FF] flex flex-col mt-10">
 								
-							<div class="course-block1 sm: flex-col sm: min-h-[551px] sm: items-end md:flex-row md:min-h-[310px] md:items-start bg-[#EDF0FF] py-[49px] px-[73px] flex justify-between relative">
+							<div class="course-block1 sm: flex-col sm: min-h-[551px] sm: items-end md:flex-row md:min-h-[310px] md:items-start bg-[#EDF0FF] py-12 px-16 flex justify-between relative">
 								<div class="course-txt">
-									<p class="tex sm: w-full sm: text-[20px] text-[#000] md:w-[467px] md:text-[24px] font-bold">Курс исследовательская деятельность педагога:
+									<p class="tex sm: w-full sm: text-xl text-[#000] md:w-[467px] md:text-2xl font-bold">Курс исследовательская деятельность педагога:
 										<span class="text-[#19B2DD]">Lesson Study и Action Research</span>
 									</p>
 								  
 									<div class="info_zap flex items-start mt-5">
-										<a href="" class="group flex  bg-[#19B2DD] border-[2px] border-[#19B2DD] rounded-lg py-[11.5px] px-[17.5px] hover:bg-white hover:transition-all hover:duration-[500ms]">
+										<a href="" class="group flex bg-[#19B2DD] border-2 border-[#19B2DD] rounded-lg py-[11.5px] px-[17.5px] hover:bg-white hover:transition-all hover:duration-[500ms]">
 											<p class="text-white group-hover:text-[#19B2DD]">Записаться</p>
 											<svg class="ml-2" width="27" h	eight="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path class="group-hover:fill-[#19B2DD]" d="M5.59375 12.6875H3.96875V14.3125H5.59375V12.6875Z" fill="white"/>
@@ -1114,11 +1275,11 @@
 									</div>
 								</div>
 
-								<div class="course-img bottom-[-50px] right-[50px] absolute">
+								<div class="course-img -bottom-12 right-12 absolute">
 									<img src="images/Man Top.svg" alt="">
 								</div>
 
-								<div class="ic-img absolute right-[22px] top-[26px]">
+								<div class="ic-img absolute right-5 top-6">
 									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path d="M1 1L23 23" stroke="black"/>
 										<path d="M1 22.9999L23 0.999877" stroke="black"/>
@@ -1130,14 +1291,14 @@
 							<div class="course-block2 bg-white rounded-lg shadow-md">
 								<div class="format-course flex flex-col items-center justify-center mt-11">
 									<div class="format-title">
-										<p class="sm: w-[271px] sm: text-center md:w-full text-[24px] font-bold text-[#000] leading-[180%]"><span class="text-[#19B2DD]">Формат</span> курса</p>
+										<p class="sm: w-[271px] sm: text-center md:w-full text-2xl font-bold text-[#000] leading-[180%]"><span class="text-[#19B2DD]">Формат</span> курса</p>
 									</div>
 									<div class="format-txt sm: w-[90%] md:w-[568px] text-base font-normal text-center mt-5">
 										<p class="sm: w-full">Вы имеете возможность применять полученные знания <br> непосредственно в процессе обучения!</p>
 									</div>
-									<div class="format-date sm: flex-wrap sm: !justify-center sm: w-[90%] md:w-[471px] shadow-[0_4px_20px_0_rgba(112,126,255,0.20)] rounded-lg bg-white py-[24px] px-[28px] flex justify-between items-center mt-5">
-										<div class="format-icon py-[2px] px-[15px] flex items-center border-r">
-											<p class="text-[15px] text-[#161616] font-medium">Онлайн</p>
+									<div class="format-date sm: flex-wrap sm: !justify-center sm: w-[90%] md:w-[471px] shadow-[0_4px_20px_0_rgba(112,126,255,0.20)] rounded-lg bg-white py-6 px-7 flex justify-between items-center mt-5">
+										<div class="format-icon py-0.5 px-3.5 flex items-center border-r">
+											<p class="text-sm text-[#161616] font-medium">Онлайн</p>
 											<svg class="ml-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<g clip-path="url(#clip0_1378_3844)">
 												<path d="M12 15.5C13.0511 15.5016 14.0842 15.2472 15.011 14.762L15.5424 15.6123C14.4559 16.1957 13.2392 16.5019 12.0008 16.5L11.9992 16.5C10.7608 16.5019 9.54411 16.1957 8.45757 15.6123L8.989 14.762C9.91584 15.2472 10.9489 15.5016 12 15.5ZM12 15.5C11.9997 15.5 11.9995 15.5 11.9992 15.5L12 15L12.0008 15.5C12.0005 15.5 12.0003 15.5 12 15.5ZM19.4419 8.06264L19.4972 8.50002H19.938H21C21.3978 8.50002 21.7794 8.65806 22.0607 8.93936C22.342 9.22067 22.5 9.6022 22.5 10V14C22.5 14.3978 22.342 14.7794 22.0607 15.0607C21.7794 15.342 21.3978 15.5 21 15.5H19.938H19.4971L19.4419 15.9375C19.2134 17.75 18.3312 19.4167 16.961 20.625C15.7163 21.7226 14.1466 22.3734 12.5 22.4833V21.4808C14.041 21.3619 15.4956 20.6968 16.5962 19.5962C17.8152 18.3772 18.5 16.7239 18.5 15V9.00002C18.5 7.27611 17.8152 5.62282 16.5962 4.40383C15.3772 3.18484 13.7239 2.50002 12 2.50002C10.2761 2.50002 8.62279 3.18484 7.40381 4.40383C6.18482 5.62282 5.5 7.27611 5.5 9.00002V15.5H3C2.60218 15.5 2.22064 15.342 1.93934 15.0607C1.65804 14.7794 1.5 14.3978 1.5 14V10C1.5 9.6022 1.65804 9.22067 1.93934 8.93936C2.22064 8.65806 2.60218 8.50002 3 8.50002H4.062H4.50285L4.55806 8.06264C4.78684 6.25034 5.66908 4.58381 7.03925 3.37574C8.40941 2.16767 10.1733 1.5011 12 1.5011C13.8267 1.5011 15.5906 2.16767 16.9608 3.37574C18.3309 4.58381 19.2132 6.25034 19.4419 8.06264ZM3 9.50002H2.5V10V14V14.5H3H4H4.5V14V10V9.50002H4H3ZM20 9.50002H19.5V10V14V14.5H20H21H21.5V14V10V9.50002H21H20Z" fill="#19B2DD" stroke="#6DDB30"/>
@@ -1150,16 +1311,16 @@
 											</svg>
 												
 										</div>
-										<div class="format-icon sm: border-r-transparent  md:border-r-[#DDD] py-[2px] px-[15px] flex items-center border-r">
-											<p class="text-[15px] text-[#161616] font-medium">80 часов</p>
+										<div class="format-icon sm: border-r-transparent  md:border-r-[#DDD] py-0.5 px-3.5 flex items-center border-r">
+											<p class="text-sm text-[#161616] font-medium">80 часов</p>
 											<svg class="ml-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M12 8V12L15 15M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#6DDB30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 											</svg>
 												
 												
 										</div>
-										<div class="format-icon sm: mt-[10px] md:mt-0 py-[2px] px-[15px] flex items-center">
-											<p class="text-[15px] text-[#161616] font-medium">12 вебинаров</p>
+										<div class="format-icon sm: mt-2.5 md:mt-0 py-0.5 px-3.5 flex items-center">
+											<p class="text-sm text-[#161616] font-medium">12 вебинаров</p>
 											<svg class="ml-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<g clip-path="url(#clip0_1378_3858)">
 												<path d="M4.00001 16H20V5H4.00001V16ZM13 18V20H17V22H7.00001V20H11V18H2.99201C2.8607 17.9992 2.73083 17.9725 2.60985 17.9215C2.48887 17.8704 2.37916 17.7959 2.287 17.7024C2.19485 17.6088 2.12206 17.498 2.07281 17.3763C2.02356 17.2546 1.99882 17.1243 2.00001 16.993V4.007C2.00001 3.451 2.45501 3 2.99201 3H21.008C21.556 3 22 3.449 22 4.007V16.993C22 17.549 21.545 18 21.008 18H13Z" fill="#6DDB30"/>
@@ -1178,17 +1339,17 @@
 
 								<div class="for-course flex flex-col items-center justify-center mt-11">
 									<div class="format-title">
-										<p class="sm: w-[271px] sm: text-center md:w-full text-[24px] font-bold text-[#000] leading-[180%]"><span class="text-[#19B2DD]">Для кого</span> предназначен курс?</p>
+										<p class="sm: w-[271px] sm: text-center md:w-full text-2xl font-bold text-[#000] leading-[180%]"><span class="text-[#19B2DD]">Для кого</span> предназначен курс?</p>
 									</div>
 
-									<div class="for-course-block sm: w-[90%] sm: flex-col-reverse sm: min-h-[476px] sm: !items-end sm: pb-[31px]
-									bg-[#F6F6F6] md:w-[90%] md:flex-row rounded-[20px] md:min-h-[218px] py-[30px] px-[33px] flex justify-between md:!items-center mt-10
-									lg:mr-[20px] lg:ml-[20px]">
-										<div class="for-course-img sm: scale-1 sm: relative sm: top-[30px] md:scale-[1.4] md:relative md:top-[5px] md:left-[10px] lg:scale-[1.29] lg:relative lg:left-[30px] mt-[-10px] ">
+									<div class="for-course-block sm: w-[90%] sm: flex-col-reverse sm: min-h-[476px] sm: !items-end sm: pb-8
+									bg-[#F6F6F6] md:w-[90%] md:flex-row rounded-[20px] md:min-h-[218px] py-7 px-8 flex justify-between md:!items-center mt-10
+									lg:mr-5 lg:ml-5">
+										<div class="for-course-img sm: scale-1 sm: relative sm: top-7 md:scale-[1.4] md:relative md:top-1 md:left-2.5 lg:scale-[1.29] lg:relative lg:left-7 -mt-2.5 ">
 											<img class="" src="images/Girl L.png" alt="">
 										</div>
 
-										<div class="for-course-text sm: !w-full ml-8 flex flex-col md:!w-2/3 md:relative md:left-[15px] lg:ml-[90px]">
+										<div class="for-course-text sm: !w-full ml-8 flex flex-col md:!w-2/3 md:relative md:left-3.5 lg:ml-24">
 											<div class="for-course-icon flex items-start">
 												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 													<g clip-path="url(#clip0_1378_3897)">
@@ -1200,7 +1361,7 @@
 													</clipPath>
 													</defs>
 												</svg>
-												<p class="ml-2 w-[297px] lg:w-full">Стремящихся улучшить обучение своих учеников</p>    
+												<p class="ml-2 lg:w-full">Стремящихся улучшить обучение своих учеников</p>    
 											</div>
 
 											<div class="for-course-icon flex items-start mt-2">
@@ -1214,7 +1375,7 @@
 													</clipPath>
 													</defs>
 												</svg>
-												<p class="ml-2 w-[297px] lg:w-full">Интересующихся исследованиями</p>    
+												<p class="ml-2 lg:w-full">Интересующихся исследованиями</p>    
 											</div>
 
 											<div class="for-course-icon flex items-start mt-2">
@@ -1228,7 +1389,7 @@
 													</clipPath>
 													</defs>
 												</svg>
-												<p class="ml-2 w-[297px] lg:w-full">Желающих профессионально развиватьсячерез исследования</p>    
+												<p class="ml-2 lg:w-full">Желающих профессионально развиватьсячерез исследования</p>    
 											</div>
 
 											
@@ -1237,68 +1398,68 @@
 								</div>
 
 								<div class="format-title flex items-center justify-center mt-8">
-									<p class="sm: w-[271px] sm: text-center md:w-full text-[24px] font-bold text-[#000] leading-[180%]"><span class="text-[#19B2DD]">Чему</span> вы научитесь?</p>
+									<p class="sm: w-64 sm: text-center md:w-full text-2xl font-bold text-[#000] leading-[180%]"><span class="text-[#19B2DD]">Чему</span> вы научитесь?</p>
 								</div>
 								
-								<div class="more-icons sm: w-full sm: pr-[34px] sm: pl-[34px] xl:w-[850px] mx-auto md:pl-[54px] md:pr-[54px] flex flex-wrap mt-5 lg:w-full xl:justify-between">
+								<div class="more-icons sm: w-full sm: pr-8 sm: pl-8 xl:w-[850px] mx-auto md:pl-14 md:pr-14 flex flex-wrap mt-5 lg:w-full xl:justify-between">
 									<div class="for-course-icon flex items-start mt-2">
 										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<path d="M5 13L9 17L19 7" stroke="#6DDB30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 										</svg> 
-										<p class="ml-2 sm: w-full md:w-full xl:w-[297px]">Определять проблему в практике преподаванияи формулировать вопрос исследования</p>    
+										<p class="ml-2 sm: w-full md:w-full xl:w-72">Определять проблему в практике преподаванияи формулировать вопрос исследования</p>    
 									</div>
 									<div class="for-course-icon flex items-start mt-2">
 										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<path d="M5 13L9 17L19 7" stroke="#6DDB30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 										</svg>
-										<p class="ml-2 sm: w-full md:w-full xl:w-[297px]">Проводить наблюдение урока с помощью различных методов</p>    
+										<p class="ml-2 sm: w-full md:w-full xl:w-72">Проводить наблюдение урока с помощью различных методов</p>    
 									</div>
 									<div class="for-course-icon flex items-start mt-2">
 										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<path d="M5 13L9 17L19 7" stroke="#6DDB30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 										</svg>
-										<p class="ml-2 sm: w-full md:w-full lg:w-[297px]">Составлять план Action Research исследуемого вопроса</p>    
+										<p class="ml-2 sm: w-full md:w-full lg:w-72">Составлять план Action Research исследуемого вопроса</p>    
 									</div>
 									<div class="for-course-icon flex items-start mt-2">
 										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<path d="M5 13L9 17L19 7" stroke="#6DDB30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 										</svg>
-										<p class="ml-2 sm: w-full md:w-full xl:w-[297px]">Составлять рефлексивный анализ практики преподавания на основе полученных данных</p>    
-									</div>
-
-									<div class="for-course-icon flex items-start mt-2">
-										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M5 13L9 17L19 7" stroke="#6DDB30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-										</svg>
-										<p class="ml-2 sm: w-full md:w-full xl:w-[332px]">Собирать и анализировать результаты проведённого исследования</p>    
+										<p class="ml-2 sm: w-full md:w-full xl:w-72">Составлять рефлексивный анализ практики преподавания на основе полученных данных</p>    
 									</div>
 
 									<div class="for-course-icon flex items-start mt-2">
 										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<path d="M5 13L9 17L19 7" stroke="#6DDB30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 										</svg>
-										<p class="ml-2 sm: w-full md:w-full xl:w-[297px]">Совместно с коллегами конструктивно обсуждать урок</p>    
+										<p class="ml-2 sm: w-full md:w-full xl:w-80">Собирать и анализировать результаты проведённого исследования</p>    
+									</div>
+
+									<div class="for-course-icon flex items-start mt-2">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M5 13L9 17L19 7" stroke="#6DDB30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+										<p class="ml-2 sm: w-full md:w-full xl:w-72">Совместно с коллегами конструктивно обсуждать урок</p>    
 									</div>
 									<div class="for-course-icon flex items-start mt-2">
 										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<path d="M5 13L9 17L19 7" stroke="#6DDB30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 										</svg>
-										<p class="ml-2 sm: w-full md:w-full xl:w-[297px]">Планировать этапы Lesson Study</p>    
+										<p class="ml-2 sm: w-full md:w-full xl:w-72">Планировать этапы Lesson Study</p>    
 									</div>
 									
 								</div>
 
 								<div class="for-course flex flex-col items-center justify-center mt-11">
 									<div class="format-title">
-										<p class="sm: w-[271px] sm: text-center md:w-full text-[24px] font-bold text-[#000] leading-[180%]"><span class="text-[#19B2DD]">Содержание</span> курса</p>
+										<p class="sm: w-full sm: text-center md:w-full text-2xl font-bold text-[#000] leading-[180%]"><span class="text-[#19B2DD]">Содержание</span> курса</p>
 									</div>
 
-									<div class="for-course-block sm: w-[90%] sm: flex-col-reverse sm: min-h-[476px] sm: !items-end sm: pb-[31px] bg-[#F6F6F6] rounded-[20px] md:min-h-[218px] py-[30px] 
-									px-[33px] md:w-[90%] md:flex-row md:!items-center bg-[#EDF0FF] pt-[50px] h-auto flex 
-									justify-between items-center mt-10 lg:mr-[20px] lg:ml-[20px]">
+									<div class="for-course-block sm: w-[90%] sm: flex-col-reverse sm: min-h-[476px] sm: !items-end sm: pb-8 bg-[#F6F6F6] rounded-[20px] md:min-h-[218px] py-7 
+									px-8 md:w-[90%] md:flex-row md:!items-center bg-[#EDF0FF] pt-12 h-auto flex 
+									justify-between items-center mt-10 lg:mr-5 lg:ml-5">
 										
 
-										<div class="for-course-text sm: !w-full sm: mt-[50px] flex flex-col md:!w-2/3 md:mt-0">
+										<div class="for-course-text sm: !w-full sm: mt-12 flex flex-col md:!w-2/3 md:mt-0">
 											<div class="for-course-icon flex items-start">
 												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 													<g clip-path="url(#clip0_1378_12246)">
@@ -1354,17 +1515,17 @@
 											
 										</div>
 
-										<div class="for-course-img sm: scale-1 md:scale-[1.13] mt-[-10px]">
+										<div class="for-course-img sm: scale-1 md:scale-[1.13] -mt-2.5">
 											<img class="sm: relative sm: top-[30px] md:top-0" src="images/Group 1809.png" alt="">
 										</div>
 									</div>
 								</div>
 
 								<div class="format-title flex items-center justify-center mt-8">
-									<p class="sm: w-[271px] sm: text-center md:w-full text-[24px] font-bold text-[#000] leading-[180%]"><span class="text-[#19B2DD]">Тренеры</span> курса</p>
+									<p class="sm: w-full sm: text-center md:w-full text-2xl font-bold text-[#000] leading-[180%]"><span class="text-[#19B2DD]">Тренеры</span> курса</p>
 								</div>
 								
-								<div class="more-icons sm: w-full sm: pr-[34px] sm: pl-[34px] xl:w-[850px] mx-auto md:pl-[54px] exp flex flex-col mt-5 w-[660px]">
+								<div class="more-icons sm: w-full sm: pr-8 sm: pl-8 xl:w-[850px] mx-auto md:pl-14 exp flex flex-col mt-5 w-[660px]">
 									<div class="for-course-icon flex w-full items-start mt-2">
 										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<path d="M5 13L9 17L19 7" stroke="#6DDB30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -1392,10 +1553,10 @@
 									
 								</div>
 
-								<div class="trainers sm: flex-col md:flex-row mt-10 flex justify-center items-center rounded-lg pb-[32px]
-								lg:mr-[20px] lg:ml-[20px]">
-									<div class="trainer-info sm: w-[90%] md:w-[48%] md:ml-[10px] border border-[#E5E8EC] p-[20px] rounded-lg flex flex-col items-center">
-										<div class="trainer-user bg-[#F6F6F6] rounded-lg py-[14px] px-[14px] flex items-center">
+								<div class="trainers sm: flex-col md:flex-row mt-10 flex justify-center items-center rounded-lg pb-8
+								lg:mr-5 lg:ml-5">
+									<div class="trainer-info sm: w-[90%] md:w-[48%] md:ml-2.5 border border-[#E5E8EC] p-5 rounded-lg flex flex-col items-center">
+										<div class="trainer-user bg-[#F6F6F6] rounded-lg py-3.5 px-3.5 flex items-center">
 											<img src="images/e472a8a51db5d797e4b32445472dcc93 2 (3).png" alt="">
 											<p class="ml-5">Айман Ракымжановна <br>
 											Старший менеджер филиала <br> 
@@ -1405,7 +1566,7 @@
 											<span class="font-bold text-2xl text-[#19B2DD]">27.03-07.04</span>
 											<p class="font-bold text-base">на казахском языке</p>
 											<div class="info_zap flex items-start mt-5">
-												<a href="" class="group flex  bg-[#19B2DD] border-[2px] border-[#19B2DD] rounded-lg py-[11.5px] px-[17.5px] hover:bg-white hover:transition-all hover:duration-[500ms]">
+												<a href="" class="group flex bg-[#19B2DD] border-2 border-[#19B2DD] rounded-lg py-[11.5px] px-[17.5px] hover:bg-white hover:transition-all hover:duration-[500ms]">
 													<p class="text-white group-hover:text-[#19B2DD]">Записаться</p>
 													<svg class="ml-2" width="27" h	eight="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
 														<path class="group-hover:fill-[#19B2DD]" d="M5.59375 12.6875H3.96875V14.3125H5.59375V12.6875Z" fill="white"/>
@@ -1417,8 +1578,8 @@
 										</div>
 									</div>
 
-									<div class="trainer-info sm: w-[90%] md:w-[48%] md:mr-[10px] sm: !ml-0 sm: mt-[30px] md:!ml-8 md:mt-0 border border-[#E5E8EC] p-[20px] rounded-lg flex flex-col items-center ml-8">
-										<div class="trainer-user bg-[#F6F6F6] rounded-lg py-[14px] px-[14px] flex items-center">
+									<div class="trainer-info sm: w-[90%] md:w-[48%] md:mr-2.5 sm: !ml-0 sm: mt-7 md:!ml-8 md:mt-0 border border-[#E5E8EC] p-5 rounded-lg flex flex-col items-center ml-8">
+										<div class="trainer-user bg-[#F6F6F6] rounded-lg py-3.5 px-3.5 flex items-center">
 											<img src="images/e472a8a51db5d797e4b32445472dcc93 2 (4).png" alt="">
 											<p class="ml-5">Айман Ракымжановна <br>
 											Старший менеджер филиала <br> 
@@ -1428,7 +1589,7 @@
 											<span class="font-bold text-2xl text-[#19B2DD]">03.04-14.04</span>
 											<p class="font-bold text-base">на русском языке</p>
 											<div class="info_zap flex items-start mt-5">
-												<a href="" class="group flex  bg-[#19B2DD] border-[2px] border-[#19B2DD] rounded-lg py-[11.5px] px-[17.5px] hover:bg-white hover:transition-all hover:duration-[500ms]">
+												<a href="" class="group flex bg-[#19B2DD] border-2 border-[#19B2DD] rounded-lg py-[11.5px] px-[17.5px] hover:bg-white hover:transition-all hover:duration-500">
 													<p class="text-white group-hover:text-[#19B2DD]">Записаться</p>
 													<svg class="ml-2" width="27" h	eight="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
 														<path class="group-hover:fill-[#19B2DD]" d="M5.59375 12.6875H3.96875V14.3125H5.59375V12.6875Z" fill="white"/>
@@ -1467,153 +1628,176 @@
 				</div>
 
 				<div id="resources" class="hidden flex justify-between flex-wrap" role="tabpanel" aria-labelledby="resources-tab">
-					<div class="filter sm: hidden md:block md:w-[90%] w-[25%] mt-8 lg:w-[22%]">
-						<div class="faq-items mt-[40px] w-[271px] rounded-[8px] w-full">
-							<div class="documents mt-[8px] bg-white rounded-[8px]">
-								<div class="faq-head text-[#151515] py-[29px] px-[21px] relative text-[24px] leading-[1.3] font-medium flex flex-col justify-between cursor-pointer rounded-[2px] border-none flex aezakmi">
+					<div class="filter sm: hidden md:block md:w-[90%] w-1/4 lg:w-[19%] xl:w-[22%]">
+						<div class="faq-items w-[271px] rounded-lg w-full">
+							<div class="documents mt-2 bg-white rounded-lg">
+								<div class="faq-head text-[#151515] py-7 px-5 relative text-2xl leading-[1.3] font-medium flex flex-col justify-between cursor-pointer rounded-sm border-none flex aezakmi">
 									<p class="font-semibold text-base">Сортировать</p>
-									<div class="button  absolute w-[24px] h-[24px] top-[50%] right-[0] transform -translate-x-1/2 -translate-y-1/2 rotate-0 rounded-[50%] cursor-pointer z-100 transition-all duration-[400ms] before:content-[''] before:absolute before:top-[50%] before:left-[50%] before:transform before:-translate-x-1/2 before:-translate-y-1/2
-									before:h-[50%] before:w-[2px] before:bg-[#B5BAC3]
-									after:content-[''] after:absolute after:top-[50%] after:left-[50%] after:transform after:-translate-x-1/2 after:-translate-y-1/2
-									after:h-[2px] after:w-[50%] after:bg-[#B5BAC3]"></div>
+									<div class="button  absolute w-6 h-6 top-1/2 right-0 transform -translate-x-1/2 -translate-y-1/2 rotate-0 rounded-[50%] cursor-pointer z-100 transition-all duration-[400ms] before:content-[''] before:absolute before:top-1/2 before:left-1/2 before:transform before:-translate-x-1/2 before:-translate-y-1/2
+									before:h-1/2 before:w-0.5 before:bg-[#B5BAC3]
+									after:content-[''] after:absolute after:top-1/2 after:left-1/2 after:transform after:-translate-x-1/2 after:-translate-y-1/2
+									after:h-0.5 after:w-1/2 after:bg-[#B5BAC3]"></div>
 								</div>
-								<div class="faq-content hidden text-[#444444] p-[20px] pt-[25px] pb-[30px]">
+								<div class="faq-content hidden text-[#444444] p-3.5  pb-7 font-normal text-base leading-[1.5]">
 									<div class="checkbox">
 										<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 
 										rounded-md relative checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block 
-										after:rotate-45 after:border-white after:border-b-2 after:border-r-2 after:w-2 after:h-3"> <p class="ml-[10px] text-[14px]">Руководитель</p>
+										after:rotate-45 after:border-white after:border-b-2 after:border-r-2 after:w-2 after:h-3"> <p class="ml-2.5 text-sm">Руководитель</p>
 									</label>
 									</div>
-									<div class="checkbox mt-[10px]">
+									<div class="checkbox mt-2.5">
 										<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md 
 										relative checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white 
 										after:border-b-2 after:border-r-2 after:w-2 after:h-3"> 
-										<p class="ml-[10px] text-[14px]">Учитель предметник</p>
+										<p class="ml-2.5 text-sm">Учитель предметник</p>
 										</label>
 									</div>
-									<div class="checkbox mt-[10px]">
+									<div class="checkbox mt-2.5">
 										<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md 
 										relative checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 
 										after:border-r-2 after:w-2 after:h-3"> 
-										<p class="ml-[10px] text-[14px]">Психолог</p>
+										<p class="ml-2.5 text-sm">Психолог</p>
 										</label>
 									</div>
-									<div class="checkbox mt-[10px]">
+									<div class="checkbox mt-2.5">
 										<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md relative 
 										checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 after:border-r-2 
 										after:w-2 after:h-3"> 
-										<p class="ml-[10px] text-[14px]">Дошкольное образование</p>
+										<p class="ml-2.5 text-sm">Дошкольное образование</p>
 										</label>
 									</div>
-									<div class="checkbox mt-[10px]">
+									<div class="checkbox mt-2.5">
 										<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md relative 
 										checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 after:border-r-2 
 										after:w-2 after:h-3"> 
-										<p class="ml-[10px] text-[14px]">Преподаватель ВУЗа</p>
+										<p class="ml-2.5 text-sm">Преподаватель ВУЗа</p>
 										</label>
 									</div>
-									<div class="checkbox mt-[10px]">
+									<div class="checkbox mt-2.5">
 										<label class="flex">
 											<input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md relative checked:border-0 
 											checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 after:border-r-2 after:w-2 
-											after:h-3"><p class="ml-[10px] text-[14px]">ТИПО</p> 
+											after:h-3"><p class="ml-2.5 text-sm">ТИПО</p> 
 										</label>
 									</div>
+									
 								</div>
 							</div>
 						
-							<div class="documents mt-[8px] bg-white rounded-[8px]">
-								<div class="faq-head text-[#151515] py-[29px] px-[21px] relative text-[24px] leading-[1.3] font-medium flex flex-col justify-between cursor-pointer rounded-[2px] border-none flex aezakmi">
+							<div class="documents mt-2 bg-white rounded-lg">
+								<div class="faq-head text-[#151515] py-7 px-5 relative text-2xl leading-[1.3] font-medium flex flex-col justify-between cursor-pointer rounded-sm border-none flex aezakmi">
 									<p class="font-semibold text-base">Фильтр по цене</p>
-									<div class="button  absolute w-[24px] h-[24px] top-[50%] right-[0] transform -translate-x-1/2 -translate-y-1/2 rotate-0 rounded-[50%] cursor-pointer z-100 transition-all duration-[400ms] before:content-[''] before:absolute before:top-[50%] before:left-[50%] before:transform before:-translate-x-1/2 before:-translate-y-1/2
-									before:h-[50%] before:w-[2px] before:bg-[#B5BAC3]
-									after:content-[''] after:absolute after:top-[50%] after:left-[50%] after:transform after:-translate-x-1/2 after:-translate-y-1/2
-									after:h-[2px] after:w-[50%] after:bg-[#B5BAC3]"></div>
+									<div class="button  absolute w-6 h-6 top-1/2 right-0 transform -translate-x-1/2 -translate-y-1/2 rotate-0 rounded-[50%] cursor-pointer z-100 transition-all duration-[400ms] before:content-[''] before:absolute before:top-1/2 before:left-1/2 before:transform before:-translate-x-1/2 before:-translate-y-1/2
+									before:h-1/2 before:w-0.5 before:bg-[#B5BAC3]
+									after:content-[''] after:absolute after:top-1/2 after:left-1/2 after:transform after:-translate-x-1/2 after:-translate-y-1/2
+									after:h-0.5 after:w-1/2 after:bg-[#B5BAC3]"></div>
 								</div>
-								<div class="faq-content hidden text-[#444444] p-[20px] pt-[25px] pb-[30px]">
-									<div class="range_container flex flex-col w-[80%] m-[100px]">
-										<div class="sliders_control relative min-h-[50px]">
-										   <input id="fromSlider" type="range" value="10" min="0" max="100"/>
-										   <input id="toSlider" type="range" value="30" min="0" max="100"/>
-										</div>
-										<div class="form_control text-[#635a5a] relative flex justify-between text-2xl">
-										  <div class="form_control_container">
-											  <div class="form_control_container__time">Min</div>
-											  <input class="form_control_container__time__input w-[50px] h-[30px] text-xl border-none" type="number" id="fromInput" value="10" min="0" max="100"/>
+								<div class="faq-content hidden text-[#444444] p-5  pb-7">
+									<div class="h-[10vh] flex justify-center items-center">
+										<div x-data="range()" x-init="mintrigger(); maxtrigger()" class="relative max-w-xl w-full">
+										  <div>
+											<input type="range" step="100" x-bind:min="min" x-bind:max="max" x-on:input="mintrigger" x-model="minprice" class="absolute pointer-events-none appearance-none z-20 h-2 w-full opacity-0 cursor-pointer">
+									  
+											<input type="range" step="100" x-bind:min="min" x-bind:max="max" x-on:input="maxtrigger" x-model="maxprice" class="absolute pointer-events-none appearance-none z-20 h-2 w-full opacity-0 cursor-pointer">
+									  
+											<div class="relative z-10 h-2">
+									  
+											  <div class="absolute z-10 left-0 right-0 bottom-0 top-0 rounded-md bg-gray-200"></div>
+									  
+											  <div class="absolute z-20 top-0 bottom-0 rounded-md bg-[#67BA39]" x-bind:style="'right:'+maxthumb+'%; left:'+minthumb+'%'"></div>
+									  
+											  <div class="absolute z-30 w-6 h-6 top-0 left-0 bg-[#67BA39] rounded-full -mt-2" x-bind:style="'left: '+minthumb+'%'"></div>
+									  
+											  <div class="absolute z-30 w-6 h-6 top-0 right-0 bg-[#67BA39] rounded-full -mt-2" x-bind:style="'right: '+maxthumb+'%'"></div>
+									  
 											</div>
-											<div class="form_control_container">
-											  <div class="form_control_container__time">Max</div>
-											  <input class="form_control_container__time__input w-[50px] h-[30px] text-xl border-none" type="number" id="toInput" value="30" min="0" max="100"/>
+									  
+										  </div>
+									  
+											<div class="flex items-center justify-between pt-5 space-x-4 text-sm text-gray-700">
+											  <div>
+												<input type="text" maxlength="5" x-on:input.debounce="mintrigger" x-model="minprice"
+												  wire:model.debounce.300="minPrice"
+												  class="w-24 px-3 py-2 text-center border-none focus:border-yellow-400 focus:outline-none">
+											  </div>
+											  <div>
+												<input type="text" maxlength="5" x-on:input.debounce.300="maxtrigger" x-model="maxprice"
+												  wire:model.debounce="maxPrice"
+												  class="w-24 px-3 py-2 text-center border-none focus:border-yellow-400 focus:outline-none">
+											  </div>
 											</div>
+									  
 										</div>
-									</div>
+									 
+									  </div>
 								</div>
 							</div>
-		
-							<div class="documents mt-[8px] bg-white rounded-[8px]">
-								<div class="faq-head text-[#151515] py-[29px] px-[21px] relative text-[24px] leading-[1.3] font-medium flex flex-col justify-between cursor-pointer rounded-[2px] border-none flex aezakmi">
+				
+							<div class="documents mt-2 bg-white rounded-lg">
+								<div class="faq-head text-[#151515] py-7 px-5 relative text-2xl leading-[1.3] font-medium flex flex-col justify-between cursor-pointer rounded-sm border-none flex aezakmi">
 									<p class="font-semibold text-base">Категории</p>
-									<div class="button  absolute w-[24px] h-[24px] top-[50%] right-[0] transform -translate-x-1/2 -translate-y-1/2 rotate-0 rounded-[50%] cursor-pointer z-100 transition-all duration-[400ms] before:content-[''] before:absolute before:top-[50%] before:left-[50%] before:transform before:-translate-x-1/2 before:-translate-y-1/2
-									before:h-[50%] before:w-[2px] before:bg-[#B5BAC3]
-									after:content-[''] after:absolute after:top-[50%] after:left-[50%] after:transform after:-translate-x-1/2 after:-translate-y-1/2
-									after:h-[2px] after:w-[50%] after:bg-[#B5BAC3]"></div>
+									<div class="button  absolute w-6 h-6 top-1/2 right-0 transform -translate-x-1/2 -translate-y-1/2 rotate-0 rounded-[50%] cursor-pointer z-100 transition-all duration-[400ms] before:content-[''] before:absolute before:top-1/2 before:left-1/2 before:transform before:-translate-x-1/2 before:-translate-y-1/2
+									before:h-1/2 before:w-0.5 before:bg-[#B5BAC3]
+									after:content-[''] after:absolute after:top-1/2 after:left-1/2 after:transform after:-translate-x-1/2 after:-translate-y-1/2
+									after:h-0.5 after:w-1/2 after:bg-[#B5BAC3]"></div>
 								</div>
-								<div class="faq-content hidden text-[#444444] p-[20px] pt-[25px] pb-[30px]">
+								<div class="faq-content hidden text-[#444444] p-3.5  pb-7 font-normal text-base leading-[1.5]">
 									<div class="checkbox">
 										<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 
 										rounded-md relative checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block 
-										after:rotate-45 after:border-white after:border-b-2 after:border-r-2 after:w-2 after:h-3"> <p class="ml-[10px] text-[14px]">Руководитель</p>
+										after:rotate-45 after:border-white after:border-b-2 after:border-r-2 after:w-2 after:h-3"> <p class="ml-2.5 text-sm">Руководитель</p>
 									</label>
 									</div>
-									<div class="checkbox mt-[10px]">
+									<div class="checkbox mt-2.5">
 										<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md 
 										relative checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white 
 										after:border-b-2 after:border-r-2 after:w-2 after:h-3"> 
-										<p class="ml-[10px] text-[14px]">Учитель предметник</p>
+										<p class="ml-2.5 text-sm">Учитель предметник</p>
 										</label>
 									</div>
-									<div class="checkbox mt-[10px]">
+									<div class="checkbox mt-2.5">
 										<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md 
 										relative checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 
 										after:border-r-2 after:w-2 after:h-3"> 
-										<p class="ml-[10px] text-[14px]">Психолог</p>
+										<p class="ml-2.5 text-sm">Психолог</p>
 										</label>
 									</div>
-									<div class="checkbox mt-[10px]">
+									<div class="checkbox mt-2.5">
 										<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md relative 
 										checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 after:border-r-2 
 										after:w-2 after:h-3"> 
-										<p class="ml-[10px] text-[14px]">Дошкольное образование</p>
+										<p class="ml-2.5 text-sm">Дошкольное образование</p>
 										</label>
 									</div>
-									<div class="checkbox mt-[10px]">
+									<div class="checkbox mt-2.5">
 										<label class="flex"><input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md relative 
 										checked:border-0 checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 after:border-r-2 
 										after:w-2 after:h-3"> 
-										<p class="ml-[10px] text-[14px]">Преподаватель ВУЗа</p>
+										<p class="ml-2.5 text-sm">Преподаватель ВУЗа</p>
 										</label>
 									</div>
-									<div class="checkbox mt-[10px]">
+									<div class="checkbox mt-2.5">
 										<label class="flex">
 											<input type="checkbox" name="a" class="align-bottom appearance-none w-6 h-6 bg-white border-gray-300 border-2 rounded-md relative checked:border-0 
 											checked:bg-lime-500 after:relative after:top-1 after:left-2 after:block after:rotate-45 after:border-white after:border-b-2 after:border-r-2 after:w-2 
-											after:h-3"><p class="ml-[10px] text-[14px]">ТИПО</p> 
+											after:h-3"><p class="ml-2.5 text-sm">ТИПО</p> 
 										</label>
 									</div>
+									
 								</div>
 							</div>
 		
 		
 							</div>
 					</div>
-					<div class="filter_contents md:w-[90%] md:mt-[30px] lg:w-[72%] lg:mt-0 flex flex-wrap justify-between lg:w-[75%]">
-						<div class="info_block sm: w-full shadow-[0_4px_20px_0_rgba(24,41,189,0.13)] mt-[10px] rounded-[8px] bg-white md:w-[45%] lg:w-[32%] flex flex-col bg-white p-5 mt-10">
+					<div class="filter_contents md:w-[90%] md:mt-7 lg:w-3/4 lg:mt-0 flex flex-wrap justify-between lg:w-3/4">
+						<div class="info_block sm: w-full shadow-[0_4px_20px_0_rgba(24,41,189,0.13)] mt-2.5 rounded-lg bg-white md:w-[45%] lg:w-[32%] flex flex-col bg-white p-5 mt-10">
 							<div class="course-img">
 								<img class="w-full" src="images/Subtract.png" alt="">
 							</div>
 
 							<div class="course-title mt-5">
-								<p class="sm: w-full md:w-[241px] text-[#000] text-base font-semibold lg:w-full">Десять шагов Исследования в действии</p>
+								<p class="sm: w-full md:w-60 text-[#000] text-base font-semibold lg:w-full">Десять шагов Исследования в действии</p>
 							</div>
 							
 							<div class="course-price mt-5">
@@ -1621,8 +1805,8 @@
 							</div>
 
 							<div class="course-button mt-5">
-								<div class="info_zap sm: mt-[20px] md:mt-0 flex items-start">
-									<a href="" class="group sm: text-[14px] sm: items-center flex bg-[#19B2DD] text-[#19B2DD] border-[2px] border-[#19B2DD] text-white rounded-lg py-[12px] px-[18px] hover:bg-[#fff] hover:transition-all hover:duration-[500ms]">
+								<div class="info_zap sm: mt-5 md:mt-0 flex items-start">
+									<a href="" class="group sm: text-sm sm: items-center flex bg-[#19B2DD] text-[#19B2DD] border-[2px] border-[#19B2DD] text-white rounded-lg py-3 px-4 hover:bg-[#fff] hover:transition-all hover:duration-500">
 										<p class="text-white group-hover:text-[#19B2DD]">В корзину</p>
 										<svg class="ml-2" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<path class="group-hover:fill-[#19B2DD]" d="M5.59375 12.6875H3.96875V14.3125H5.59375V12.6875Z" fill="white"/>
@@ -1634,13 +1818,13 @@
 							
 						</div>
 
-						<div class="info_block sm: w-full shadow-[0_4px_20px_0_rgba(24,41,189,0.13)] mt-[10px] rounded-[8px] bg-white md:w-[45%] lg:w-[32%] flex flex-col bg-white p-5 mt-10">
+						<div class="info_block sm: w-full shadow-[0_4px_20px_0_rgba(24,41,189,0.13)] mt-2.5 rounded-lg bg-white md:w-[45%] lg:w-[32%] flex flex-col bg-white p-5 mt-10">
 							<div class="course-img">
 								<img class="w-full" src="images/Обложка (1).png" alt="">
 							</div>
 
 							<div class="course-title mt-5">
-								<p class="sm: w-full md:w-[241px] text-[#000] text-base font-semibold lg:w-full">Учить, воспитывать, любить: год детей в Казахстане</p>
+								<p class="sm: w-full md:w-60 text-[#000] text-base font-semibold lg:w-full">Учить, воспитывать, любить: год детей в Казахстане</p>
 							</div>
 							
 							<div class="course-price mt-5">
@@ -1648,8 +1832,8 @@
 							</div>
 
 							<div class="course-button mt-5">
-								<div class="info_zap sm: mt-[20px] md:mt-0 flex items-start">
-									<a href="" class="group sm: text-[14px] sm: items-center flex bg-[#19B2DD] text-[#19B2DD] border-[2px] border-[#19B2DD] text-white rounded-lg py-[12px] px-[18px] hover:bg-[#fff] hover:transition-all hover:duration-[500ms]">
+								<div class="info_zap sm: mt-5 md:mt-0 flex items-start">
+									<a href="" class="group sm: text-[14px] sm: items-center flex bg-[#19B2DD] text-[#19B2DD] border-2 border-[#19B2DD] text-white rounded-lg py-3 px-4 hover:bg-[#fff] hover:transition-all hover:duration-500">
 										<p class="text-white group-hover:text-[#19B2DD]">В корзину</p>
 										<svg class="ml-2" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<path class="group-hover:fill-[#19B2DD]" d="M5.59375 12.6875H3.96875V14.3125H5.59375V12.6875Z" fill="white"/>
@@ -1661,13 +1845,13 @@
 							
 						</div>
 
-						<div class="info_block sm: w-full shadow-[0_4px_20px_0_rgba(24,41,189,0.13)] mt-[10px] rounded-[8px] bg-white md:w-[45%] lg:w-[32%] flex flex-col bg-white p-5 mt-10">
+						<div class="info_block sm: w-full shadow-[0_4px_20px_0_rgba(24,41,189,0.13)] mt-2.5 rounded-lg bg-white md:w-[45%] lg:w-[32%] flex flex-col bg-white p-5 mt-10">
 							<div class="course-img">
 								<img class="w-full" src="images/обложка.png" alt="">
 							</div>
 
 							<div class="course-title mt-5">
-								<p class="sm: w-full md:w-[241px] text-[#000] text-base font-semibold lg:w-full">Цифровое образование</p>
+								<p class="sm: w-full md:w-60 text-[#000] text-base font-semibold lg:w-full">Цифровое образование</p>
 							</div>
 							
 							<div class="course-price mt-5">
@@ -1675,8 +1859,8 @@
 							</div>
 
 							<div class="course-button mt-5">
-								<div class="info_zap sm: mt-[20px] md:mt-0 flex items-start">
-									<a href="" class="group sm: text-[14px] sm: items-center flex bg-[#19B2DD] text-[#19B2DD] border-[2px] border-[#19B2DD] text-white rounded-lg py-[12px] px-[18px] hover:bg-[#fff] hover:transition-all hover:duration-[500ms]">
+								<div class="info_zap sm: mt-5 md:mt-0 flex items-start">
+									<a href="" class="group sm: text-sm sm: items-center flex bg-[#19B2DD] text-[#19B2DD] border-2 border-[#19B2DD] text-white rounded-lg py-3 px-4 hover:bg-[#fff] hover:transition-all hover:duration-500">
 										<p class="text-white group-hover:text-[#19B2DD]">В корзину</p>
 										<svg class="ml-2" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<path class="group-hover:fill-[#19B2DD]" d="M5.59375 12.6875H3.96875V14.3125H5.59375V12.6875Z" fill="white"/>
@@ -1688,13 +1872,13 @@
 							
 						</div>
 
-						<div class="info_block sm: w-full shadow-[0_4px_20px_0_rgba(24,41,189,0.13)] mt-[10px] rounded-[8px] bg-white md:w-[45%] lg:w-[32%] flex flex-col bg-white p-5 mt-10">
+						<div class="info_block sm: w-full shadow-[0_4px_20px_0_rgba(24,41,189,0.13)] mt-2.5 rounded-lg bg-white md:w-[45%] lg:w-[32%] flex flex-col bg-white p-5 mt-10">
 							<div class="course-img">
-								<img class="w-full" src="images/Обложка-№3.png" alt="">
+								<img class="w-full" src="images/Обложка (1).png" alt="">
 							</div>
 
 							<div class="course-title mt-5">
-								<p class="sm: w-full md:w-[241px] text-[#000] text-base font-semibold lg:w-full">Учить, воспитывать, любить: год детей в Казахстане</p>
+								<p class="sm: w-full md:w-60 text-[#000] text-base font-semibold lg:w-full">Учить, воспитывать, любить: год детей в Казахстане</p>
 							</div>
 							
 							<div class="course-price mt-5">
@@ -1702,8 +1886,8 @@
 							</div>
 
 							<div class="course-button mt-5">
-								<div class="info_zap sm: mt-[20px] md:mt-0 flex items-start">
-									<a href="" class="group sm: text-[14px] sm: items-center flex bg-[#19B2DD] text-[#19B2DD] border-[2px] border-[#19B2DD] text-white rounded-lg py-[12px] px-[18px] hover:bg-[#fff] hover:transition-all hover:duration-[500ms]">
+								<div class="info_zap sm: mt-5 md:mt-0 flex items-start">
+									<a href="" class="group sm: text-[14px] sm: items-center flex bg-[#19B2DD] text-[#19B2DD] border-2 border-[#19B2DD] text-white rounded-lg py-3 px-4 hover:bg-[#fff] hover:transition-all hover:duration-500">
 										<p class="text-white group-hover:text-[#19B2DD]">В корзину</p>
 										<svg class="ml-2" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<path class="group-hover:fill-[#19B2DD]" d="M5.59375 12.6875H3.96875V14.3125H5.59375V12.6875Z" fill="white"/>
@@ -1715,13 +1899,13 @@
 							
 						</div>
 
-						<div class="info_block sm: w-full shadow-[0_4px_20px_0_rgba(24,41,189,0.13)] mt-[10px] rounded-[8px] bg-white md:w-[45%] lg:w-[32%] flex flex-col bg-white p-5 mt-10">
+						<div class="info_block sm: w-full shadow-[0_4px_20px_0_rgba(24,41,189,0.13)] mt-2.5 rounded-lg bg-white md:w-[45%] lg:w-[32%] flex flex-col bg-white p-5 mt-10">
 							<div class="course-img">
 								<img class="w-full" src="images/Subtract.png" alt="">
 							</div>
 
 							<div class="course-title mt-5">
-								<p class="sm: w-full md:w-[241px] text-[#000] text-base font-semibold lg:w-full">Десять шагов Исследования в действии</p>
+								<p class="sm: w-full md:w-60 text-[#000] text-base font-semibold lg:w-full">Десять шагов Исследования в действии</p>
 							</div>
 							
 							<div class="course-price mt-5">
@@ -1729,8 +1913,8 @@
 							</div>
 
 							<div class="course-button mt-5">
-								<div class="info_zap sm: mt-[20px] md:mt-0 flex items-start">
-									<a href="" class="group sm: text-[14px] sm: items-center flex bg-[#19B2DD] text-[#19B2DD] border-[2px] border-[#19B2DD] text-white rounded-lg py-[12px] px-[18px] hover:bg-[#fff] hover:transition-all hover:duration-[500ms]">
+								<div class="info_zap sm: mt-5 md:mt-0 flex items-start">
+									<a href="" class="group sm: text-sm sm: items-center flex bg-[#19B2DD] text-[#19B2DD] border-[2px] border-[#19B2DD] text-white rounded-lg py-3 px-4 hover:bg-[#fff] hover:transition-all hover:duration-500">
 										<p class="text-white group-hover:text-[#19B2DD]">В корзину</p>
 										<svg class="ml-2" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<path class="group-hover:fill-[#19B2DD]" d="M5.59375 12.6875H3.96875V14.3125H5.59375V12.6875Z" fill="white"/>
@@ -1742,13 +1926,13 @@
 							
 						</div>
 
-						<div class="info_block sm: w-full shadow-[0_4px_20px_0_rgba(24,41,189,0.13)] mt-[10px] rounded-[8px] bg-white md:w-[45%] lg:w-[32%] flex flex-col bg-white p-5 mt-10">
+						<div class="info_block sm: w-full shadow-[0_4px_20px_0_rgba(24,41,189,0.13)] mt-2.5 rounded-lg bg-white md:w-[45%] lg:w-[32%] flex flex-col bg-white p-5 mt-10">
 							<div class="course-img">
 								<img class="w-full" src="images/Subtract.png" alt="">
 							</div>
 
 							<div class="course-title mt-5">
-								<p class="sm: w-full md:w-[241px] text-[#000] text-base font-semibold lg:w-full">Десять шагов Исследования в действии</p>
+								<p class="sm: w-full md:w-60 text-[#000] text-base font-semibold lg:w-full">Десять шагов Исследования в действии</p>
 							</div>
 							
 							<div class="course-price mt-5">
@@ -1756,8 +1940,8 @@
 							</div>
 
 							<div class="course-button mt-5">
-								<div class="info_zap sm: mt-[20px] md:mt-0 flex items-start">
-									<a href="" class="group sm: text-[14px] sm: items-center flex bg-[#19B2DD] text-[#19B2DD] border-[2px] border-[#19B2DD] text-white rounded-lg py-[12px] px-[18px] hover:bg-[#fff] hover:transition-all hover:duration-[500ms]">
+								<div class="info_zap sm: mt-5 md:mt-0 flex items-start">
+									<a href="" class="group sm: text-sm sm: items-center flex bg-[#19B2DD] text-[#19B2DD] border-[2px] border-[#19B2DD] text-white rounded-lg py-3 px-4 hover:bg-[#fff] hover:transition-all hover:duration-500">
 										<p class="text-white group-hover:text-[#19B2DD]">В корзину</p>
 										<svg class="ml-2" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<path class="group-hover:fill-[#19B2DD]" d="M5.59375 12.6875H3.96875V14.3125H5.59375V12.6875Z" fill="white"/>
@@ -1769,13 +1953,13 @@
 							
 						</div>
 
-						<div class="info_block sm: w-full shadow-[0_4px_20px_0_rgba(24,41,189,0.13)] mt-[10px] rounded-[8px] bg-white md:w-[45%] lg:w-[32%] flex flex-col bg-white p-5 mt-10">
+						<div class="info_block sm: w-full shadow-[0_4px_20px_0_rgba(24,41,189,0.13)] mt-2.5 rounded-lg bg-white md:w-[45%] lg:w-[32%] flex flex-col bg-white p-5 mt-10">
 							<div class="course-img">
 								<img class="w-full" src="images/Subtract.png" alt="">
 							</div>
 
 							<div class="course-title mt-5">
-								<p class="sm: w-full md:w-[241px] text-[#000] text-base font-semibold lg:w-full">Десять шагов Исследования в действии</p>
+								<p class="sm: w-full md:w-60 text-[#000] text-base font-semibold lg:w-full">Десять шагов Исследования в действии</p>
 							</div>
 							
 							<div class="course-price mt-5">
@@ -1783,8 +1967,8 @@
 							</div>
 
 							<div class="course-button mt-5">
-								<div class="info_zap sm: mt-[20px] md:mt-0 flex items-start">
-									<a href="" class="group sm: text-[14px] sm: items-center flex bg-[#19B2DD] text-[#19B2DD] border-[2px] border-[#19B2DD] text-white rounded-lg py-[12px] px-[18px] hover:bg-[#fff] hover:transition-all hover:duration-[500ms]">
+								<div class="info_zap sm: mt-5 md:mt-0 flex items-start">
+									<a href="" class="group sm: text-sm sm: items-center flex bg-[#19B2DD] text-[#19B2DD] border-[2px] border-[#19B2DD] text-white rounded-lg py-3 px-4 hover:bg-[#fff] hover:transition-all hover:duration-500">
 										<p class="text-white group-hover:text-[#19B2DD]">В корзину</p>
 										<svg class="ml-2" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<path class="group-hover:fill-[#19B2DD]" d="M5.59375 12.6875H3.96875V14.3125H5.59375V12.6875Z" fill="white"/>
@@ -1819,7 +2003,7 @@
 
 
 	<div class="block4">
-		<div class="container md:w-full md: p-[0_15px] lg:w-[1170px] mx-auto ">
+		<div class="container sm: px-3.5 sm: py-0 md:w-full md:px-3.5 md:py-0 lg:w-[1170px] mx-auto ">
 			<div class="simple_title flex items-center justify-center mt-16">
 				<h1 class="text-2xl font-semibold">Наши партнеры</h1>
 			</div>
@@ -1918,11 +2102,11 @@
 	  
 		  
 
-	<footer class="bg-gray-900 mt-10 pt-16 pb-16">
-		<div class="container md:w-full md: p-[0_15px] lg:w-[1170px] mx-auto ">
+	<footer class="bg-gray-900 mt-10 pt-7 pb-7">
+		<div class="container sm: px-3.5 sm: py-0 md:w-full md:px-3.5 md:py-0 lg:w-[1170px] mx-auto ">
 			<div class="contacts_wrap flex flex-wrap items-start justify-between">
 				<div class="contacts sm: !w-full flex flex-wrap justify-between lg:!w-3/5">
-					<div class="contact sm: !w-[50%] md:!w-[40%] flex items-start w-[182px] mt-2">
+					<div class="contact sm: !w-1/2 md:!w-2/5 flex items-start w-44 mt-2">
 						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<g id="Icon/Outline/phone">
 							<path id="Icon" d="M2.5 4.16667C2.5 3.24619 3.24619 2.5 4.16667 2.5H6.89937C7.25806 2.5 7.57651 2.72953 7.68994 3.06981L8.93811 6.81434C9.06926 7.20777 8.89115 7.63776 8.52022 7.82322L6.63917 8.76375C7.55771 10.801 9.19898 12.4423 11.2363 13.3608L12.1768 11.4798C12.3622 11.1088 12.7922 10.9307 13.1857 11.0619L16.9302 12.3101C17.2705 12.4235 17.5 12.7419 17.5 13.1006V15.8333C17.5 16.7538 16.7538 17.5 15.8333 17.5H15C8.09644 17.5 2.5 11.9036 2.5 5V4.16667Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -1931,12 +2115,12 @@
 
 						<div class="cont_txt flex flex-col ml-2">
 							<p class="text-white text-base">Телефон:</p>
-							<a class="mt-5 text-[15px] text-[#A6A6A6]" href="tel:+7 775 776 55 99">+7 775 776 55 99</a>
+							<a class="mt-5 text-sm text-[#A6A6A6]" href="tel:+7 775 776 55 99">+7 775 776 55 99</a>
 						</div>
 							
 					</div>
 
-					<div class="contact sm: !w-[50%] md:!w-[40%] flex items-start w-[182px] mt-2">
+					<div class="contact sm: !w-1/2 md:!w-2/5 flex items-start w-44 mt-2">
 						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M14.7142 13.8807C13.9867 14.6083 12.5191 16.0758 11.4136 17.1813C10.6325 17.9624 9.36775 17.9623 8.5867 17.1813C7.50109 16.0957 6.06062 14.6552 5.28612 13.8807C2.68262 11.2772 2.68262 7.05612 5.28612 4.45262C7.88961 1.84913 12.1107 1.84913 14.7142 4.45262C17.3177 7.05612 17.3177 11.2772 14.7142 13.8807Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 							<path d="M12.5002 9.16667C12.5002 10.5474 11.3809 11.6667 10.0002 11.6667C8.61945 11.6667 7.50016 10.5474 7.50016 9.16667C7.50016 7.78596 8.61945 6.66667 10.0002 6.66667C11.3809 6.66667 12.5002 7.78596 12.5002 9.16667Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -1945,12 +2129,12 @@
 
 						<div class="cont_txt flex flex-col ml-2">
 							<p class="text-white text-base">Адрес:</p>
-							<a class="mt-5 text-[15px] text-[#A6A6A6]" href="">г. Астана улица Хусейн бен Талал 21/1</a>
+							<a class="mt-5 text-sm text-[#A6A6A6]" href="">г. Астана улица Хусейн бен Талал 21/1</a>
 						</div>
 							
 					</div>
 
-					<div class="contact sm: !w-[50%] md:!w-[40%] flex items-start w-[182px] mt-2">
+					<div class="contact sm: !w-1/2 md:!w-2/5 flex items-start w-44 mt-2">
 						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<g id="Icon/Outline/phone">
 							<path id="Icon" d="M2.5 4.16667C2.5 3.24619 3.24619 2.5 4.16667 2.5H6.89937C7.25806 2.5 7.57651 2.72953 7.68994 3.06981L8.93811 6.81434C9.06926 7.20777 8.89115 7.63776 8.52022 7.82322L6.63917 8.76375C7.55771 10.801 9.19898 12.4423 11.2363 13.3608L12.1768 11.4798C12.3622 11.1088 12.7922 10.9307 13.1857 11.0619L16.9302 12.3101C17.2705 12.4235 17.5 12.7419 17.5 13.1006V15.8333C17.5 16.7538 16.7538 17.5 15.8333 17.5H15C8.09644 17.5 2.5 11.9036 2.5 5V4.16667Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -1959,12 +2143,12 @@
 
 						<div class="cont_txt flex flex-col ml-2">
 							<p class="text-white text-base">Техническая поддержка:</p>
-							<a class="mt-5 text-[15px] text-[#A6A6A6]" href="tel:+7 775 776 55 99">+7 775 776 55 99</a>
+							<a class="mt-5 text-sm text-[#A6A6A6]" href="tel:+7 775 776 55 99">+7 775 776 55 99</a>
 						</div>
 							
 					</div>
 
-					<div class="contact sm: !w-[50%] md:!w-[40%] flex items-start w-[182px] mt-3">
+					<div class="contact sm: !w-1/2 md:!w-2/5 flex items-start w-44 mt-3">
 						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<g clip-path="url(#clip0_1378_3112)">
 							<path d="M6.39545 16.1961L6.39512 16.1959L5.97309 15.9493L4.17566 16.4398L3.33205 16.6701L3.56154 15.8263L4.05075 14.0275L3.80472 13.6054L6.39545 16.1961ZM6.39545 16.1961C7.48937 16.8341 8.7335 17.1691 9.99985 17.1667M6.39545 16.1961L9.99985 17.1667M8.826 11.2985C8.73748 11.2205 8.64981 11.1346 8.57427 11.0606C8.55035 11.0372 8.52764 11.0149 8.50651 10.9945L8.50562 10.9936C8.12853 10.6273 7.81464 10.2341 7.57726 9.83888L6.89777 6.59844L6.90801 6.61867L6.90775 6.6188C6.90268 6.62135 6.87869 6.63341 6.78126 6.72543C6.72808 6.77598 6.69853 6.81444 6.64927 6.87858C6.63905 6.89188 6.62798 6.9063 6.61567 6.92216C6.3765 7.2343 6.24782 7.61703 6.24982 8.01023C6.2567 8.34647 6.33441 8.67749 6.4779 8.98168L6.4813 8.9889L6.48125 8.98893C6.79246 9.67695 7.31433 10.4238 8.01991 11.1254L8.02007 11.1256C8.0499 11.1553 8.07906 11.1844 8.10771 11.2131C8.25721 11.3625 8.39291 11.4981 8.53859 11.6264C9.39333 12.3789 10.4107 12.9232 11.5108 13.2166M8.826 11.2985C8.82589 11.2984 8.82579 11.2983 8.82568 11.2982L9.15652 10.9233L8.826 11.2985ZM8.826 11.2985C9.25517 11.6772 9.74085 11.9859 10.2646 12.2148L10.2718 12.218L10.2762 12.2197M10.2762 12.2197C10.2945 12.2277 10.3118 12.2354 10.3301 12.2434C10.3699 12.261 10.4142 12.2805 10.4825 12.3098L10.4857 12.3111C10.5529 12.3393 10.6291 12.3671 10.7117 12.3887L10.7148 12.3895C10.8667 12.4282 11.0267 12.4209 11.1745 12.3686L11.1745 12.3686C11.3174 12.3179 11.4427 12.2274 11.5356 12.1078M10.2762 12.2197C10.274 12.2187 10.2717 12.2178 10.2695 12.2168L10.4092 11.8956L10.469 11.7583L10.2833 12.2225L10.2791 12.2209L10.2762 12.2197ZM11.5356 12.1078C11.8328 11.7478 11.9925 11.5591 12.0773 11.4616C12.0903 11.4467 12.1011 11.4343 12.1101 11.4242M11.5356 12.1078C11.5336 12.1102 11.5316 12.1126 11.5296 12.115L11.443 12.0435L11.5356 12.1078ZM12.1101 11.4242C12.3274 11.5231 12.5973 11.643 12.8173 11.7401C12.936 11.7924 13.0407 11.8384 13.1158 11.8713L13.2043 11.91L13.2282 11.9205L13.2342 11.9231L13.2319 11.922L13.4365 11.4658M12.1101 11.4242C12.1159 11.4177 12.1209 11.412 12.1252 11.4072L12.1484 11.3856C12.1444 11.3893 12.1402 11.3926 12.1358 11.3956C12.1411 11.3898 12.1445 11.3861 12.1466 11.384C12.1466 11.384 12.1467 11.3839 12.1467 11.3839C12.1506 11.3799 12.1437 11.3874 12.1305 11.3989C12.1248 11.4021 12.1189 11.4048 12.1126 11.4069C12.105 11.4095 12.0971 11.4111 12.0892 11.4117C12.0886 11.4118 12.088 11.4118 12.0874 11.4119C12.0836 11.4108 12.0782 11.4091 12.0718 11.4065C12.07 11.4058 12.068 11.405 12.066 11.4041L12.0738 11.3866L12.0921 11.3457L12.0938 11.3418L12.0983 11.3319L12.2375 11.02H12.3073V11.0183V10.9646C12.752 11.1673 13.4365 11.4658 13.4365 11.4658M12.1101 11.4242C12.1094 11.4239 12.1087 11.4236 12.108 11.4233L13.9215 11.6833M13.4365 11.4658L13.2366 11.9241L13.2366 11.9241L13.2365 11.9241L13.2361 11.9239L13.2345 11.9232L13.5799 12.0781M13.4365 11.4658L13.9215 11.6833M13.5799 12.0781C13.5783 12.1002 13.576 12.1258 13.5726 12.1554M13.5799 12.0781C13.5819 12.0509 13.5827 12.0289 13.5829 12.0114C13.5834 11.98 13.5822 11.9582 13.5807 11.934L13.5803 11.9261L13.58 11.9182C13.5802 11.9236 13.5805 11.9288 13.5809 11.9339C13.5865 12.0095 13.6161 12.0557 13.6288 12.0729C13.6438 12.0931 13.6665 12.1155 13.7053 12.1342L13.8078 11.9204L13.812 11.9117L13.9215 11.6833M13.5799 12.0781L13.7169 12.1395L13.8154 11.9199L13.8192 11.9115L13.9215 11.6833M13.5726 12.1554C13.5492 12.3432 13.4938 12.5422 13.4613 12.61L13.9123 12.8258L13.4616 12.6094C13.4402 12.6539 13.4118 12.6948 13.3775 12.7303L13.3753 12.7327C13.3124 12.7987 13.2436 12.8587 13.1697 12.9121L13.1696 12.912L13.1618 12.9179C13.1357 12.9376 13.1091 12.9567 13.0822 12.9754M13.5726 12.1554C13.5726 12.1548 13.5727 12.1542 13.5728 12.1537L14.069 12.215L13.5724 12.1573C13.5724 12.1567 13.5725 12.156 13.5726 12.1554ZM13.0822 12.9754C12.9935 13.0314 12.9024 13.0835 12.8093 13.1317L12.8093 13.1317L12.8045 13.1342C12.6546 13.2139 12.4891 13.2596 12.3196 13.2681L12.3179 13.2682C12.293 13.2696 12.2693 13.2709 12.2465 13.2722C12.1218 13.2792 12.0248 13.2847 11.9284 13.2808M13.0822 12.9754C13.0849 12.9737 13.0876 12.972 13.0903 12.9703L13.3582 13.3925M13.0822 12.9754C13.0797 12.9772 13.0771 12.979 13.0745 12.9807L13.3582 13.3925M11.9284 13.2808L11.8799 13.2735L11.7186 13.2488L11.5578 13.2239L11.5108 13.2166M11.9284 13.2808L11.9324 13.2814L11.9446 13.2832C11.9458 13.2834 11.9448 13.2832 11.9427 13.2829L11.9341 13.2819L11.9219 13.2808L11.9216 13.2808C11.92 13.2806 11.9153 13.2802 11.9084 13.2799M11.9284 13.2808C11.9217 13.2805 11.915 13.2802 11.9084 13.2799M11.5108 13.2166C11.519 13.2188 11.5272 13.221 11.5354 13.2231L11.4082 13.7067L11.4849 13.2126L11.485 13.2126L11.485 13.2126L11.4853 13.2126L11.4863 13.2128L11.4901 13.2134L11.5049 13.2157L11.5108 13.2166ZM11.9084 13.2799C11.9013 13.2795 11.8919 13.2792 11.8815 13.2792H11.8949L11.9084 13.2799ZM13.3582 13.3925C13.3934 13.3682 13.4282 13.3432 13.4623 13.3175L11.8815 13.7792C12.0144 13.7863 12.1467 13.7787 12.2789 13.7712C12.3009 13.7699 12.3229 13.7687 12.3448 13.7675C12.5875 13.7552 12.8245 13.6898 13.039 13.5758C13.148 13.5194 13.2545 13.4582 13.3582 13.3925ZM9.99985 17.1667C11.4173 17.1667 12.8029 16.7463 13.9814 15.9589C15.16 15.1714 16.0786 14.0521 16.621 12.7426C17.1634 11.433 17.3053 9.99204 17.0288 8.60184C16.7523 7.21165 16.0697 5.93467 15.0674 4.93239C14.0652 3.93011 12.7882 3.24756 11.398 2.97103C10.0078 2.6945 8.56682 2.83643 7.25728 3.37885C5.94775 3.92128 4.82847 4.83985 4.04098 6.0184C3.2535 7.19696 2.83318 8.58256 2.83318 9.99999C2.83318 11.2851 3.17081 12.5195 3.80454 13.6051L9.99985 17.1667ZM2.38196 17.6207L3.27897 14.3246L3.334 14.1224L3.2284 13.9414C2.53076 12.7455 2.16424 11.3853 2.16652 10.0008V9.99999C2.16652 5.67363 5.67349 2.16666 9.99985 2.16666C14.3262 2.16666 17.8332 5.67363 17.8332 9.99999C17.8332 14.3263 14.3262 17.8333 9.99985 17.8333H9.99904C8.61513 17.8356 7.25557 17.4693 6.06004 16.7722L5.87888 16.6666L5.67657 16.7218L2.38196 17.6207ZM12.0851 11.4128C12.091 11.4155 12.097 11.4182 12.103 11.421L11.9826 11.02H12.1115H12.1153H12.2367L12.0954 11.3288L12.0946 11.3305L12.0902 11.3401L12.0753 11.3727L12.0618 11.4021C12.0651 11.4037 12.0684 11.4052 12.0718 11.4067C12.0756 11.4085 12.0795 11.4103 12.0834 11.412C12.0794 11.4121 12.0753 11.412 12.0713 11.4115L12.0802 11.4125L12.0851 11.4128Z" fill="white" stroke="white"/>
@@ -1980,12 +2164,12 @@
 													
 						<div class="cont_txt flex flex-col ml-2">
 							<p class="text-white text-base">WhatsApp:</p>
-							<a class="mt-5 text-[15px] text-[#A6A6A6]" href="tel:+7 775 776 55 99">+7 775 776 55 99</a>
+							<a class="mt-5 text-sm text-[#A6A6A6]" href="tel:+7 775 776 55 99">+7 775 776 55 99</a>
 						</div>
 							
 					</div>
 
-					<div class="contact sm: !w-[50%] md:!w-[40%] flex items-start w-[182px] mt-3">
+					<div class="contact sm: !w-1/2 md:!w-2/5 flex items-start w-44 mt-3">
 						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M2.5 6.66669L9.0755 11.0504C9.63533 11.4236 10.3647 11.4236 10.9245 11.0504L17.5 6.66669M4.16667 15.8334H15.8333C16.7538 15.8334 17.5 15.0872 17.5 14.1667V5.83335C17.5 4.91288 16.7538 4.16669 15.8333 4.16669H4.16667C3.24619 4.16669 2.5 4.91288 2.5 5.83335V14.1667C2.5 15.0872 3.24619 15.8334 4.16667 15.8334Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 						</svg>
@@ -1993,12 +2177,12 @@
 
 						<div class="cont_txt flex flex-col ml-2 ">
 							<p class="text-white text-base">E-mail:</p>
-							<a class="mt-5 text-[15px] text-[#A6A6A6]" href="mailto:info@cpm.kz">info@cpm.kz</a>
+							<a class="mt-5 text-sm text-[#A6A6A6]" href="mailto:info@cpm.kz">info@cpm.kz</a>
 						</div>
 							
 					</div>
 
-					<div class="contact sm: !w-[50%] md:!w-[40%] flex items-start w-[182px] mt-3">
+					<div class="contact sm: !w-1/2 md:!w-2/5 flex items-start w-44 mt-3">
 						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M12.5 8.33333L16.2942 6.43667C16.4212 6.3732 16.5623 6.34323 16.7042 6.34962C16.846 6.35601 16.9839 6.39854 17.1047 6.47317C17.2255 6.5478 17.3252 6.65206 17.3944 6.77606C17.4636 6.90006 17.4999 7.03967 17.5 7.18167V12.8183C17.4999 12.9603 17.4636 13.0999 17.3944 13.2239C17.3252 13.3479 17.2255 13.4522 17.1047 13.5268C16.9839 13.6015 16.846 13.644 16.7042 13.6504C16.5623 13.6568 16.4212 13.6268 16.2942 13.5633L12.5 11.6667M4.16667 15H10.8333C11.2754 15 11.6993 14.8244 12.0118 14.5118C12.3244 14.1993 12.5 13.7754 12.5 13.3333V6.66667C12.5 6.22464 12.3244 5.80072 12.0118 5.48816C11.6993 5.17559 11.2754 5 10.8333 5H4.16667C3.72464 5 3.30072 5.17559 2.98816 5.48816C2.67559 5.80072 2.5 6.22464 2.5 6.66667V13.3333C2.5 13.7754 2.67559 14.1993 2.98816 14.5118C3.30072 14.8244 3.72464 15 4.16667 15Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 						</svg>
@@ -2013,14 +2197,14 @@
 					</div>
 				</div>
 
-				<div class="podpiska sm: !w-full sm: !mt-[30px] md:!mt-0 md:!w-2/6 flex flex-col mt-2">
+				<div class="podpiska sm: !w-full sm: !mt-7 md:!mt-0 md:!w-2/6 flex flex-col mt-2">
 					<p class="text-base font-semibold text-white">Подпишитесь на наши новости</p>
 					<span class="mt-5 text-base text-[#A6A6A6]">Последние новости о курсах <br> и ресурсах</span>
 					<div class="pod_input sm: !flex mt-6 flex md:flex-wrap lg:flex-wrap lg:items-start">
-						<input class="rounded-[8px] sm: w-[90%] outline-0 md:w-full lg:w-[55%] border border-[#343A47] bg-[#1D2432] placeholder-white p-[13px] text-white outline-0" type="text" placeholder="Ваш e-mail">
-						<button class="ml-5 sm: hidden md:block bg-[#184BA0] rounded-lg text-white py-[14px] 
-						px-[18px] md:ml-0 md:mt-[10px] md:w-full first lg:w-[40%] lg:ml-4 lg:mt-[0px]">Подписаться</button>
-						<button class="ml-5 bg-[#184BA0] sm: block md:hidden p-[15px_18px] rounded-lg">
+						<input class="rounded-lg sm: w-[90%] outline-0 md:w-full lg:w-[55%] border border-[#343A47] bg-[#1D2432] placeholder-white p-3 text-white outline-0" type="text" placeholder="Ваш e-mail">
+						<button class="ml-5 sm: hidden md:block bg-[#184BA0] rounded-lg text-white py-3.5 
+						px-4 md:ml-0 md:mt-2.5 md:w-full first lg:w-[40%] lg:ml-4 lg:mt-0">Подписаться</button>
+						<button class="ml-5 bg-[#184BA0] sm: block md:hidden px-3.5 py-4 rounded-lg">
 							<svg width="21" height="16" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M2.09375 7.1875H0.46875V8.8125H2.09375V7.1875Z" fill="white"/>
 							<path d="M13.0109 15.089L20.1 7.99995L13.0109 0.910889L11.8531 2.0687L16.9922 7.18745H4.09375V8.81245H16.9922L11.8531 13.9312L13.0109 15.089Z" fill="white"/>
@@ -2032,12 +2216,12 @@
 
 			<hr class="mt-7 border border-[#4B4B4B]">
 			
-			<div class="footer-social flex justify-between items-center mt-7">
+			<div class="footer-social sm: flex sm: flex-col md:flex-row justify-between items-center mt-7">
 				<div class="footer-logo">
 					<p style="color:#4B4B4B">© Edu CPM</p>
 				</div>
 
-				<div class="socials w-36 flex justify-between items-center">
+				<div class="socials sm: mt-5 md:mt-0 w-36 flex justify-between items-center">
 					<a href="">
 						<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<g clip-path="url(#clip0_1378_3155)">
