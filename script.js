@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $(".faq-head").click(function(){
 		$(this).parent().find(".faq-content").slideToggle();
-		$(this).find(".button").toggleClass("active: transform rotate-180 before:w-0");
+		$(this).find(".button").toggleClass("active: transform rotate-180 before:!w-0");
 		$(this).parent().find(".faq-head").toggleClass("december");
 		$(this).parent().find(".aezakmi").toggleClass("september");
 	});
@@ -76,8 +76,8 @@ $(document).ready(function(){
     
 
     $('.mod').click(function() {
-        $('.mod').removeClass('active: p-[10px] rounded-[10px] bg-[#0095BF] text-white');
-        $(this).addClass('active: p-[10px] rounded-[10px] bg-[#0095BF] text-white');
+        $('.mod').removeClass('active: p-2.5 rounded-lg bg-[#0095BF] text-white');
+        $(this).addClass('active: p-2.5 rounded-lg bg-[#0095BF] text-white');
     });
 
     $('.tab').click(function() {
