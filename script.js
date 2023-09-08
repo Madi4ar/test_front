@@ -63,8 +63,8 @@ $(document).ready(function(){
                      {
                       breakpoint: 575,
                       settings: {
-                          slidesToShow: 2,
-                          slidesToScroll: 2,
+                          slidesToShow: 1,
+                          slidesToScroll: 1,
                           arrow:false,
                           autoplay:true,
                       }
