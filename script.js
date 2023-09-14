@@ -6,6 +6,16 @@ $(document).ready(function(){
 		$(this).parent().find(".aezakmi").toggleClass("september");
 	});
 
+    $('a[href^="#"]').on('click', function(e) {
+        e.preventDefault();
+        
+        let href = $(this).attr('href');
+        
+        $('html, body').animate({
+            scrollTop: $(href).offset().top
+        }, 2000); 
+    });
+
     $('.info_slider').slick({
       dots: true,
       infinite: true,
