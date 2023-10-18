@@ -86,6 +86,8 @@ $(document).ready(function(){
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: true,
+        prevArrow:'.prev',
+        nextArrow:'.next',
         fade: true,
         asNavFor: '.slider-nav'
       });
@@ -121,7 +123,12 @@ $(document).ready(function(){
      })
 
       
+     document.querySelector('.box').onclick = function() {
+        let tox = document.querySelector('.tox');
+        tox.classList.toggle('group')
+     }
 
+     
         
 });
 

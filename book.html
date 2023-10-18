@@ -12,9 +12,11 @@
 	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 	<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://unpkg.com/@themesberg/flowbite@1.2.0/dist/flowbite.min.css" />
+	<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 	<script src="https://cdn.tailwindcss.com"></script>
 	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -259,20 +261,79 @@
 
 	<div class="block_book">
         <div class="container border-[#ff0000] mx-auto">
-            <div class="slider-for">
-				<div class="product1"><img src="images/2D_обложка-min__13_.webp" width="250px" height="auto" alt="product1"></div>
-				<div class="product1"><img src="images/706146efc63d659f81483a94982 1.png" width="250px" height="auto" alt="product2"></div>
-				<div class="product1"><img src="images/e472a8a51db5d797e4b32445472dcc93 2 (1).png" width="250px" height="auto" alt="product3"></div>
-				<div class="product1"><img src="images/Frame 1784.png" width="250px" height="auto" alt="product4"></div>
+			<div class="book-wrap flex items-start justify-between mt-10">
+
+			
+			<div class="book-slider w-2/4 relative">
+				<div class="slider-for flex items-center justify-center">
+					<div class="product1 !flex items-center justify-center"><a href="images/2D_обложка-min__13_.webp" data-fancybox="gallery"><img src="images/2D_обложка-min__13_.webp" width="550px" height="auto" alt="product1"></a></div>
+					<div class="product1 !flex items-center justify-center"><a href="images/02030302-min.webp" data-fancybox="gallery"><img src="images/02030302-min.webp" width="550px" height="auto" alt="product2"></a></div>
+					<div class="product1 !flex items-center justify-center"><a href="images/Shantaram_Страница_004-min.webp" data-fancybox="gallery"><img src="images/Shantaram_Страница_004-min.webp" width="550px" height="auto" alt="product3"></a></div>
+					<div class="product1 !flex items-center justify-center"><a href="images/Резервная_копия_Kelly_McGonigal__COVER-16-min.webp" data-fancybox="gallery"><img src="images/Резервная_копия_Kelly_McGonigal__COVER-16-min.webp" width="550px" height="auto" alt="product4"></a></div>
+				</div>
+
+				<ul class="flex w-full justify-between absolute top-1/3">
+					<li class="prev cursor-pointer"><i class="fa-solid fa-chevron-left"></i></li>
+					<li class="next cursor-pointer"><i class="fa-solid fa-chevron-right"></i></li>
+				</ul>
+
+				<div class="slider-nav">
+					<div class="product2"><img src="images/2D_обложка-min__13_.webp" class="cursor-pointer" width="150px" height="auto" alt="product1"></div>
+					<div class="product2"><img src="images/02030302-min.webp"  class="cursor-pointer" width="150px" height="auto" alt="product2"></div>
+					<div class="product2"><img src="images/Shantaram_Страница_004-min.webp" class="cursor-pointer" width="150px" height="auto" alt="product3"></div>
+					<div class="product2"><img src="images/Резервная_копия_Kelly_McGonigal__COVER-16-min.webp" class="cursor-pointer" width="150px" height="auto" alt="product4"></div>
+				</div>
 			</div>
 
-			<div class="slider-nav">
-				<div class="product2"><img src="images/2D_обложка-min__13_.webp" width="250px" height="auto" alt="product1"></div>
-				<div class="product2"><img src="images/706146efc63d659f81483a94982 1.png" width="250px" height="auto" alt="product2"></div>
-				<div class="product2"><img src="images/e472a8a51db5d797e4b32445472dcc93 2 (1).png" width="250px" height="auto" alt="product3"></div>
-				<div class="product2"><img src="images/Frame 1784.png" width="250px" height="auto" alt="product4"></div>
+			<div class="book-content w-5/12 mt-12">
+				<h1 class="font-bold">«Action Research»: тренердің тәлімгерлік тәжірибесінен: әдістемелік ұсыным</h1>
+				<p class="font-bold">950 ₸</p>
+				<div class="buy-book mt-3 group">
+					<button class="bg-black p-3 rounded-lg text-white flex items-center group-hover:bg-gray-200"><i class="fa-solid fa-cart-shopping text-white group-hover:text-black"></i><p class="ml-3 group-hover:text-black">В корзину</p></button>
+				</div>
+
+				<div class="description-book mt-3">
+					<h1 class="font-bold">Описание</h1>
+					<div class="text h-12 overflow-hidden transition-all duration-300">
+						<p>Бұл әдістемелік ұсынымда мұғалімдердің зерттеу құзыреттілігін арттыру мақсатында «Action Research» тәсілін мектеп тәжірибесіне енгізу жолдары қарастырылған. 
+							Әдістемелік ұсынымда «Іс-әрекеттегі зерттеу» тәсілін қолдану, мектеп тәжірибесіне ендірудің теориясы мен практикасы берілген. 
+							Мектептегі Іс-әрекеттегі зерттеу жүргізген мұғалімдердің жұмысына тренерлердің тәлімгерлік тәжірибесі ұсынылған. Тәлімгерлік жоспары мен үдерісі көрсетілген. Мұғалімдердің Іс-әрекеттегі зерттеу жұмыстарының нәтижелері көрсетілген.
+	
+							Әдістемелік ұсыным Іс-әрекеттегі зерттеу жұмыстарын жүргізетін орта мектеп мұғалімдеріне, мектеп тренерлеріне, сондай-ақ педагогикалық ЖОО және колледж студенттеріне арналған.</p>
+					</div>
+					<button class="toggle-button font-bold">Показать полностью</button>
+					</div>
+				<div class="character bg-[#f7f7f7] flex flex-wrap justify-between mt-7 p-7 rounded-lg">
+					<div class="flex flex-col w-2/5">
+						<p class="font-bold">Түпнұсқа тілі:</p>
+						<p>қазақ</p>
+					</div>
+					<div class="flex flex-col w-2/5">
+						<p class="font-bold">Басылған жылы:</p>
+						<p>2020</p>
+					</div>
+					<div class="flex flex-col w-2/5 mt-3">
+						<p class="font-bold">Баспа:</p>
+						<p>«Назарбаев Зияткерлік мектептері» ДББҰ Педагогикалық шеберлік орталығы</p>
+					</div>
+					<div class="flex flex-col w-2/5 mt-3">
+						<p class="font-bold">Рубрика:</p>
+						<p>мұғалімге көмек</p>	
+					</div>
+					<div class="flex flex-col w-2/5 mt-5">
+						<p>ISBN 978-601-328-932-8</p>
+					</div>
+					<div class="flex flex-col w-2/5 mt-5">
+						<p class="font-bold">Авторлар:</p>
+						<p>Калыкулова Ж.О., Матаева С.Р., Байдабекова Н.Т.</p>
+					</div>
+					<div class="flex flex-col w-2/5 mt-5">
+						<p>Ж.О. Калыкулова, С.Р. Матаева, Н.Т. Байдабекова. – Нұр-Сұлтан: «Назарбаев Зияткерлік мектептері» ДББҰ Педагогикалық шеберлік орталығы, 2020. – 78 б</p>
+					</div>
+				</div>
 			</div>
-        </div>
+		</div>
+        </div>             
     </div>
 
 	
@@ -443,6 +504,7 @@
 	
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<script src="https://unpkg.com/@themesberg/flowbite@1.2.0/dist/flowbite.bundle.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 	<script type="text/javascript" src="slick/slick.min.js"></script>
 	<script src="script.js"></script>
 	<script>
@@ -469,6 +531,25 @@
 			let modal = document.querySelector('.filter-hidden');
 			modal.classList.remove('open');
 		}
+
+		document.addEventListener('DOMContentLoaded', function () {
+		const toggleButton = document.querySelector('.toggle-button');
+		const textDiv = document.querySelector('.text');
+
+		let expanded = false;
+
+		toggleButton.addEventListener('click', function () {
+			if (!expanded) {
+				textDiv.style.height = 'auto';
+				toggleButton.textContent = 'Свернуть';
+			} else {
+				textDiv.style.height = '50px'; 
+				toggleButton.textContent = 'Показать полностью';
+			}
+			expanded = !expanded;
+		});
+		});
+
 		
 	</script>
 </body>
