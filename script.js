@@ -97,9 +97,26 @@ $(document).ready(function(){
         asNavFor: '.slider-for',
         dots: true,
         centerMode: true,
-        focusOnSelect: true
+        focusOnSelect: true,
       });
     
+let gallery = $('.product1 a');
+$('.product1 a').on('click', function(e) {
+  e.preventDefault();
+  let totalSlides = +$(this).parents('.slider-for').slick("getSlick").slideCount,
+      dataIndex = +$(this).parents('.product1').data('slick-index'),
+      trueIndex;
+  switch(true){
+    case (dataIndex<0):
+      trueIndex = totalSlides+dataIndex; break;
+    case (dataIndex>=totalSlides):
+      trueIndex = dataIndex%totalSlides; break;
+    default: 
+      trueIndex = dataIndex;
+  }  
+  $.fancybox.open(gallery,{}, trueIndex);
+  return false;
+});
 
     $('.mod').click(function() {
         $('.mod').removeClass('active: p-2.5 rounded-lg bg-[#0095BF] text-white');
