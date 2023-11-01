@@ -160,21 +160,40 @@
 					 </a>
 				</div>
 				<div
-					class="nav-links  justify-between duration-500  md:z-10 lg:static absolute  lg:min-h-fit min-h-[15vh] right-0 -top-full  w-full flex items-start px-5">
-					<ul class="hidden md:hidden xl:flex xl:max-w-lg font-bold uppercase flex  
-					items-start justify-between z-[1] mt-2.5 md:z-auto md:static absolute  left-0  md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] 
+					class="nav-links lg:items-start flex-col opacity-0 lg:opacity-100 absolute bg-[#19B2DD] pb-5 top-[60px] transition-all duration md:top-[62px] left-0 justify-center justify-between duration-300 md:z-10 lg:static lg:min-h-fit  w-full flex items-center  px-5">
+					
+					<div class="log w-full md:hidden lg:hidden smart flex flex-col items-center justify-center">
+						<div class="lang cursor-pointer mt-2.5">
+							<p class="text-white"> <span class="mod active: bg-[#0095BF] p-2.5 rounded-lg transition-all ease-in-out duration-500">КАЗ</span> |  <span class="mod transition-all ease-in-out duration-500">РУС</span></p>
+						</div>
+		
+						<div class="reg flex ">
+							<div class="login mt-3.5 cursor-pointer flex items-center justify-between p-4">
+								<a href="https://esus.kz/login"><p class="text-white  w-full text-center" >Профиль</p></a>				
+							</div>
+		
+							<div class="login mt-2.5 cursor-pointer flex items-center justify-between p-4">
+								<a href="https://esus.kz/register"><p class="text-white mt-1 text-center" >Выйти</p></a>									
+							</div>
+						</div>
+					
+						
+					</div>
+					
+					<ul class="flex items-center lg:items-start w-full flex-col lg:flex-row lg:w-96 lg: font-bold uppercase flex  
+					items-start justify-between z-[1] mt-[10px] md:z-auto md:static md:py-0 py-4 md:pl-0 pl-7 opacity-100  
 					transition-all ease-in duration-500">
-						<li class="mx-4 my-6 md:my-0">
-						  <a href="course.html" class="text-base hover:text-white transition-all duration-400">Каталог</a>
+						<li class="md:relative md:top-2.5 lg:py-0">
+						  <a href="course.html" class="text-base text-white lg:text-black hover:text-white transition-all duration-400">Каталог</a>
 						</li>
-						<li class="mx-4 my-6 md:my-0">
-						  <a href="#" class="text-base hover:text-white transition-all duration-400">CPM.KZ</a>
+						<li class="md:relative md:top-2.5 lg:py-0 pt-4">
+						  <a href="#" class="text-base text-white lg:text-black hover:text-white transition-all duration-400">CPM.KZ</a>
 						</li>
-						<li class="mx-4 my-6 md:my-0">
-						  <a href="#" class="text-base hover:text-white transition-all duration-400">Контакты</a>
+						<li class="md:relative md:top-2.5 lg:py-0 pt-4">
+						  <a href="#" class="text-base text-white lg:text-black hover:text-white transition-all duration-400">Контакты</a>
 						</li>
-						<li class="mx-4 my-6 md:my-0">
-							<a href="#" class="text-base hover:text-white transition-all duration-400">Мои курсы</a>
+						<li class="md:relative md:top-2.5 lg:py-0 pt-4">
+							<a href="#" class="text-base text-white lg:text-black hover:text-white transition-all duration-400">Мои курсы</a>
 						</li>
 					</ul>	
 				</div>
@@ -210,7 +229,7 @@
 
 
 				
-								<div class="login border border-white-500 rounded-3xl cursor-pointer flex items-center justify-between py-1 px-2" onclick="toggle()">
+								<div class="login border border-white-500 rounded-3xl cursor-pointer flex items-center justify-between py-1 px-2 -ml-2.5" onclick="toggle()">
 									<div class="round-image w-[35px] h-[35px] rounded-[50%] overflow-hidden flex items-center justify-center">
 										<img class="w-full h-full object-cover" src="http://10.4.1.65/storage/2023/10/19/IRcGYIAecVCJQHWSaiFXWCnMYENspZHWJoSPsdAe.jpg" alt="">
 									</div>
@@ -2327,10 +2346,21 @@
 	<script>
 		
 		const btn = document.querySelector("button.mobile-menu-button");
-		const menu = document.querySelector(".mobile-menu");
-
+		const menu = document.querySelector(".nav-links");
+		const bet = document.querySelector('.extra');
+		
 		btn.addEventListener("click", () => {
-		menu.classList.toggle("hidden");
+		menu.classList.toggle("opacity-100");
+		if (bet.classList.contains("pt-80")) {
+			bet.classList.remove("pt-80");
+		} else {
+			bet.classList.add("pt-80");
+		}
+		if (bet.classList.contains("md:pt-44")) {
+			bet.classList.remove("md:pt-44");
+		} else {
+			bet.classList.add("md:pt-44");
+		}
 		});
 			
 		function toggle() {
