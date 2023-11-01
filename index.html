@@ -153,13 +153,13 @@
 					 </a>
 				</div>
 				<div
-					class="nav-links lg:items-start flex-col hidden lg:flex absolute bg-[#19B2DD] pb-5 top-[60px] md:top-[65px] left-0 justify-center justify-between duration-500 md:z-10 lg:static lg:min-h-fit  w-full flex items-center  px-5">
+					class="nav-links lg:items-start flex-col opacity-0 lg:opacity-100 absolute bg-[#19B2DD] pb-5 top-[60px] transition-all duration md:top-[67px] left-0 justify-center justify-between duration-300 md:z-10 lg:static lg:min-h-fit  w-full flex items-center  px-5">
 					<div class="log w-full md:hidden lg:hidden smart flex flex-col items-center justify-center">
 						<div class="lang cursor-pointer mt-5">
 							<p class="text-white"> <span class="mod active: bg-[#0095BF] p-2.5 rounded-lg transition-all ease-in-out duration-500">КАЗ</span> |  <span class="mod transition-all ease-in-out duration-500">РУС</span></p>
 						</div>
 		
-						<div class="reg flex">
+						<div class="reg flex ml-12">
 							<div class="login mt-3.5 cursor-pointer flex items-center justify-between p-4">
 								<a href="https://esus.kz/login"><p class="text-white  w-full text-center" >Войти</p></a>				
 							</div>
@@ -245,36 +245,7 @@
 				
 				</nav>
 		</header>
-		<div class="hidden mobile-menu">
-			
-			<div class="log w-full md:hidden smart flex flex-col items-center justify-center">
-				<div class="lang cursor-pointer mt-2.5">
-					<p class="text-white"> <span class="mod active: bg-[#0095BF] p-2.5 rounded-lg transition-all ease-in-out duration-500">КАЗ</span> |  <span class="mod transition-all ease-in-out duration-500">РУС</span></p>
-				</div>
-
-				<div class="reg flex">
-					<div class="login mt-3.5 cursor-pointer flex items-center justify-between p-4">
-						<a href="https://esus.kz/login"><p class="text-white  w-full text-center" >Войти</p></a>				
-					</div>
-
-					<div class="login mt-2.5 cursor-pointer flex items-center justify-between p-4">
-						<a href="https://esus.kz/register"><p class="text-white mt-1 text-center" >Регистрация</p></a>									
-					</div>
-				</div>
-			
-				
-			</div>
-			
-
-			<ul class="flex flex-col items-center justify-center">
-				<li><a href="course.html" class="block text-base text-white px-2 py-4 hover:bg-green-500 transition duration-300">Каталог</a></li>
-				<li><a href="#" class="block text-base text-white px-2 py-4 hover:bg-green-500 transition duration-300">CPM.KZ</a></li>
-				<li><a href="#" class="block text-base text-white px-2 py-4 hover:bg-green-500 transition duration-300">Контакты</a></li>
-			</ul>
-
-
-
-		</div>
+		
 			
 
 		</div>
@@ -2287,7 +2258,7 @@
 		const bet = document.querySelector('.extra');
 		
 		btn.addEventListener("click", () => {
-		menu.classList.toggle("!flex");
+		menu.classList.toggle("opacity-100");
 		if (bet.classList.contains("pt-64")) {
 			bet.classList.remove("pt-64");
 		} else {
